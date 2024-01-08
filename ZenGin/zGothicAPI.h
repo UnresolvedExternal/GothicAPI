@@ -4,6 +4,8 @@
 #ifndef __ZGOTHIC_API_H__
 #define __ZGOTHIC_API_H__
 
+#include <stdio.h>
+
 #define cimport extern "C" __declspec( dllimport )
 #define cexport extern "C" __declspec( dllexport )
 #define cppimport __declspec( dllimport )

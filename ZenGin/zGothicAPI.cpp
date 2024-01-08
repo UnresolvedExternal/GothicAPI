@@ -1,5 +1,4 @@
 #include <Windows.h>
-#include <stdio.h>
 
 #include "zGothicAPI.h"
 
@@ -70,7 +69,7 @@ inline void DisableNamespace( char* where ) {
 
 inline const char* FindGothicNamespace( const char* str ) {
   size_t length = strlen( str );
-  if( length > GothicNamespaceLength ) {
+  if( static_cast<int>(length) > GothicNamespaceLength ) {
     const char* part = str + length - GothicNamespaceLength;
     if( strcmp( part, GothicNamespace ) == 0 )
       return part;
