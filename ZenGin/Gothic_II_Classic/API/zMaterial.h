@@ -51,7 +51,9 @@ namespace Gothic_II_Classic {
     static unsigned long& masterFrameCtr;
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCTexAniCtrl.inl"
+    #if __has_include("zCTexAniCtrl.inl")
+    #include "zCTexAniCtrl.inl"
+    #endif
   };
 
   // sizeof ACh
@@ -141,7 +143,9 @@ namespace Gothic_II_Classic {
     static unsigned char& s_matUsageDefault;
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCMaterial.inl"
+    #if __has_include("zCMaterial.inl")
+    #include "zCMaterial.inl"
+    #endif
   };
 
 } // namespace Gothic_II_Classic

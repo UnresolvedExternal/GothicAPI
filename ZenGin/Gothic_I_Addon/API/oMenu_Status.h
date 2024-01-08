@@ -31,7 +31,9 @@ namespace Gothic_I_Addon {
     oSMenuInfoAttribute()             zInit( oSMenuInfoAttribute_OnInit() );
 
     // user API
-    #include "..\..\Gothic_UserAPI\oSMenuInfoAttribute.inl"
+    #if __has_include("oSMenuInfoAttribute.inl")
+    #include "oSMenuInfoAttribute.inl"
+    #endif
   };
 
   // sizeof 04h
@@ -50,7 +52,9 @@ namespace Gothic_I_Addon {
     oSMenuInfoArmor() {}
 
     // user API
-    #include "..\..\Gothic_UserAPI\oSMenuInfoArmor.inl"
+    #if __has_include("oSMenuInfoArmor.inl")
+    #include "oSMenuInfoArmor.inl"
+    #endif
   };
 
   // sizeof 44h
@@ -68,7 +72,9 @@ namespace Gothic_I_Addon {
     oSMenuInfoTalent()             zInit( oSMenuInfoTalent_OnInit() );
 
     // user API
-    #include "..\..\Gothic_UserAPI\oSMenuInfoTalent.inl"
+    #if __has_include("oSMenuInfoTalent.inl")
+    #include "oSMenuInfoTalent.inl"
+    #endif
   };
 
   // sizeof CD8h
@@ -100,7 +106,9 @@ namespace Gothic_I_Addon {
     virtual int ExecCommand( zSTRING const& )                           zCall( 0x0047ED70 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\oCMenu_Log.inl"
+    #if __has_include("oCMenu_Log.inl")
+    #include "oCMenu_Log.inl"
+    #endif
   };
 
   // sizeof CE8h
@@ -127,7 +135,9 @@ namespace Gothic_I_Addon {
     virtual ~oCMenu_Status()                                                            zCall( 0x0047FD90 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\oCMenu_Status.inl"
+    #if __has_include("oCMenu_Status.inl")
+    #include "oCMenu_Status.inl"
+    #endif
   };
 
   // sizeof 08h
@@ -143,7 +153,9 @@ namespace Gothic_I_Addon {
     virtual ~oCStatusScreen()    zCall( 0x00481180 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\oCStatusScreen.inl"
+    #if __has_include("oCStatusScreen.inl")
+    #include "oCStatusScreen.inl"
+    #endif
   };
 
   // sizeof 08h
@@ -159,7 +171,9 @@ namespace Gothic_I_Addon {
     virtual ~oCLogScreen()    zCall( 0x004818C0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\oCLogScreen.inl"
+    #if __has_include("oCLogScreen.inl")
+    #include "oCLogScreen.inl"
+    #endif
   };
 
   // sizeof 04h
@@ -174,7 +188,9 @@ namespace Gothic_I_Addon {
     virtual ~oCMapScreen()    zCall( 0x00481F10 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\oCMapScreen.inl"
+    #if __has_include("oCMapScreen.inl")
+    #include "oCMapScreen.inl"
+    #endif
   };
 
 } // namespace Gothic_I_Addon

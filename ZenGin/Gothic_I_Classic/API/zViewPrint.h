@@ -47,7 +47,9 @@ namespace Gothic_I_Classic {
     /* for zCViewBase num : 8*/
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCViewPrint.inl"
+    #if __has_include("zCViewPrint.inl")
+    #include "zCViewPrint.inl"
+    #endif
   };
 
 } // namespace Gothic_I_Classic

@@ -152,7 +152,9 @@ namespace Gothic_II_Classic {
     virtual void __fastcall DeleteBuffer()                                                             zCall( 0x00519B30 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCArchiverBinSafe.inl"
+    #if __has_include("zCArchiverBinSafe.inl")
+    #include "zCArchiverBinSafe.inl"
+    #endif
   };
 
 } // namespace Gothic_II_Classic

@@ -29,7 +29,9 @@ namespace Gothic_II_Addon {
     virtual ~zCVobWaypoint()                 zCall( 0x007ACC20 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCVobWaypoint.inl"
+    #if __has_include("zCVobWaypoint.inl")
+    #include "zCVobWaypoint.inl"
+    #endif
   };
 
   // sizeof 7Ch
@@ -80,7 +82,9 @@ namespace Gothic_II_Addon {
     virtual int CanBeUsed( zCVob const* )    zCall( 0x007AF860 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCWaypoint.inl"
+    #if __has_include("zCWaypoint.inl")
+    #include "zCWaypoint.inl"
+    #endif
   };
 
   // sizeof 20h
@@ -118,7 +122,9 @@ namespace Gothic_II_Addon {
     virtual int IsObjectOnWay( zCVob const* )     zCall( 0x007AE850 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCWay.inl"
+    #if __has_include("zCWay.inl")
+    #include "zCWay.inl"
+    #endif
   };
 
   // sizeof 4Ch
@@ -192,7 +198,9 @@ namespace Gothic_II_Addon {
     virtual ~zCWayNet()                                                zCall( 0x007ACDB0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCWayNet.inl"
+    #if __has_include("zCWayNet.inl")
+    #include "zCWayNet.inl"
+    #endif
   };
 
   // sizeof 1Ch
@@ -221,7 +229,9 @@ namespace Gothic_II_Addon {
     virtual ~zCRoute()                                zCall( 0x007B28A0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCRoute.inl"
+    #if __has_include("zCRoute.inl")
+    #include "zCRoute.inl"
+    #endif
   };
 
   // sizeof 128h
@@ -241,7 +251,9 @@ namespace Gothic_II_Addon {
     virtual ~zCVobSpot()                     zCall( 0x007B3000 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCVobSpot.inl"
+    #if __has_include("zCVobSpot.inl")
+    #include "zCVobSpot.inl"
+    #endif
   };
 
   // sizeof 120h
@@ -255,7 +267,9 @@ namespace Gothic_II_Addon {
     virtual ~zCVobStartpoint()               zCall( 0x007B3980 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCVobStartpoint.inl"
+    #if __has_include("zCVobStartpoint.inl")
+    #include "zCVobStartpoint.inl"
+    #endif
   };
 
 } // namespace Gothic_II_Addon

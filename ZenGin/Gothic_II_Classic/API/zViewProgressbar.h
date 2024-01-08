@@ -17,7 +17,9 @@ namespace Gothic_II_Classic {
     zTProgressRange() {}
 
     // user API
-    #include "..\..\Gothic_UserAPI\zTProgressRange.inl"
+    #if __has_include("zTProgressRange.inl")
+    #include "zTProgressRange.inl"
+    #endif
   };
 
   // sizeof 130h
@@ -48,7 +50,9 @@ namespace Gothic_II_Classic {
     /* for zCInputCallback num : 1*/
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCViewProgressBar.inl"
+    #if __has_include("zCViewProgressBar.inl")
+    #include "zCViewProgressBar.inl"
+    #endif
   };
 
 } // namespace Gothic_II_Classic

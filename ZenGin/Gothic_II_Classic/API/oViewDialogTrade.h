@@ -54,7 +54,9 @@ namespace Gothic_II_Classic {
     virtual int HandleEvent( int )                    zCall( 0x007756B0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\oCViewDialogTrade.inl"
+    #if __has_include("oCViewDialogTrade.inl")
+    #include "oCViewDialogTrade.inl"
+    #endif
   };
 
 } // namespace Gothic_II_Classic

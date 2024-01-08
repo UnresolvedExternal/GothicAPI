@@ -25,7 +25,9 @@ namespace Gothic_I_Classic {
     zCMallocWin32Debug() : zCtor( zCMalloc ) {}
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCMallocWin32Debug.inl"
+    #if __has_include("zCMallocWin32Debug.inl")
+    #include "zCMallocWin32Debug.inl"
+    #endif
   };
 
 } // namespace Gothic_I_Classic

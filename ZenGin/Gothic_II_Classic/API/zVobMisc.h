@@ -30,7 +30,9 @@ namespace Gothic_II_Classic {
     virtual zSTRING MD_GetSubTypeString( int ) zCall( 0x00608120 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCEventCommon.inl"
+    #if __has_include("zCEventCommon.inl")
+    #include "zCEventCommon.inl"
+    #endif
   };
 
   // sizeof 134h
@@ -54,7 +56,9 @@ namespace Gothic_II_Classic {
     virtual zSTRING const* GetTriggerTarget( int ) const zCall( 0x004042F0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCTriggerBase.inl"
+    #if __has_include("zCTriggerBase.inl")
+    #include "zCTriggerBase.inl"
+    #endif
   };
 
   // sizeof 168h
@@ -109,7 +113,9 @@ namespace Gothic_II_Classic {
     virtual int CanBeActivatedNow( zCVob* )                           zCall( 0x00608B60 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCTrigger.inl"
+    #if __has_include("zCTrigger.inl")
+    #include "zCTrigger.inl"
+    #endif
   };
 
   // sizeof 30h
@@ -136,7 +142,9 @@ namespace Gothic_II_Classic {
     virtual zSTRING MD_GetSubTypeString( int ) zCall( 0x00608280 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCEventMover.inl"
+    #if __has_include("zCEventMover.inl")
+    #include "zCEventMover.inl"
+    #endif
   };
 
   // sizeof 270h
@@ -195,7 +203,9 @@ namespace Gothic_II_Classic {
       zTMov_Keyframe() {}
 
       // user API
-      #include "..\..\Gothic_UserAPI\zCMover_zTMov_Keyframe.inl"
+      #if __has_include("zCMover_zTMov_Keyframe.inl")
+      #include "zCMover_zTMov_Keyframe.inl"
+      #endif
     };
 
     zCArray<zTMov_Keyframe> keyframeList; // sizeof 0Ch    offset 168h
@@ -268,7 +278,9 @@ namespace Gothic_II_Classic {
     virtual void SetVisual( zCVisual* )                               zCall( 0x0060ACE0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCMover.inl"
+    #if __has_include("zCMover.inl")
+    #include "zCMover.inl"
+    #endif
   };
 
   // sizeof 180h
@@ -292,7 +304,9 @@ namespace Gothic_II_Classic {
     virtual void OnTouch( zCVob* )             zCall( 0x0060CFD0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCTriggerTeleport.inl"
+    #if __has_include("zCTriggerTeleport.inl")
+    #include "zCTriggerTeleport.inl"
+    #endif
   };
 
   // sizeof 204h
@@ -330,7 +344,9 @@ namespace Gothic_II_Classic {
     virtual void UntriggerTarget( zCVob* )               zCall( 0x0060DDB0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCTriggerList.inl"
+    #if __has_include("zCTriggerList.inl")
+    #include "zCTriggerList.inl"
+    #endif
   };
 
   // sizeof 120h
@@ -344,7 +360,9 @@ namespace Gothic_II_Classic {
     virtual ~zCEffect()                      zCall( 0x00488A40 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCEffect.inl"
+    #if __has_include("zCEffect.inl")
+    #include "zCEffect.inl"
+    #endif
   };
 
   // sizeof 134h
@@ -367,7 +385,9 @@ namespace Gothic_II_Classic {
     virtual void OnUntrigger( zCVob*, zCVob* ) zCall( 0x0060C920 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCEarthquake.inl"
+    #if __has_include("zCEarthquake.inl")
+    #include "zCEarthquake.inl"
+    #endif
   };
 
   // sizeof 138h
@@ -394,7 +414,9 @@ namespace Gothic_II_Classic {
     virtual void PostLoad()                    zCall( 0x0060D1F0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCPFXControler.inl"
+    #if __has_include("zCPFXControler.inl")
+    #include "zCPFXControler.inl"
+    #endif
   };
 
   // sizeof 134h
@@ -433,7 +455,9 @@ namespace Gothic_II_Classic {
     virtual char const* GetDamageTypeArcEnum( unsigned long ) zCall( 0x0060EBD0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCTouchDamage.inl"
+    #if __has_include("zCTouchDamage.inl")
+    #include "zCTouchDamage.inl"
+    #endif
   };
 
   // sizeof 120h
@@ -447,7 +471,9 @@ namespace Gothic_II_Classic {
     virtual ~zCVobStair()                    zCall( 0x00603D50 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCVobStair.inl"
+    #if __has_include("zCVobStair.inl")
+    #include "zCVobStair.inl"
+    #endif
   };
 
   // sizeof 138h
@@ -478,7 +504,9 @@ namespace Gothic_II_Classic {
     virtual zSTRING GetSoundName()           zCall( 0x0060F360 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCTouchAnimate.inl"
+    #if __has_include("zCTouchAnimate.inl")
+    #include "zCTouchAnimate.inl"
+    #endif
   };
 
   // sizeof 14Ch
@@ -498,7 +526,9 @@ namespace Gothic_II_Classic {
     virtual zSTRING GetSoundName()                  zCall( 0x0060F960 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCTouchAnimateSound.inl"
+    #if __has_include("zCTouchAnimateSound.inl")
+    #include "zCTouchAnimateSound.inl"
+    #endif
   };
 
   // sizeof 124h
@@ -523,7 +553,9 @@ namespace Gothic_II_Classic {
     virtual void SetVisual( zCVisual* )        zCall( 0x0060FA70 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCVobAnimate.inl"
+    #if __has_include("zCVobAnimate.inl")
+    #include "zCVobAnimate.inl"
+    #endif
   };
 
   // sizeof 124h
@@ -544,7 +576,9 @@ namespace Gothic_II_Classic {
     virtual int __fastcall Render( zTRenderContext& ) zCall( 0x0060FD50 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCVobLensFlare.inl"
+    #if __has_include("zCVobLensFlare.inl")
+    #include "zCVobLensFlare.inl"
+    #endif
   };
 
   // sizeof 38h
@@ -582,7 +616,9 @@ namespace Gothic_II_Classic {
     virtual void Unpack( zCBuffer&, zCEventManager* )                                                     zCall( 0x006102C0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCEventScreenFX.inl"
+    #if __has_include("zCEventScreenFX.inl")
+    #include "zCEventScreenFX.inl"
+    #endif
   };
 
   // sizeof 1C0h
@@ -607,7 +643,9 @@ namespace Gothic_II_Classic {
       ~zTScreenFXSet() zCall( 0x00610570 );
 
       // user API
-      #include "..\..\Gothic_UserAPI\zCVobScreenFX_zTScreenFXSet.inl"
+      #if __has_include("zCVobScreenFX_zTScreenFXSet.inl")
+      #include "zCVobScreenFX_zTScreenFXSet.inl"
+      #endif
     };
 
     zTScreenFXSet blend;    // sizeof 30h    offset 120h
@@ -629,7 +667,9 @@ namespace Gothic_II_Classic {
     virtual void OnTick()                                  zCall( 0x006109B0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCVobScreenFX.inl"
+    #if __has_include("zCVobScreenFX.inl")
+    #include "zCVobScreenFX.inl"
+    #endif
   };
 
   // sizeof 138h
@@ -666,7 +706,9 @@ namespace Gothic_II_Classic {
     virtual void OnUntouch( zCVob* )             zCall( 0x00604620 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCMessageFilter.inl"
+    #if __has_include("zCMessageFilter.inl")
+    #include "zCMessageFilter.inl"
+    #endif
   };
 
   // sizeof 134h
@@ -684,7 +726,9 @@ namespace Gothic_II_Classic {
     virtual void OnUntouch( zCVob* )           zCall( 0x00611390 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCTriggerUntouch.inl"
+    #if __has_include("zCTriggerUntouch.inl")
+    #include "zCTriggerUntouch.inl"
+    #endif
   };
 
   // sizeof 138h
@@ -709,7 +753,9 @@ namespace Gothic_II_Classic {
     virtual void PostLoad()                        zCall( 0x00612E20 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCTriggerWorldStart.inl"
+    #if __has_include("zCTriggerWorldStart.inl")
+    #include "zCTriggerWorldStart.inl"
+    #endif
   };
 
   // sizeof 1E0h
@@ -752,7 +798,9 @@ namespace Gothic_II_Classic {
     virtual zSTRING const* GetTriggerTarget( int ) const zCall( 0x00612780 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCCodeMaster.inl"
+    #if __has_include("zCCodeMaster.inl")
+    #include "zCCodeMaster.inl"
+    #endif
   };
 
   // sizeof 13Ch
@@ -776,7 +824,9 @@ namespace Gothic_II_Classic {
     virtual void OnUntouch( zCVob* )            zCall( 0x00604DD0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCMoverControler.inl"
+    #if __has_include("zCMoverControler.inl")
+    #include "zCMoverControler.inl"
+    #endif
   };
 
   // sizeof 120h
@@ -787,7 +837,9 @@ namespace Gothic_II_Classic {
     zCVobChar() : zCtor( zCVob ) {}
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCVobChar.inl"
+    #if __has_include("zCVobChar.inl")
+    #include "zCVobChar.inl"
+    #endif
   };
 
 } // namespace Gothic_II_Classic

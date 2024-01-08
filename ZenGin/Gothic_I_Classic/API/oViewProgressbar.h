@@ -23,7 +23,9 @@ namespace Gothic_I_Classic {
     /* for zCInputCallback num : 1*/
 
     // user API
-    #include "..\..\Gothic_UserAPI\oCViewGothicProgressBar.inl"
+    #if __has_include("oCViewGothicProgressBar.inl")
+    #include "oCViewGothicProgressBar.inl"
+    #endif
   };
 
 } // namespace Gothic_I_Classic

@@ -35,7 +35,9 @@ namespace Gothic_I_Classic {
     ~zCDrvProperties_MSS()            zCall( 0x004DCDC0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCDrvProperties_MSS.inl"
+    #if __has_include("zCDrvProperties_MSS.inl")
+    #include "zCDrvProperties_MSS.inl"
+    #endif
   };
 
   // sizeof 54h
@@ -114,7 +116,9 @@ namespace Gothic_I_Classic {
     static zCActiveSnd*& nextFreeSnd;
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCActiveSnd.inl"
+    #if __has_include("zCActiveSnd.inl")
+    #include "zCActiveSnd.inl"
+    #endif
   };
 
   // sizeof 18h
@@ -132,7 +136,9 @@ namespace Gothic_I_Classic {
     ~zCSndChannel()            zCall( 0x004EB310 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCSndChannel.inl"
+    #if __has_include("zCSndChannel.inl")
+    #include "zCSndChannel.inl"
+    #endif
   };
 
   // sizeof 6Ch
@@ -166,7 +172,9 @@ namespace Gothic_I_Classic {
     void CacheOut()               zCall( 0x004EBA60 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCSndFrame.inl"
+    #if __has_include("zCSndFrame.inl")
+    #include "zCSndFrame.inl"
+    #endif
   };
 
   // sizeof 30h
@@ -197,7 +205,9 @@ namespace Gothic_I_Classic {
     int GetSize()                      zCall( 0x004EDC90 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCWaveData.inl"
+    #if __has_include("zCWaveData.inl")
+    #include "zCWaveData.inl"
+    #endif
   };
 
   // sizeof 14h
@@ -264,7 +274,9 @@ namespace Gothic_I_Classic {
     static zCDrvProperties_MSS& prefs;
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCSndSys_MSS.inl"
+    #if __has_include("zCSndSys_MSS.inl")
+    #include "zCSndSys_MSS.inl"
+    #endif
   };
 
   // sizeof 80h
@@ -313,7 +325,9 @@ namespace Gothic_I_Classic {
     virtual int IsLooping() const                  zCall( 0x004E0B40 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCSndFX_MSS.inl"
+    #if __has_include("zCSndFX_MSS.inl")
+    #include "zCSndFX_MSS.inl"
+    #endif
   };
 
   // sizeof 18h
@@ -334,7 +348,9 @@ namespace Gothic_I_Classic {
     void DisposeAllSamples()      zCall( 0x004EDF00 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCHandleManager.inl"
+    #if __has_include("zCHandleManager.inl")
+    #include "zCHandleManager.inl"
+    #endif
   };
 
 } // namespace Gothic_I_Classic

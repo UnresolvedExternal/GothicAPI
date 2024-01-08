@@ -38,7 +38,9 @@ namespace Gothic_II_Addon {
     virtual void ResetSettings( float )    zCall( 0x00439B00 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\oCSystemInfo.inl"
+    #if __has_include("oCSystemInfo.inl")
+    #include "oCSystemInfo.inl"
+    #endif
   };
 
 } // namespace Gothic_II_Addon

@@ -43,7 +43,9 @@ namespace Gothic_II_Classic {
     ~TNpcAIState()            zCall( 0x0070C5B0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\TNpcAIState.inl"
+    #if __has_include("TNpcAIState.inl")
+    #include "TNpcAIState.inl"
+    #endif
   };
 
   // sizeof E0h
@@ -123,7 +125,9 @@ namespace Gothic_II_Classic {
     virtual void UnpackState( zCBuffer& )                              zCall( 0x00710000 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\oCNpc_States.inl"
+    #if __has_include("oCNpc_States.inl")
+    #include "oCNpc_States.inl"
+    #endif
   };
 
 } // namespace Gothic_II_Classic

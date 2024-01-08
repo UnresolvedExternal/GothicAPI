@@ -264,7 +264,9 @@ namespace Gothic_II_Classic {
     }
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCArray.inl"
+    #if __has_include("zCArray.inl")
+    #include "zCArray.inl"
+    #endif
   };
 
   template <class T>
@@ -551,7 +553,9 @@ namespace Gothic_II_Classic {
     }
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCArraySort.inl"
+    #if __has_include("zCArraySort.inl")
+    #include "zCArraySort.inl"
+    #endif
   };
 
   template <class T>
@@ -688,7 +692,9 @@ namespace Gothic_II_Classic {
     }
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCArrayAdapt.inl"
+    #if __has_include("zCArrayAdapt.inl")
+    #include "zCArrayAdapt.inl"
+    #endif
   };
 
   template <class T, int SIZE>
@@ -825,7 +831,9 @@ namespace Gothic_II_Classic {
     }
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCTree.inl"
+    #if __has_include("zCTree.inl")
+    #include "zCTree.inl"
+    #endif
   };
 
   template <class T>
@@ -1081,7 +1089,9 @@ namespace Gothic_II_Classic {
     }
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCList.inl"
+    #if __has_include("zCList.inl")
+    #include "zCList.inl"
+    #endif
   };
 
   template <class T>

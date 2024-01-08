@@ -44,7 +44,9 @@ namespace Gothic_I_Addon {
     virtual void CutsceneSystemInit()                                            zCall( 0x005D4E40 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCSession.inl"
+    #if __has_include("zCSession.inl")
+    #include "zCSession.inl"
+    #endif
   };
 
 } // namespace Gothic_I_Addon

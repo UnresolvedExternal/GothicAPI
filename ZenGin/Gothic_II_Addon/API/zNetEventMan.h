@@ -31,7 +31,9 @@ namespace Gothic_II_Addon {
     virtual zCNetVobControl* GetNetVobControl( int )                       zCall( 0x00459F60 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCNetEventManager.inl"
+    #if __has_include("zCNetEventManager.inl")
+    #include "zCNetEventManager.inl"
+    #endif
   };
 
 } // namespace Gothic_II_Addon

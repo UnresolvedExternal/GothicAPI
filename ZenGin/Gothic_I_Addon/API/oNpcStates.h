@@ -43,7 +43,9 @@ namespace Gothic_I_Addon {
     ~TNpcAIState()            zCall( 0x006F9E60 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\TNpcAIState.inl"
+    #if __has_include("TNpcAIState.inl")
+    #include "TNpcAIState.inl"
+    #endif
   };
 
   // sizeof E0h
@@ -122,7 +124,9 @@ namespace Gothic_I_Addon {
     virtual void UnpackState( zCBuffer& )                              zCall( 0x006FDAB0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\oCNpc_States.inl"
+    #if __has_include("oCNpc_States.inl")
+    #include "oCNpc_States.inl"
+    #endif
   };
 
 } // namespace Gothic_I_Addon

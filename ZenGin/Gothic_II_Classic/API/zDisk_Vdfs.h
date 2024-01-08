@@ -71,7 +71,9 @@ namespace Gothic_II_Classic {
     static zCCriticalSection*& s_criticalSection;
 
     // user API
-    #include "..\..\Gothic_UserAPI\zFILE_VDFS.inl"
+    #if __has_include("zFILE_VDFS.inl")
+    #include "zFILE_VDFS.inl"
+    #endif
   };
 
 } // namespace Gothic_II_Classic

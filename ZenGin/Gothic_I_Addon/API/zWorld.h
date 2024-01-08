@@ -39,7 +39,9 @@ namespace Gothic_I_Addon {
     zCCallback() {}
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCCallback.inl"
+    #if __has_include("zCCallback.inl")
+    #include "zCCallback.inl"
+    #endif
   };
 
   // sizeof 04h
@@ -52,7 +54,9 @@ namespace Gothic_I_Addon {
     virtual void HandleVob( zCVob*, void* ) zPureCall;
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCVobCallback.inl"
+    #if __has_include("zCVobCallback.inl")
+    #include "zCVobCallback.inl"
+    #endif
   };
 
   // sizeof 04h
@@ -65,7 +69,9 @@ namespace Gothic_I_Addon {
     zCWorldPerFrameCallback() : zCtor( zCCallback ) {}
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCWorldPerFrameCallback.inl"
+    #if __has_include("zCWorldPerFrameCallback.inl")
+    #include "zCWorldPerFrameCallback.inl"
+    #endif
   };
 
   // sizeof 28h
@@ -82,7 +88,9 @@ namespace Gothic_I_Addon {
     zTTraceRayReport() {}
 
     // user API
-    #include "..\..\Gothic_UserAPI\zTTraceRayReport.inl"
+    #if __has_include("zTTraceRayReport.inl")
+    #include "zTTraceRayReport.inl"
+    #endif
   };
 
   // sizeof 08h
@@ -96,7 +104,9 @@ namespace Gothic_I_Addon {
     zCTransferConstr() {}
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCTransferConstr.inl"
+    #if __has_include("zCTransferConstr.inl")
+    #include "zCTransferConstr.inl"
+    #endif
   };
   
 #pragma pack( push, 1 )
@@ -112,7 +122,9 @@ namespace Gothic_I_Addon {
     zCTransfer() {}
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCTransfer.inl"
+    #if __has_include("zCTransfer.inl")
+    #include "zCTransfer.inl"
+    #endif
   };
   
 #pragma pack( pop )
@@ -138,7 +150,9 @@ namespace Gothic_I_Addon {
     void DoTransfers()    zCall( 0x00621CF0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCPatch.inl"
+    #if __has_include("zCPatch.inl")
+    #include "zCPatch.inl"
+    #endif
   };
     
 #pragma pack( push, 1 )
@@ -166,7 +180,9 @@ namespace Gothic_I_Addon {
     ~zCPatchMap()                                                          zCall( 0x006214D0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCPatchMap.inl"
+    #if __has_include("zCPatchMap.inl")
+    #include "zCPatchMap.inl"
+    #endif
   };
     
 #pragma pack( pop )
@@ -356,7 +372,9 @@ namespace Gothic_I_Addon {
     static zTWorldLoadMergeMode& s_worldMergeMode;
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCWorld.inl"
+    #if __has_include("zCWorld.inl")
+    #include "zCWorld.inl"
+    #endif
   };
 
 } // namespace Gothic_I_Addon

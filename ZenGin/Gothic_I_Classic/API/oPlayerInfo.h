@@ -39,7 +39,9 @@ namespace Gothic_I_Classic {
     virtual void SetInstanceByName( zSTRING const& )    zCall( 0x00433730 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\oCPlayerInfo.inl"
+    #if __has_include("oCPlayerInfo.inl")
+    #include "oCPlayerInfo.inl"
+    #endif
   };
 
 } // namespace Gothic_I_Classic

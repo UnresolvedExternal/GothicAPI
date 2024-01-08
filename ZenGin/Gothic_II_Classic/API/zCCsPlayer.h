@@ -73,7 +73,9 @@ namespace Gothic_II_Classic {
     virtual void CSDB_Stop( zCCutscene* )                                      zCall( 0x0041F7A0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCCSPlayer.inl"
+    #if __has_include("zCCSPlayer.inl")
+    #include "zCCSPlayer.inl"
+    #endif
   };
 
 } // namespace Gothic_II_Classic

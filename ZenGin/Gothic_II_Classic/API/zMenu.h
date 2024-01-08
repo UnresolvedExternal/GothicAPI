@@ -137,7 +137,9 @@ namespace Gothic_II_Classic {
     static int& inGameMenu;
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCMenu.inl"
+    #if __has_include("zCMenu.inl")
+    #include "zCMenu.inl"
+    #endif
   };
 
 } // namespace Gothic_II_Classic

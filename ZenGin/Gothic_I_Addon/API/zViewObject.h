@@ -76,7 +76,9 @@ namespace Gothic_I_Addon {
     virtual int GetCode( int, int )                                     zCall( 0x00798760 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCViewObject.inl"
+    #if __has_include("zCViewObject.inl")
+    #include "zCViewObject.inl"
+    #endif
   };
 
 } // namespace Gothic_I_Addon

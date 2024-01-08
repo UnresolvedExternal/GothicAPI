@@ -23,7 +23,9 @@ namespace Gothic_I_Addon {
     static int& s_actCounter;
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCAccount.inl"
+    #if __has_include("zCAccount.inl")
+    #include "zCAccount.inl"
+    #endif
   };
 
 } // namespace Gothic_I_Addon

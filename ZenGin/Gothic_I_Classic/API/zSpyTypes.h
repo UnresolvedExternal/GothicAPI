@@ -20,7 +20,9 @@ namespace Gothic_I_Classic {
     zTErrorMessage() {}
 
     // user API
-    #include "..\..\Gothic_UserAPI\zTErrorMessage.inl"
+    #if __has_include("zTErrorMessage.inl")
+    #include "zTErrorMessage.inl"
+    #endif
   };
 
 } // namespace Gothic_I_Classic

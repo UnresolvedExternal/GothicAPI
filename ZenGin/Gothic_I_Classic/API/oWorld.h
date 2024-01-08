@@ -56,7 +56,9 @@ namespace Gothic_I_Classic {
     virtual void DisposeVobs()                                           zCall( 0x006D7990 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\oCWorld.inl"
+    #if __has_include("oCWorld.inl")
+    #include "oCWorld.inl"
+    #endif
   };
 
   // sizeof 08h
@@ -88,7 +90,9 @@ namespace Gothic_I_Classic {
     static void AddTime( int&, int&, int, int ) zCall( 0x006D80E0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\oCWorldTimer.inl"
+    #if __has_include("oCWorldTimer.inl")
+    #include "oCWorldTimer.inl"
+    #endif
   };
 
 } // namespace Gothic_I_Classic

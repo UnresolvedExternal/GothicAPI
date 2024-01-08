@@ -33,7 +33,9 @@ namespace Gothic_I_Classic {
     void SetMat( zMAT4 const& ) zCall( 0x004890E0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCPositionKey.inl"
+    #if __has_include("zCPositionKey.inl")
+    #include "zCPositionKey.inl"
+    #endif
   };
 
   // sizeof 3Ch
@@ -58,7 +60,9 @@ namespace Gothic_I_Classic {
     void Interpolate0( float, zVEC3& ) zCall( 0x004CBD50 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCCubicPolynomial.inl"
+    #if __has_include("zCCubicPolynomial.inl")
+    #include "zCCubicPolynomial.inl"
+    #endif
   };
 
   // sizeof 24h
@@ -100,7 +104,9 @@ namespace Gothic_I_Classic {
     float GetTime( float )                               zCall( 0x004CBE30 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCKBSpline.inl"
+    #if __has_include("zCKBSpline.inl")
+    #include "zCKBSpline.inl"
+    #endif
   };
 
 } // namespace Gothic_I_Classic

@@ -25,7 +25,9 @@ namespace Gothic_I_Addon {
     /* for oCViewDialogItem num : 1*/
 
     // user API
-    #include "..\..\Gothic_UserAPI\oCViewDialogItem.inl"
+    #if __has_include("oCViewDialogItem.inl")
+    #include "oCViewDialogItem.inl"
+    #endif
   };
 
 } // namespace Gothic_I_Addon

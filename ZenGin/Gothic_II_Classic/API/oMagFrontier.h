@@ -31,7 +31,9 @@ namespace Gothic_II_Classic {
     void DisposeShootFX()                                         zCall( 0x00473E00 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\oCMagFrontier.inl"
+    #if __has_include("oCMagFrontier.inl")
+    #include "oCMagFrontier.inl"
+    #endif
   };
 
 } // namespace Gothic_II_Classic

@@ -37,7 +37,9 @@ namespace Gothic_II_Classic {
     }
 
     // user API
-    #include "..\..\Gothic_UserAPI\zTNetAddress.inl"
+    #if __has_include("zTNetAddress.inl")
+    #include "zTNetAddress.inl"
+    #endif
   };
 
   // sizeof 08h
@@ -53,7 +55,9 @@ namespace Gothic_II_Classic {
     }
 
     // user API
-    #include "..\..\Gothic_UserAPI\zTNetBufferInfo.inl"
+    #if __has_include("zTNetBufferInfo.inl")
+    #include "zTNetBufferInfo.inl"
+    #endif
   };
 
   // sizeof 18h
@@ -72,7 +76,9 @@ namespace Gothic_II_Classic {
     }
 
     // user API
-    #include "..\..\Gothic_UserAPI\zTNetPacket.inl"
+    #if __has_include("zTNetPacket.inl")
+    #include "zTNetPacket.inl"
+    #endif
   };
 
   // sizeof 10h
@@ -92,7 +98,9 @@ namespace Gothic_II_Classic {
     }
 
     // user API
-    #include "..\..\Gothic_UserAPI\zTNetTimeout.inl"
+    #if __has_include("zTNetTimeout.inl")
+    #include "zTNetTimeout.inl"
+    #endif
   };
 
 } // namespace Gothic_II_Classic

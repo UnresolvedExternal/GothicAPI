@@ -21,7 +21,9 @@ namespace Gothic_II_Classic {
     virtual void __fastcall GetLargestBBox3DLocal( zTBBox3D& )                                                     zCall( 0x005499B0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCCollObjectBase.inl"
+    #if __has_include("zCCollObjectBase.inl")
+    #include "zCCollObjectBase.inl"
+    #endif
   };
 
   // sizeof 8Ch
@@ -37,7 +39,9 @@ namespace Gothic_II_Classic {
     virtual ~zCCollObjectUndef()                          zCall( 0x00548450 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCCollObjectUndef.inl"
+    #if __has_include("zCCollObjectUndef.inl")
+    #include "zCCollObjectUndef.inl"
+    #endif
   };
 
   // sizeof 8Ch
@@ -60,7 +64,9 @@ namespace Gothic_II_Classic {
     virtual void __fastcall GetLargestBBox3DLocal( zTBBox3D& )                                                       zCall( 0x00548A00 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCCollObjectPoint.inl"
+    #if __has_include("zCCollObjectPoint.inl")
+    #include "zCCollObjectPoint.inl"
+    #endif
   };
 
   // sizeof 8Ch
@@ -76,7 +82,9 @@ namespace Gothic_II_Classic {
     virtual ~zCCollObjectProjectile()                     zCall( 0x005487A0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCCollObjectProjectile.inl"
+    #if __has_include("zCCollObjectProjectile.inl")
+    #include "zCCollObjectProjectile.inl"
+    #endif
   };
 
   // sizeof 8Ch
@@ -94,7 +102,9 @@ namespace Gothic_II_Classic {
     virtual float __fastcall GetAdaptiveStepSize()                                        zCall( 0x00549080 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCCollObjectComplex.inl"
+    #if __has_include("zCCollObjectComplex.inl")
+    #include "zCCollObjectComplex.inl"
+    #endif
   };
 
   // sizeof 98h
@@ -113,7 +123,9 @@ namespace Gothic_II_Classic {
     virtual ~zCCollObjectLevelPolys()                     zCall( 0x00548520 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCCollObjectLevelPolys.inl"
+    #if __has_include("zCCollObjectLevelPolys.inl")
+    #include "zCCollObjectLevelPolys.inl"
+    #endif
   };
 
   // sizeof 8Ch
@@ -130,7 +142,9 @@ namespace Gothic_II_Classic {
     virtual int __fastcall SuppressCollisionResponse()    zCall( 0x005489C0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCCollObjectBoxPassThrough.inl"
+    #if __has_include("zCCollObjectBoxPassThrough.inl")
+    #include "zCCollObjectBoxPassThrough.inl"
+    #endif
   };
 
   // sizeof 8Ch
@@ -146,7 +160,9 @@ namespace Gothic_II_Classic {
     virtual ~zCCollObjectBoxBlocker()                     zCall( 0x00548920 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCCollObjectBoxBlocker.inl"
+    #if __has_include("zCCollObjectBoxBlocker.inl")
+    #include "zCCollObjectBoxBlocker.inl"
+    #endif
   };
 
   // sizeof 13Ch
@@ -184,7 +200,9 @@ namespace Gothic_II_Classic {
       zTConfig() {}
 
       // user API
-      #include "..\..\Gothic_UserAPI\zCCollObjectCharacter_zTConfig.inl"
+      #if __has_include("zCCollObjectCharacter_zTConfig.inl")
+      #include "zCCollObjectCharacter_zTConfig.inl"
+      #endif
     };
 
     // sizeof 20h
@@ -207,7 +225,9 @@ namespace Gothic_II_Classic {
       zTSpatialState() {}
 
       // user API
-      #include "..\..\Gothic_UserAPI\zCCollObjectCharacter_zTSpatialState.inl"
+      #if __has_include("zCCollObjectCharacter_zTSpatialState.inl")
+      #include "zCCollObjectCharacter_zTSpatialState.inl"
+      #endif
     };
 
     // sizeof 30h
@@ -253,7 +273,9 @@ namespace Gothic_II_Classic {
       zTInterferenceReport() {}
 
       // user API
-      #include "..\..\Gothic_UserAPI\zCCollObjectCharacter_zTInterferenceReport.inl"
+      #if __has_include("zCCollObjectCharacter_zTInterferenceReport.inl")
+      #include "zCCollObjectCharacter_zTInterferenceReport.inl"
+      #endif
     };
 
     zCRayCache m_oUpRayCache;                   // sizeof 08h    offset 8Ch
@@ -302,7 +324,9 @@ namespace Gothic_II_Classic {
     virtual void PushAround( zVEC3 const& )                                                                          zCall( 0x0054A700 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCCollObjectCharacter.inl"
+    #if __has_include("zCCollObjectCharacter.inl")
+    #include "zCCollObjectCharacter.inl"
+    #endif
   };
 
 } // namespace Gothic_II_Classic

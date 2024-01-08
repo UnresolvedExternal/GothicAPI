@@ -47,7 +47,9 @@ namespace Gothic_I_Classic {
     virtual int PlayHandleEvents()           zCall( 0x0043C9A0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCBinkPlayer.inl"
+    #if __has_include("zCBinkPlayer.inl")
+    #include "zCBinkPlayer.inl"
+    #endif
   };
 
 } // namespace Gothic_I_Classic

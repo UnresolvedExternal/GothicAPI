@@ -56,7 +56,9 @@ namespace Gothic_II_Classic {
     virtual void ProcessInputEvents()                                      zCall( 0x004D3140 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCInput_Win32.inl"
+    #if __has_include("zCInput_Win32.inl")
+    #include "zCInput_Win32.inl"
+    #endif
   };
 
 } // namespace Gothic_II_Classic

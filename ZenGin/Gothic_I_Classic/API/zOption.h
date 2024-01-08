@@ -53,7 +53,9 @@ namespace Gothic_I_Classic {
     ~zCOptionEntry()                                            zCall( 0x0045B180 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCOptionEntry.inl"
+    #if __has_include("zCOptionEntry.inl")
+    #include "zCOptionEntry.inl"
+    #endif
   };
 
   // sizeof 20h
@@ -70,7 +72,9 @@ namespace Gothic_I_Classic {
     ~zCOptionSection()                            zCall( 0x0045ACC0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCOptionSection.inl"
+    #if __has_include("zCOptionSection.inl")
+    #include "zCOptionSection.inl"
+    #endif
   };
 
   // sizeof 280h
@@ -140,7 +144,9 @@ namespace Gothic_I_Classic {
     static int& trade_amount;
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCOption.inl"
+    #if __has_include("zCOption.inl")
+    #include "zCOption.inl"
+    #endif
   };
 
 } // namespace Gothic_I_Classic

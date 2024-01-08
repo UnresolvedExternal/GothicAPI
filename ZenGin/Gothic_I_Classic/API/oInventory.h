@@ -129,7 +129,9 @@ namespace Gothic_I_Classic {
     static zCGfx** gfx_arrow;
 
     // user API
-    #include "..\..\Gothic_UserAPI\oCItemContainer.inl"
+    #if __has_include("oCItemContainer.inl")
+    #include "oCItemContainer.inl"
+    #endif
   };
 
   // sizeof 9Ch
@@ -149,7 +151,9 @@ namespace Gothic_I_Classic {
     virtual void CreateList()                     zCall( 0x0066A5C0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\oCStealContainer.inl"
+    #if __has_include("oCStealContainer.inl")
+    #include "oCStealContainer.inl"
+    #endif
   };
 
   // sizeof 9Ch
@@ -167,7 +171,9 @@ namespace Gothic_I_Classic {
     virtual void CreateList()                    zCall( 0x0066AB10 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\oCNpcContainer.inl"
+    #if __has_include("oCNpcContainer.inl")
+    #include "oCNpcContainer.inl"
+    #endif
   };
 
   // sizeof 230h
@@ -238,7 +244,9 @@ namespace Gothic_I_Classic {
     static zCGfx** gfx_cats;
 
     // user API
-    #include "..\..\Gothic_UserAPI\oCNpcInventory.inl"
+    #if __has_include("oCNpcInventory.inl")
+    #include "oCNpcInventory.inl"
+    #endif
   };
 
 } // namespace Gothic_I_Classic

@@ -31,7 +31,9 @@ namespace Gothic_I_Classic {
     virtual float MD_GetMinTime()                                       zCall( 0x0070D480 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCEventMusicControler.inl"
+    #if __has_include("zCEventMusicControler.inl")
+    #include "zCEventMusicControler.inl"
+    #endif
   };
 
   // sizeof 100h
@@ -48,7 +50,9 @@ namespace Gothic_I_Classic {
     virtual void ThisVobRemovedFromWorld( zCWorld* )                    zCall( 0x0070D5B0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCMusicControler.inl"
+    #if __has_include("zCMusicControler.inl")
+    #include "zCMusicControler.inl"
+    #endif
   };
 
 } // namespace Gothic_I_Classic

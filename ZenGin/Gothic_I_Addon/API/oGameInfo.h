@@ -22,7 +22,9 @@ namespace Gothic_I_Addon {
     virtual void Unpack( zCBuffer& )              zCall( 0x00425E50 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\oCGameInfo.inl"
+    #if __has_include("oCGameInfo.inl")
+    #include "oCGameInfo.inl"
+    #endif
   };
 
 } // namespace Gothic_I_Addon

@@ -52,7 +52,9 @@ namespace Gothic_I_Classic {
     virtual void SetDetailTextureMode( int )                 zCall( 0x00722BD0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCTexConGeneric.inl"
+    #if __has_include("zCTexConGeneric.inl")
+    #include "zCTexConGeneric.inl"
+    #endif
   };
 
 } // namespace Gothic_I_Classic

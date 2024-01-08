@@ -25,7 +25,9 @@ namespace Gothic_II_Classic {
     zCCircleArc3D() {}
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCCircleArc3D.inl"
+    #if __has_include("zCCircleArc3D.inl")
+    #include "zCCircleArc3D.inl"
+    #endif
   };
 
   // sizeof 8E4h
@@ -73,7 +75,9 @@ namespace Gothic_II_Classic {
     static zMAT4& tmpMat;
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCPose.inl"
+    #if __has_include("zCPose.inl")
+    #include "zCPose.inl"
+    #endif
   };
 
 } // namespace Gothic_II_Classic

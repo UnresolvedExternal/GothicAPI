@@ -30,7 +30,9 @@ namespace Gothic_II_Classic {
     zTNetMessageHeader() {}
 
     // user API
-    #include "..\..\Gothic_UserAPI\zTNetMessageHeader.inl"
+    #if __has_include("zTNetMessageHeader.inl")
+    #include "zTNetMessageHeader.inl"
+    #endif
   };
 #pragma pack( pop )
 
@@ -92,7 +94,9 @@ namespace Gothic_II_Classic {
     virtual ~zCNetMessage()                                         zCall( 0x0045BCD0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCNetMessage.inl"
+    #if __has_include("zCNetMessage.inl")
+    #include "zCNetMessage.inl"
+    #endif
   };
 
   // sizeof 0Ch
@@ -107,7 +111,9 @@ namespace Gothic_II_Classic {
     ~zCNetMessageQueue()            zCall( 0x0044FD90 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCNetMessageQueue.inl"
+    #if __has_include("zCNetMessageQueue.inl")
+    #include "zCNetMessageQueue.inl"
+    #endif
   };
 
 } // namespace Gothic_II_Classic

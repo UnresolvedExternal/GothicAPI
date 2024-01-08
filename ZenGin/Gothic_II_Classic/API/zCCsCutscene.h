@@ -23,7 +23,9 @@ namespace Gothic_II_Classic {
     ~zTCSBlockPosition() zCall( 0x00417DB0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zTCSBlockPosition.inl"
+    #if __has_include("zTCSBlockPosition.inl")
+    #include "zTCSBlockPosition.inl"
+    #endif
   };
 
   // sizeof 50h
@@ -60,7 +62,9 @@ namespace Gothic_II_Classic {
     virtual zSTRING MD_GetSubTypeString( int )                                zCall( 0x0040C6B0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCEvMsgCutscene.inl"
+    #if __has_include("zCEvMsgCutscene.inl")
+    #include "zCEvMsgCutscene.inl"
+    #endif
   };
 
   // sizeof 44h
@@ -127,7 +131,9 @@ namespace Gothic_II_Classic {
     virtual zCCSBlockPosition* GetChildPos( int )                       zCall( 0x0040CB10 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCCSBlockBase.inl"
+    #if __has_include("zCCSBlockBase.inl")
+    #include "zCCSBlockBase.inl"
+    #endif
   };
 
   // sizeof 34h
@@ -164,7 +170,9 @@ namespace Gothic_II_Classic {
     virtual zCEventMessage* GetCommand()                                zCall( 0x0040A9A0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCCSAtomicBlock.inl"
+    #if __has_include("zCCSAtomicBlock.inl")
+    #include "zCCSAtomicBlock.inl"
+    #endif
   };
 
   // sizeof 0Ch
@@ -185,7 +193,9 @@ namespace Gothic_II_Classic {
     virtual ~zCCSBlockPosition()                              zCall( 0x00416BD0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCCSBlockPosition.inl"
+    #if __has_include("zCCSBlockPosition.inl")
+    #include "zCCSBlockPosition.inl"
+    #endif
   };
 
   // sizeof 44h
@@ -224,7 +234,9 @@ namespace Gothic_II_Classic {
     virtual zCCSBlockPosition* GetChildPos( int )                       zCall( 0x0040D430 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCCSBlock.inl"
+    #if __has_include("zCCSBlock.inl")
+    #include "zCCSBlock.inl"
+    #endif
   };
 
   // sizeof 50h
@@ -253,7 +265,9 @@ namespace Gothic_II_Classic {
     virtual void BlockAsFocus( int )                                   zCall( 0x0040E2A0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCCSSyncBlock.inl"
+    #if __has_include("zCCSSyncBlock.inl")
+    #include "zCCSSyncBlock.inl"
+    #endif
   };
 
   // sizeof 80h
@@ -340,7 +354,9 @@ namespace Gothic_II_Classic {
     virtual void PrepareBlock()                               zCall( 0x0040FDC0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCCutscene.inl"
+    #if __has_include("zCCutscene.inl")
+    #include "zCCutscene.inl"
+    #endif
   };
 
 } // namespace Gothic_II_Classic

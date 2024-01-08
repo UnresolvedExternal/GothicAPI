@@ -121,7 +121,9 @@ namespace Gothic_I_Addon {
     void RenderThunderList( zTRenderContext& )          zCall( 0x00657AF0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\oCBarrier.inl"
+    #if __has_include("oCBarrier.inl")
+    #include "oCBarrier.inl"
+    #endif
   };
 
   // sizeof 688h
@@ -138,7 +140,9 @@ namespace Gothic_I_Addon {
     virtual void RenderSkyPre()                                zCall( 0x00657C60 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\oCSkyControler_Barrier.inl"
+    #if __has_include("oCSkyControler_Barrier.inl")
+    #include "oCSkyControler_Barrier.inl"
+    #endif
   };
 
 } // namespace Gothic_I_Addon

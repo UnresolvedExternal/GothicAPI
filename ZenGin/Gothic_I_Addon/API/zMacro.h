@@ -72,7 +72,11 @@ namespace Gothic_I_Addon {
     b              = cos(radAngle) * length;  \
     return *this;
 
-  // memory pool declaration for gothic api containers
+ // memory pool declaration for gothic api containers
+#if defined(zMEMPOOL_DECLARATION_TEMPLATE)
+#undef zMEMPOOL_DECLARATION_TEMPLATE
+#endif
+
 #define zMEMPOOL_DECLARATION_TEMPLATE( classname, address )                                         \
     void *operator new( size_t s ) {                                                                \
       return ((zCMemPoolBase*)address)->Alloc();                                                    \

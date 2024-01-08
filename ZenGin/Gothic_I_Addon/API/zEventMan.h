@@ -68,7 +68,9 @@ namespace Gothic_I_Addon {
     static int& showMsgCommunication;
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCEventManager.inl"
+    #if __has_include("zCEventManager.inl")
+    #include "zCEventManager.inl"
+    #endif
   };
 
 } // namespace Gothic_I_Addon

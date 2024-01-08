@@ -67,7 +67,9 @@ namespace Gothic_II_Addon {
     zSTRING ToString( zTDATE_CONVERT ) zCall( 0x00442900 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zDATE.inl"
+    #if __has_include("zDATE.inl")
+    #include "zDATE.inl"
+    #endif
   };
 
   // sizeof 34h
@@ -83,7 +85,9 @@ namespace Gothic_II_Addon {
     zFILE_STATS() {}
 
     // user API
-    #include "..\..\Gothic_UserAPI\zFILE_STATS.inl"
+    #if __has_include("zFILE_STATS.inl")
+    #include "zFILE_STATS.inl"
+    #endif
   };
 
   // sizeof 28h
@@ -97,7 +101,9 @@ namespace Gothic_II_Addon {
     zFILE_INFO() {}
 
     // user API
-    #include "..\..\Gothic_UserAPI\zFILE_INFO.inl"
+    #if __has_include("zFILE_INFO.inl")
+    #include "zFILE_INFO.inl"
+    #endif
   };
 
   // sizeof 10h
@@ -196,7 +202,9 @@ namespace Gothic_II_Addon {
     static int*& bufferFlag;
 
     // user API
-    #include "..\..\Gothic_UserAPI\zFILE.inl"
+    #if __has_include("zFILE.inl")
+    #include "zFILE.inl"
+    #endif
   };
 
   // sizeof 1C0h
@@ -289,7 +297,9 @@ namespace Gothic_II_Addon {
     virtual zSTRING DirStepInto( zSTRING )                        zCall( 0x004468C0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zFILE_FILE.inl"
+    #if __has_include("zFILE_FILE.inl")
+    #include "zFILE_FILE.inl"
+    #endif
   };
 
   // sizeof 08h
@@ -319,7 +329,9 @@ namespace Gothic_II_Addon {
     virtual ~zPATH()                                      zCall( 0x0048D290 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zPATH.inl"
+    #if __has_include("zPATH.inl")
+    #include "zPATH.inl"
+    #endif
   };
 
 } // namespace Gothic_II_Addon

@@ -21,7 +21,9 @@ namespace Gothic_I_Addon {
       zTWriteObjectEntry() {}
 
       // user API
-      #include "..\..\Gothic_UserAPI\zCArchiverGeneric_zTWriteObjectEntry.inl"
+      #if __has_include("zCArchiverGeneric_zTWriteObjectEntry.inl")
+      #include "zCArchiverGeneric_zTWriteObjectEntry.inl"
+      #endif
     };
 
     zFILE* file;                                                  // sizeof 04h    offset 2Ch
@@ -142,7 +144,9 @@ namespace Gothic_I_Addon {
     virtual void __fastcall DeleteBuffer()                                                             zCall( 0x005275E0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCArchiverGeneric.inl"
+    #if __has_include("zCArchiverGeneric.inl")
+    #include "zCArchiverGeneric.inl"
+    #endif
   };
 
 } // namespace Gothic_I_Addon

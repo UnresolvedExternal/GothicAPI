@@ -24,7 +24,9 @@ namespace Gothic_I_Addon {
     virtual zCCSProps* CreateProperties()                               zCall( 0x00402FB0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\oCCSManager.inl"
+    #if __has_include("oCCSManager.inl")
+    #include "oCCSManager.inl"
+    #endif
   };
 
 } // namespace Gothic_I_Addon

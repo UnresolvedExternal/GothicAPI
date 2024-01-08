@@ -43,7 +43,9 @@ namespace Gothic_II_Addon {
     virtual int HandleEvent( int )                       zCall( 0x00689220 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\oCViewDialogInventory.inl"
+    #if __has_include("oCViewDialogInventory.inl")
+    #include "oCViewDialogInventory.inl"
+    #endif
   };
 
 } // namespace Gothic_II_Addon

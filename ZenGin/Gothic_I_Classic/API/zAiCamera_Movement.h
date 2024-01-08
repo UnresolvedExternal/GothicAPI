@@ -196,7 +196,9 @@ namespace Gothic_I_Classic {
     static zCMovementTracker* GetTracker()                                    zCall( 0x004ABB60 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCMovementTracker.inl"
+    #if __has_include("zCMovementTracker.inl")
+    #include "zCMovementTracker.inl"
+    #endif
   };
 
 } // namespace Gothic_I_Classic

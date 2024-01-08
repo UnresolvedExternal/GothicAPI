@@ -31,7 +31,9 @@ namespace Gothic_I_Classic {
       zSParticle() {}
 
       // user API
-      #include "..\..\Gothic_UserAPI\zCOutdoorRainFX_zSParticle.inl"
+      #if __has_include("zCOutdoorRainFX_zSParticle.inl")
+      #include "zCOutdoorRainFX_zSParticle.inl"
+      #endif
     };
 
     // sizeof 18h
@@ -44,7 +46,9 @@ namespace Gothic_I_Classic {
       zSCacheElement() {}
 
       // user API
-      #include "..\..\Gothic_UserAPI\zCOutdoorRainFX_zSCacheElement.inl"
+      #if __has_include("zCOutdoorRainFX_zSCacheElement.inl")
+      #include "zCOutdoorRainFX_zSCacheElement.inl"
+      #endif
     };
 
     zSParticle m_flyParticleList[zMAX_FLY_PARTICLE];       // sizeof 8000h  offset 00h
@@ -78,7 +82,9 @@ namespace Gothic_I_Classic {
     void RenderParticles( zTRenderContext&, zCOLOR ) zCall( 0x005B93F0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCOutdoorRainFX.inl"
+    #if __has_include("zCOutdoorRainFX.inl")
+    #include "zCOutdoorRainFX.inl"
+    #endif
   };
 
 } // namespace Gothic_I_Classic

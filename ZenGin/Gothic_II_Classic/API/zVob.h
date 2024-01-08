@@ -100,7 +100,9 @@ namespace Gothic_II_Classic {
     virtual void Unpack( zCBuffer&, zCEventManager* )                               zCall( 0x004020C0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCEventMessage.inl"
+    #if __has_include("zCEventMessage.inl")
+    #include "zCEventMessage.inl"
+    #endif
   };
 
   // sizeof 4Ch
@@ -139,7 +141,9 @@ namespace Gothic_II_Classic {
     virtual void Unpack( zCBuffer&, zCEventManager* ) zCall( 0x005FF340 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCEventCore.inl"
+    #if __has_include("zCEventCore.inl")
+    #include "zCEventCore.inl"
+    #endif
   };
 
   // sizeof 120h
@@ -182,7 +186,9 @@ namespace Gothic_II_Classic {
       ~zTCollisionContext() zCall( 0x00617D40 );
 
       // user API
-      #include "..\..\Gothic_UserAPI\zCVob_zTCollisionContext.inl"
+      #if __has_include("zCVob_zTCollisionContext.inl")
+      #include "zCVob_zTCollisionContext.inl"
+      #endif
     };
 
     // sizeof 1Ch
@@ -199,7 +205,9 @@ namespace Gothic_II_Classic {
       ~zTModelLimbColl()            zCall( 0x005FCBD0 );
 
       // user API
-      #include "..\..\Gothic_UserAPI\zCVob_zTModelLimbColl.inl"
+      #if __has_include("zCVob_zTModelLimbColl.inl")
+      #include "zCVob_zTModelLimbColl.inl"
+      #endif
     };
 
     zCTree<zCVob>* globalVobTreeNode;               // sizeof 04h    offset 24h
@@ -445,7 +453,9 @@ namespace Gothic_II_Classic {
     static zCCollisionDetector*& s_poCollisionDetector;
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCVob.inl"
+    #if __has_include("zCVob.inl")
+    #include "zCVob.inl"
+    #endif
   };
 
   // sizeof 48h
@@ -488,7 +498,9 @@ namespace Gothic_II_Classic {
     void SetRange( float, int )                zCall( 0x006037A0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCVobLightData.inl"
+    #if __has_include("zCVobLightData.inl")
+    #include "zCVobLightData.inl"
+    #endif
   };
 
   // sizeof 80h
@@ -507,7 +519,9 @@ namespace Gothic_II_Classic {
     virtual ~zCVobLightPreset()              zCall( 0x005F68E0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCVobLightPreset.inl"
+    #if __has_include("zCVobLightPreset.inl")
+    #include "zCVobLightPreset.inl"
+    #endif
   };
 
   // sizeof 17Ch
@@ -542,7 +556,9 @@ namespace Gothic_II_Classic {
     static int& renderLightVisuals;
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCVobLight.inl"
+    #if __has_include("zCVobLight.inl")
+    #include "zCVobLight.inl"
+    #endif
   };
 
   // sizeof 120h
@@ -565,7 +581,9 @@ namespace Gothic_II_Classic {
     static int& unarcIgnoreVisuals;
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCVobLevelCompo.inl"
+    #if __has_include("zCVobLevelCompo.inl")
+    #include "zCVobLevelCompo.inl"
+    #endif
   };
 
 } // namespace Gothic_II_Classic

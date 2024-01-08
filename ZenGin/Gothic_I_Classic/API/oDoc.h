@@ -40,7 +40,9 @@ namespace Gothic_I_Classic {
     static zCView*& posView;
 
     // user API
-    #include "..\..\Gothic_UserAPI\oCDoc.inl"
+    #if __has_include("oCDoc.inl")
+    #include "oCDoc.inl"
+    #endif
   };
 
 } // namespace Gothic_I_Classic

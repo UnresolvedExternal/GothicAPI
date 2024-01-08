@@ -87,7 +87,9 @@ namespace Gothic_I_Classic {
     virtual ~zERROR( void )                                                                       zCall( 0x00447FD0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zERROR.inl"
+    #if __has_include("zERROR.inl")
+    #include "zERROR.inl"
+    #endif
   };
 
 } // namespace Gothic_I_Classic

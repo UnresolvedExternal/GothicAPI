@@ -22,7 +22,9 @@ namespace Gothic_I_Classic {
     void Normalize()                                     zCall( 0x00595850 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCPluecker.inl"
+    #if __has_include("zCPluecker.inl")
+    #include "zCPluecker.inl"
+    #endif
   };
 
 } // namespace Gothic_I_Classic

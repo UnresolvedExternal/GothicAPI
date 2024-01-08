@@ -56,7 +56,9 @@ namespace Gothic_II_Addon {
       zTConfig() {}
 
       // user API
-      #include "..\..\Gothic_UserAPI\zCAIPlayer_zTConfig.inl"
+      #if __has_include("zCAIPlayer_zTConfig.inl")
+      #include "zCAIPlayer_zTConfig.inl"
+      #endif
     };
 
     // sizeof 28h
@@ -71,7 +73,9 @@ namespace Gothic_II_Addon {
       zTLedgeInfo() {}
 
       // user API
-      #include "..\..\Gothic_UserAPI\zCAIPlayer_zTLedgeInfo.inl"
+      #if __has_include("zCAIPlayer_zTLedgeInfo.inl")
+      #include "zCAIPlayer_zTLedgeInfo.inl"
+      #endif
     };
 
     // sizeof 08h
@@ -84,7 +88,9 @@ namespace Gothic_II_Addon {
       zTBloodVobTrack() {}
 
       // user API
-      #include "..\..\Gothic_UserAPI\zCAIPlayer_zTBloodVobTrack.inl"
+      #if __has_include("zCAIPlayer_zTBloodVobTrack.inl")
+      #include "zCAIPlayer_zTBloodVobTrack.inl"
+      #endif
     };
 
     zTConfig config;                                                  // sizeof 40h    offset 24h
@@ -205,7 +211,9 @@ namespace Gothic_II_Addon {
     static int& s_bShowWeaponTrails;
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCAIPlayer.inl"
+    #if __has_include("zCAIPlayer.inl")
+    #include "zCAIPlayer.inl"
+    #endif
   };
 
 } // namespace Gothic_II_Addon

@@ -30,7 +30,9 @@ namespace Gothic_I_Classic {
     static void FrameUpdate()     zCall( 0x005CE670 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCTimer.inl"
+    #if __has_include("zCTimer.inl")
+    #include "zCTimer.inl"
+    #endif
   };
 
   // sizeof 04h
@@ -49,7 +51,9 @@ namespace Gothic_I_Classic {
     static unsigned long GetBufferCRC32( unsigned char*, unsigned long, unsigned long ) zCall( 0x005CE710 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCChecksum.inl"
+    #if __has_include("zCChecksum.inl")
+    #include "zCChecksum.inl"
+    #endif
   };
 
   // sizeof 02h
@@ -66,7 +70,9 @@ namespace Gothic_I_Classic {
     static unsigned short GetBufferCRC16( unsigned char*, unsigned long, unsigned short ) zCall( 0x005CE9A0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCChecksum16.inl"
+    #if __has_include("zCChecksum16.inl")
+    #include "zCChecksum16.inl"
+    #endif
   };
 
   // sizeof 08h
@@ -91,7 +97,9 @@ namespace Gothic_I_Classic {
     void PrintStatus()                    zCall( 0x005CECE0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCFPUControler.inl"
+    #if __has_include("zCFPUControler.inl")
+    #include "zCFPUControler.inl"
+    #endif
   };
 
 } // namespace Gothic_I_Classic

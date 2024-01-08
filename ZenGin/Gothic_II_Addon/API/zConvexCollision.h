@@ -17,7 +17,9 @@ namespace Gothic_II_Addon {
     zCCacheIndex() {}
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCCacheIndex.inl"
+    #if __has_include("zCCacheIndex.inl")
+    #include "zCCacheIndex.inl"
+    #endif
   };
 
   // sizeof 10h
@@ -33,7 +35,9 @@ namespace Gothic_II_Addon {
     zCConvexCollisionCache( zCCacheIndex const& a0 )          zInit( zCConvexCollisionCache_OnInit( a0 ));
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCConvexCollisionCache.inl"
+    #if __has_include("zCConvexCollisionCache.inl")
+    #include "zCConvexCollisionCache.inl"
+    #endif
   };
 
   // sizeof 1Ch
@@ -62,7 +66,9 @@ namespace Gothic_II_Addon {
     virtual void DrawVirtual() const                                                                                                                             zCall( 0x00555150 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCConvexPrimitive.inl"
+    #if __has_include("zCConvexPrimitive.inl")
+    #include "zCConvexPrimitive.inl"
+    #endif
   };
 
   // sizeof 1Ch
@@ -85,7 +91,9 @@ namespace Gothic_II_Addon {
     static zCConvexPrimitiveUnitSphere& s_unitSphere;
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCConvexPrimitiveUnitSphere.inl"
+    #if __has_include("zCConvexPrimitiveUnitSphere.inl")
+    #include "zCConvexPrimitiveUnitSphere.inl"
+    #endif
   };
 
   // sizeof 38h
@@ -109,7 +117,9 @@ namespace Gothic_II_Addon {
     virtual void DrawVirtual() const                                                                                       zCall( 0x00555990 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCConvexPrimitiveScaleTrans.inl"
+    #if __has_include("zCConvexPrimitiveScaleTrans.inl")
+    #include "zCConvexPrimitiveScaleTrans.inl"
+    #endif
   };
 
   // sizeof 3Ch
@@ -127,7 +137,9 @@ namespace Gothic_II_Addon {
     virtual int SymetryRotation( zVEC3& ) const                                                           zCall( 0x00555B90 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCConvexPrimitiveEllipsoid.inl"
+    #if __has_include("zCConvexPrimitiveEllipsoid.inl")
+    #include "zCConvexPrimitiveEllipsoid.inl"
+    #endif
   };
 
 } // namespace Gothic_II_Addon

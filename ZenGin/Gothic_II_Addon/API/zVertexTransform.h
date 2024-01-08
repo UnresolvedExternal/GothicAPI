@@ -22,7 +22,9 @@ namespace Gothic_II_Addon {
     zCVertexTransform() {}
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCVertexTransform.inl"
+    #if __has_include("zCVertexTransform.inl")
+    #include "zCVertexTransform.inl"
+    #endif
   };
 
 } // namespace Gothic_II_Addon

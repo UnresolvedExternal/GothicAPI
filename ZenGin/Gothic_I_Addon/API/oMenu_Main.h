@@ -25,7 +25,9 @@ namespace Gothic_I_Addon {
     virtual int ExecCommand( zSTRING const& )                      zCall( 0x0047C990 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\oCMenu_ChgKeys.inl"
+    #if __has_include("oCMenu_ChgKeys.inl")
+    #include "oCMenu_ChgKeys.inl"
+    #endif
   };
 
   // sizeof CC4h
@@ -44,7 +46,9 @@ namespace Gothic_I_Addon {
     virtual void ScreenDone()                                   zCall( 0x0047C4D0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\oCMenu_Main.inl"
+    #if __has_include("oCMenu_Main.inl")
+    #include "oCMenu_Main.inl"
+    #endif
   };
 
 } // namespace Gothic_I_Addon

@@ -62,7 +62,9 @@ namespace Gothic_II_Addon {
     static const char** message;
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCMgcEigenD.inl"
+    #if __has_include("zCMgcEigenD.inl")
+    #include "zCMgcEigenD.inl"
+    #endif
   };
 
 } // namespace Gothic_II_Addon

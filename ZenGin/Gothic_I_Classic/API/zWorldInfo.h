@@ -31,7 +31,9 @@ namespace Gothic_I_Classic {
     virtual ~zCWorldInfo()                    zCall( 0x0046A620 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCWorldInfo.inl"
+    #if __has_include("zCWorldInfo.inl")
+    #include "zCWorldInfo.inl"
+    #endif
   };
 
 } // namespace Gothic_I_Classic

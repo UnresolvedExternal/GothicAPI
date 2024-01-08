@@ -41,7 +41,9 @@ namespace Gothic_I_Classic {
     /* for zCViewBase num : 8*/
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCViewDraw.inl"
+    #if __has_include("zCViewDraw.inl")
+    #include "zCViewDraw.inl"
+    #endif
   };
 
 } // namespace Gothic_I_Classic

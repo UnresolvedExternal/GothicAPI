@@ -23,7 +23,9 @@ namespace Gothic_II_Addon {
     static void operator delete( void* ) zCall( 0x00566670 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCMemPoolBlock.inl"
+    #if __has_include("zCMemPoolBlock.inl")
+    #include "zCMemPoolBlock.inl"
+    #endif
   };
 
   // sizeof 24h
@@ -54,7 +56,9 @@ namespace Gothic_II_Addon {
     virtual void Destroyed( void* )                                                        zCall( 0x005660C0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCVolatileMemoryBase.inl"
+    #if __has_include("zCVolatileMemoryBase.inl")
+    #include "zCVolatileMemoryBase.inl"
+    #endif
   };
 
   // sizeof 1Ch
@@ -90,7 +94,9 @@ namespace Gothic_II_Addon {
     static int& s_disablePools;
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCMemPoolBase.inl"
+    #if __has_include("zCMemPoolBase.inl")
+    #include "zCMemPoolBase.inl"
+    #endif
   };
 
 } // namespace Gothic_II_Addon

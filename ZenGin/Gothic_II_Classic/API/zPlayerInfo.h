@@ -66,7 +66,9 @@ namespace Gothic_II_Classic {
     static zCPlayerInfo*& activePlayer;
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCPlayerInfo.inl"
+    #if __has_include("zCPlayerInfo.inl")
+    #include "zCPlayerInfo.inl"
+    #endif
   };
 
 } // namespace Gothic_II_Classic

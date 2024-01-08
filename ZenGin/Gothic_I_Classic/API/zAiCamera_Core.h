@@ -81,7 +81,9 @@ namespace Gothic_I_Classic {
       zSEvasionSearchOptions()                                            zInit( zSEvasionSearchOptions_OnInit() );
 
       // user API
-      #include "..\..\Gothic_UserAPI\zSEvasionSearchDesc_zSEvasionSearchOptions.inl"
+      #if __has_include("zSEvasionSearchDesc_zSEvasionSearchOptions.inl")
+      #include "zSEvasionSearchDesc_zSEvasionSearchOptions.inl"
+      #endif
     };
 
     int(* searchFunc )( const zSEvasionSearchDesc& ); // sizeof 04h    offset 00h
@@ -94,7 +96,9 @@ namespace Gothic_I_Classic {
     zSEvasionSearchDesc& operator =( zSEvasionSearchDesc const& ) zCall( 0x004A8EE0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zSEvasionSearchDesc.inl"
+    #if __has_include("zSEvasionSearchDesc.inl")
+    #include "zSEvasionSearchDesc.inl"
+    #endif
   };
 
   // sizeof 60h
@@ -119,7 +123,9 @@ namespace Gothic_I_Classic {
     zSPathSearchResult()             zInit( zSPathSearchResult_OnInit() );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zSPathSearchResult.inl"
+    #if __has_include("zSPathSearchResult.inl")
+    #include "zSPathSearchResult.inl"
+    #endif
   };
 
   // sizeof 98h
@@ -146,7 +152,9 @@ namespace Gothic_I_Classic {
     ~zSPathSearchState() zCall( 0x0049E170 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zSPathSearchState.inl"
+    #if __has_include("zSPathSearchState.inl")
+    #include "zSPathSearchState.inl"
+    #endif
   };
 
   // sizeof 74h
@@ -170,7 +178,9 @@ namespace Gothic_I_Classic {
     zSPathSearchState_Internal()             zInit( zSPathSearchState_Internal_OnInit() );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zSPathSearchState_Internal.inl"
+    #if __has_include("zSPathSearchState_Internal.inl")
+    #include "zSPathSearchState_Internal.inl"
+    #endif
   };
 
   // sizeof 10h
@@ -188,7 +198,9 @@ namespace Gothic_I_Classic {
       zSRangeSphereCoord() {}
 
       // user API
-      #include "..\..\Gothic_UserAPI\zCSphereCoordsCache_zSRangeSphereCoord.inl"
+      #if __has_include("zCSphereCoordsCache_zSRangeSphereCoord.inl")
+      #include "zCSphereCoordsCache_zSRangeSphereCoord.inl"
+      #endif
     };
 
     // sizeof 18h
@@ -203,7 +215,9 @@ namespace Gothic_I_Classic {
       ~zSElevSphereCoord() zCall( 0x0049F090 );
 
       // user API
-      #include "..\..\Gothic_UserAPI\zCSphereCoordsCache_zSElevSphereCoord.inl"
+      #if __has_include("zCSphereCoordsCache_zSElevSphereCoord.inl")
+      #include "zCSphereCoordsCache_zSElevSphereCoord.inl"
+      #endif
     };
 
     // sizeof 14h
@@ -217,7 +231,9 @@ namespace Gothic_I_Classic {
       ~zSAziSphereCoord() zCall( 0x0049F070 );
 
       // user API
-      #include "..\..\Gothic_UserAPI\zCSphereCoordsCache_zSAziSphereCoord.inl"
+      #if __has_include("zCSphereCoordsCache_zSAziSphereCoord.inl")
+      #include "zCSphereCoordsCache_zSAziSphereCoord.inl"
+      #endif
     };
 
     zCArraySort<zSAziSphereCoord*> aziCoords; // sizeof 10h    offset 00h
@@ -230,7 +246,9 @@ namespace Gothic_I_Classic {
     void DeleteList()                                                                                zCall( 0x0049F290 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCSphereCoordsCache.inl"
+    #if __has_include("zCSphereCoordsCache.inl")
+    #include "zCSphereCoordsCache.inl"
+    #endif
   };
 
   // sizeof 214h
@@ -259,7 +277,9 @@ namespace Gothic_I_Classic {
       void SetDefaults() zCall( 0x0049DB50 );
 
       // user API
-      #include "..\..\Gothic_UserAPI\zCPathSearch_zSPathSearchOptions.inl"
+      #if __has_include("zCPathSearch_zSPathSearchOptions.inl")
+      #include "zCPathSearch_zSPathSearchOptions.inl"
+      #endif
     };
 
     zSPathSearchState bestSearchState;                               // sizeof 98h    offset 00h
@@ -318,7 +338,9 @@ namespace Gothic_I_Classic {
     static zCPathSearch* GetSearch()                                                 zCall( 0x0049F400 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCPathSearch.inl"
+    #if __has_include("zCPathSearch.inl")
+    #include "zCPathSearch.inl"
+    #endif
   };
 
 } // namespace Gothic_I_Classic

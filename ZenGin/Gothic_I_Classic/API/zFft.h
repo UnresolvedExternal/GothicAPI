@@ -29,7 +29,9 @@ namespace Gothic_I_Classic {
     zRandom_Gauss() {}
 
     // user API
-    #include "..\..\Gothic_UserAPI\zRandom_Gauss.inl"
+    #if __has_include("zRandom_Gauss.inl")
+    #include "zRandom_Gauss.inl"
+    #endif
   };
 
   // sizeof 18h
@@ -47,7 +49,9 @@ namespace Gothic_I_Classic {
     zCFFT() {}
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCFFT.inl"
+    #if __has_include("zCFFT.inl")
+    #include "zCFFT.inl"
+    #endif
   };
 
 } // namespace Gothic_I_Classic

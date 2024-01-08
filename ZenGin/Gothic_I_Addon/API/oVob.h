@@ -60,7 +60,9 @@ namespace Gothic_I_Addon {
     virtual oTSndMaterial GetSoundMaterial()                                                 zCall( 0x006BC4C0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\oCVob.inl"
+    #if __has_include("oCVob.inl")
+    #include "oCVob.inl"
+    #endif
   };
 
   // sizeof 114h
@@ -75,7 +77,9 @@ namespace Gothic_I_Addon {
     virtual char const* GetDamageTypeArcEnum( unsigned long )           zCall( 0x0070BC00 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\oCTouchDamage.inl"
+    #if __has_include("oCTouchDamage.inl")
+    #include "oCTouchDamage.inl"
+    #endif
   };
 
 } // namespace Gothic_I_Addon

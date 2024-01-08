@@ -20,7 +20,9 @@ namespace Gothic_II_Classic {
     int GetOU( zSTRING const&, int ) zCall( 0x0071A410 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\oCSVMManager.inl"
+    #if __has_include("oCSVMManager.inl")
+    #include "oCSVMManager.inl"
+    #endif
   };
 
   // sizeof 0Ch
@@ -39,7 +41,9 @@ namespace Gothic_II_Classic {
     int GetOU( zSTRING const& ) zCall( 0x0071AB00 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\oCSVM.inl"
+    #if __has_include("oCSVM.inl")
+    #include "oCSVM.inl"
+    #endif
   };
 
 } // namespace Gothic_II_Classic

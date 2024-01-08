@@ -25,7 +25,9 @@ namespace Gothic_II_Addon {
       zTLightScore() {}
 
       // user API
-      #include "..\..\Gothic_UserAPI\zCRenderLightContainer_zTLightScore.inl"
+      #if __has_include("zCRenderLightContainer_zTLightScore.inl")
+      #include "zCRenderLightContainer_zTLightScore.inl"
+      #endif
     };
 
     zCRenderLight lightList[zRENDERLIGHT_LIGHT_MAX]; // sizeof 260h   offset 00h
@@ -51,7 +53,9 @@ namespace Gothic_II_Addon {
     static void S_ReleaseVobLightRefs()                                zCall( 0x005D4A80 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCRenderLightContainer.inl"
+    #if __has_include("zCRenderLightContainer.inl")
+    #include "zCRenderLightContainer.inl"
+    #endif
   };
 
 } // namespace Gothic_II_Addon

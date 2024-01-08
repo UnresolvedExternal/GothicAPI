@@ -205,7 +205,9 @@ namespace Gothic_I_Addon {
     }
 
     // user API
-    #include "..\..\Gothic_UserAPI\zVEC2.inl"
+    #if __has_include("zVEC2.inl")
+    #include "zVEC2.inl"
+    #endif
   };
 
   class zVEC3 {
@@ -421,7 +423,9 @@ namespace Gothic_I_Addon {
     }
 
     // user API
-    #include "..\..\Gothic_UserAPI\zVEC3.inl"
+    #if __has_include("zVEC3.inl")
+    #include "zVEC3.inl"
+    #endif
   };
 
   class zVEC4 {
@@ -591,7 +595,9 @@ namespace Gothic_I_Addon {
     }
 
     // user API
-    #include "..\..\Gothic_UserAPI\zVEC4.inl"
+    #if __has_include("zVEC4.inl")
+    #include "zVEC4.inl"
+    #endif
   };
 
   inline zMAT3 Alg_Scaling2D( zVEC2& );
@@ -734,6 +740,10 @@ namespace Gothic_I_Addon {
     zMAT3& operator*=( float )        zCall( 0x00517A80 );
     zMAT3& operator/=( float )        zCall( 0x00517AE0 );
 
+#if defined(ROWCOL)
+#undef ROWCOL
+#endif
+
 #define ROWCOL( i, j )    \
   v[i][0] * other[0][j] + \
   v[i][1] * other[1][j] + \
@@ -801,7 +811,9 @@ namespace Gothic_I_Addon {
     static zMAT3& s_identity;
 
     // user API
-    #include "..\..\Gothic_UserAPI\zMAT3.inl"
+    #if __has_include("zMAT3.inl")
+    #include "zMAT3.inl"
+    #endif
   };
 
   class zMAT4 {
@@ -850,7 +862,7 @@ namespace Gothic_I_Addon {
       v[3] = a0[3];
     }
 
-    zMAT4 Inverse()                   zCall( 0x005197F0 );
+    zMAT4 Inverse() const             zCall( 0x005197F0 );
     void MakeOrthonormal()            zCall( 0x0051BD40 );
     zMAT3 ExtractRotation() const     zCall( 0x0051BB10 );
     zVEC3 ExtractScaling() const      zCall( 0x0051BA80 );
@@ -1001,14 +1013,18 @@ namespace Gothic_I_Addon {
       return *this;
     }
 
+    #if defined(ROWCOL)
+    #undef ROWCOL
+    #endif
+
 	#define ROWCOL( i, j )                        \
                        self[i][0] * other[0][j] + \
                        self[i][1] * other[1][j] + \
                        self[i][2] * other[2][j] + \
                        self[i][3] * other[3][j]
 
-    zMAT4 operator * ( const zMAT4& other ) {
-      zMAT4& self = *this;
+    zMAT4 operator * ( const zMAT4& other ) const {
+      const zMAT4& self = *this;
       return zMAT4(
         zVEC4( ROWCOL( 0, 0 ), ROWCOL( 0, 1 ), ROWCOL( 0, 2 ), ROWCOL( 0, 3 ) ),
         zVEC4( ROWCOL( 1, 0 ), ROWCOL( 1, 1 ), ROWCOL( 1, 2 ), ROWCOL( 1, 3 ) ),
@@ -1079,7 +1095,9 @@ namespace Gothic_I_Addon {
     static zMAT4& s_identity;
 
     // user API
-    #include "..\..\Gothic_UserAPI\zMAT4.inl"
+    #if __has_include("zMAT4.inl")
+    #include "zMAT4.inl"
+    #endif
   };
 
   class zCQuat {
@@ -1247,7 +1265,9 @@ namespace Gothic_I_Addon {
     }
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCQuat.inl"
+    #if __has_include("zCQuat.inl")
+    #include "zCQuat.inl"
+    #endif
   };
 
   inline float Alg_SqrtInvApprox( float );
@@ -1354,7 +1374,9 @@ namespace Gothic_I_Addon {
     }
 
     // user API
-    #include "..\..\Gothic_UserAPI\zComplex.inl"
+    #if __has_include("zComplex.inl")
+    #include "zComplex.inl"
+    #endif
   };
 
   inline void GetProjection( int& x, int& y, zVEC3 v );
@@ -1498,7 +1520,9 @@ namespace Gothic_I_Addon {
     }
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCLine2D.inl"
+    #if __has_include("zCLine2D.inl")
+    #include "zCLine2D.inl"
+    #endif
   };
   
   inline zVEC2 Alg_Min( zVEC2 const &, zVEC2 const & )               zCall( 0x005101F0 );

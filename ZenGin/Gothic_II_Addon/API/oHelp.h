@@ -32,7 +32,9 @@ namespace Gothic_II_Addon {
     void Redraw( zCVob* ) zCall( 0x00702010 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\oCHelp.inl"
+    #if __has_include("oCHelp.inl")
+    #include "oCHelp.inl"
+    #endif
   };
 
 } // namespace Gothic_II_Addon

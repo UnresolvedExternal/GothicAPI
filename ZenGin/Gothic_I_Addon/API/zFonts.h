@@ -52,7 +52,9 @@ namespace Gothic_I_Addon {
     static zCTextureConvert*& texConv;
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCFont.inl"
+    #if __has_include("zCFont.inl")
+    #include "zCFont.inl"
+    #endif
   };
 
   // sizeof 0Ch
@@ -71,7 +73,9 @@ namespace Gothic_I_Addon {
     zCFont* GetFont( int )           zCall( 0x007176A0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCFontMan.inl"
+    #if __has_include("zCFontMan.inl")
+    #include "zCFontMan.inl"
+    #endif
   };
 
 } // namespace Gothic_I_Addon

@@ -43,7 +43,9 @@ namespace Gothic_II_Classic {
     static zCPar_TreeNode* MakeMonadicNode( int, zCPar_TreeNode* )                 zCall( 0x007382E0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCPar_TreeNode.inl"
+    #if __has_include("zCPar_TreeNode.inl")
+    #include "zCPar_TreeNode.inl"
+    #endif
   };
 
   // sizeof 2Ch
@@ -83,7 +85,9 @@ namespace Gothic_II_Classic {
     void DeleteTree()                                zCall( 0x0072E450 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCPar_File.inl"
+    #if __has_include("zCPar_File.inl")
+    #include "zCPar_File.inl"
+    #endif
   };
 
   // sizeof 11C4h
@@ -283,7 +287,9 @@ namespace Gothic_II_Classic {
     static zCParser*& cur_parser;
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCParser.inl"
+    #if __has_include("zCParser.inl")
+    #include "zCParser.inl"
+    #endif
   };
 
 } // namespace Gothic_II_Classic

@@ -24,7 +24,9 @@ namespace Gothic_II_Classic {
     static int& size_checked;
 
     // user API
-    #include "..\..\Gothic_UserAPI\oCTradeManager.inl"
+    #if __has_include("oCTradeManager.inl")
+    #include "oCTradeManager.inl"
+    #endif
   };
 
   // sizeof 20h
@@ -60,7 +62,9 @@ namespace Gothic_II_Classic {
     int GetNpcInstance()                  zCall( 0x006B6C90 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\oCItemReactModule.inl"
+    #if __has_include("oCItemReactModule.inl")
+    #include "oCItemReactModule.inl"
+    #endif
   };
 
 } // namespace Gothic_II_Classic

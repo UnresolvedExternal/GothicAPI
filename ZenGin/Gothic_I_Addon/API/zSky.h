@@ -36,7 +36,9 @@ namespace Gothic_I_Addon {
     ~zCSkyLayerData()            zCall( 0x005D9430 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCSkyLayerData.inl"
+    #if __has_include("zCSkyLayerData.inl")
+    #include "zCSkyLayerData.inl"
+    #endif
   };
 
   // sizeof C0h
@@ -67,7 +69,9 @@ namespace Gothic_I_Addon {
     void PresetDawn()        zCall( 0x005D9F10 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCSkyState.inl"
+    #if __has_include("zCSkyState.inl")
+    #include "zCSkyState.inl"
+    #endif
   };
 
   // sizeof 18h
@@ -94,7 +98,9 @@ namespace Gothic_I_Addon {
     static zCMesh* CreateSkyBoxMesh( int )   zCall( 0x005DDD60 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCSkyLayer.inl"
+    #if __has_include("zCSkyLayer.inl")
+    #include "zCSkyLayer.inl"
+    #endif
   };
 
   // sizeof 40h
@@ -114,7 +120,9 @@ namespace Gothic_I_Addon {
     ~zCSkyPlanet()            zCall( 0x005DA310 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCSkyPlanet.inl"
+    #if __has_include("zCSkyPlanet.inl")
+    #include "zCSkyPlanet.inl"
+    #endif
   };
 
   // sizeof BCh
@@ -131,7 +139,9 @@ namespace Gothic_I_Addon {
     virtual int Render( zTRenderContext& ) zCall( 0x005D8910 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCUnderwaterPFX.inl"
+    #if __has_include("zCUnderwaterPFX.inl")
+    #include "zCUnderwaterPFX.inl"
+    #endif
   };
 
   // sizeof 38h
@@ -182,7 +192,9 @@ namespace Gothic_I_Addon {
     static int& s_skyEffectsEnabled;
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCSkyControler.inl"
+    #if __has_include("zCSkyControler.inl")
+    #include "zCSkyControler.inl"
+    #endif
   };
 
   // sizeof 68h
@@ -230,7 +242,9 @@ namespace Gothic_I_Addon {
     virtual void RenderSkyPost()                         zCall( 0x005D86F0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCSkyControler_Mid.inl"
+    #if __has_include("zCSkyControler_Mid.inl")
+    #include "zCSkyControler_Mid.inl"
+    #endif
   };
 
   // sizeof 74h
@@ -261,7 +275,9 @@ namespace Gothic_I_Addon {
     virtual void RenderSkyPost()                                        zCall( 0x005D93B0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCSkyControler_Indoor.inl"
+    #if __has_include("zCSkyControler_Indoor.inl")
+    #include "zCSkyControler_Indoor.inl"
+    #endif
   };
 
   // sizeof 680h
@@ -284,7 +300,9 @@ namespace Gothic_I_Addon {
       zTRainFX() {}
 
       // user API
-      #include "..\..\Gothic_UserAPI\zCSkyControler_Outdoor_zTRainFX.inl"
+      #if __has_include("zCSkyControler_Outdoor_zTRainFX.inl")
+      #include "zCSkyControler_Outdoor_zTRainFX.inl"
+      #endif
     };
 
     int initDone;                         // sizeof 04h    offset 68h
@@ -362,7 +380,9 @@ namespace Gothic_I_Addon {
     virtual void SetCameraLocationHint( zCSkyControler::zTCamLocationHint ) zCall( 0x005DA380 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCSkyControler_Outdoor.inl"
+    #if __has_include("zCSkyControler_Outdoor.inl")
+    #include "zCSkyControler_Outdoor.inl"
+    #endif
   };
 
 } // namespace Gothic_I_Addon

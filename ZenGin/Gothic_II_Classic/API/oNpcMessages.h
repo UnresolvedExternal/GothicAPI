@@ -42,7 +42,9 @@ namespace Gothic_II_Classic {
     virtual void SetHighPriority( int )      zCall( 0x00703C00 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\oCNpcMessage.inl"
+    #if __has_include("oCNpcMessage.inl")
+    #include "oCNpcMessage.inl"
+    #endif
   };
 
   // sizeof 114h
@@ -79,7 +81,9 @@ namespace Gothic_II_Classic {
     virtual void Unpack( zCBuffer&, zCEventManager* )                                             zCall( 0x00705FC0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\oCMsgDamage.inl"
+    #if __has_include("oCMsgDamage.inl")
+    #include "oCMsgDamage.inl"
+    #endif
   };
 
   // sizeof 50h
@@ -128,7 +132,9 @@ namespace Gothic_II_Classic {
     virtual float MD_GetMinTime()                                            zCall( 0x007079B0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\oCMsgWeapon.inl"
+    #if __has_include("oCMsgWeapon.inl")
+    #include "oCMsgWeapon.inl"
+    #endif
   };
 
   // sizeof 7Ch
@@ -195,7 +201,9 @@ namespace Gothic_II_Classic {
     virtual float MD_GetMinTime()                                                   zCall( 0x007071C0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\oCMsgMovement.inl"
+    #if __has_include("oCMsgMovement.inl")
+    #include "oCMsgMovement.inl"
+    #endif
   };
 
   // sizeof 58h
@@ -245,7 +253,9 @@ namespace Gothic_II_Classic {
     virtual void Unpack( zCBuffer&, zCEventManager* )                             zCall( 0x00707FF0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\oCMsgAttack.inl"
+    #if __has_include("oCMsgAttack.inl")
+    #include "oCMsgAttack.inl"
+    #endif
   };
 
   // sizeof 50h
@@ -278,7 +288,9 @@ namespace Gothic_II_Classic {
     virtual void Unpack( zCBuffer&, zCEventManager* )                     zCall( 0x00708740 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\oCMsgUseItem.inl"
+    #if __has_include("oCMsgUseItem.inl")
+    #include "oCMsgUseItem.inl"
+    #endif
   };
 
   // sizeof 74h
@@ -325,7 +337,9 @@ namespace Gothic_II_Classic {
     virtual float MD_GetMinTime()                                                             zCall( 0x007091F0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\oCMsgState.inl"
+    #if __has_include("oCMsgState.inl")
+    #include "oCMsgState.inl"
+    #endif
   };
 
   // sizeof 7Ch
@@ -397,7 +411,9 @@ namespace Gothic_II_Classic {
     virtual void Unpack( zCBuffer&, zCEventManager* )                                                      zCall( 0x00709DF0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\oCMsgManipulate.inl"
+    #if __has_include("oCMsgManipulate.inl")
+    #include "oCMsgManipulate.inl"
+    #endif
   };
 
   // sizeof 98h
@@ -479,7 +495,9 @@ namespace Gothic_II_Classic {
     virtual float MD_GetMinTime()                                                                              zCall( 0x0070BA10 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\oCMsgConversation.inl"
+    #if __has_include("oCMsgConversation.inl")
+    #include "oCMsgConversation.inl"
+    #endif
   };
 
   // sizeof 6Ch
@@ -531,7 +549,9 @@ namespace Gothic_II_Classic {
     virtual void Unpack( zCBuffer&, zCEventManager* )                             zCall( 0x0070BE20 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\oCMsgMagic.inl"
+    #if __has_include("oCMsgMagic.inl")
+    #include "oCMsgMagic.inl"
+    #endif
   };
 
   // sizeof 4Ch
@@ -559,7 +579,9 @@ namespace Gothic_II_Classic {
     oCMsgRequest() : zCtor( oCNpcMessage ) {}
 
     // user API
-    #include "..\..\Gothic_UserAPI\oCMsgRequest.inl"
+    #if __has_include("oCMsgRequest.inl")
+    #include "oCMsgRequest.inl"
+    #endif
   };
 
 } // namespace Gothic_II_Classic

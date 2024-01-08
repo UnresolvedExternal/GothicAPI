@@ -43,7 +43,9 @@ namespace Gothic_I_Classic {
     virtual zCArchiver* CreateArchiverWrite( zSTRING const&, zTArchiveMode, int, int ) zCall( 0x0050AF80 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCArchiverFactory.inl"
+    #if __has_include("zCArchiverFactory.inl")
+    #include "zCArchiverFactory.inl"
+    #endif
   };
 
   // sizeof 2Ch
@@ -79,7 +81,9 @@ namespace Gothic_I_Classic {
       zTChunkRecord()                                   zInit( zTChunkRecord_OnInit() );
 
       // user API
-      #include "..\..\Gothic_UserAPI\zCArchiver_zTChunkRecord.inl"
+      #if __has_include("zCArchiver_zTChunkRecord.inl")
+      #include "zCArchiver_zTChunkRecord.inl"
+      #endif
     };
 
     zTArchiveMedium medium; // sizeof 04h    offset 24h
@@ -182,7 +186,9 @@ namespace Gothic_I_Classic {
     static zSTRING& stringEOL;
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCArchiver.inl"
+    #if __has_include("zCArchiver.inl")
+    #include "zCArchiver.inl"
+    #endif
   };
 
 } // namespace Gothic_I_Classic

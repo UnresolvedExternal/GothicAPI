@@ -192,7 +192,9 @@ namespace Gothic_I_Classic {
     static zCMenuItem*& tmp;
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCMenuItem.inl"
+    #if __has_include("zCMenuItem.inl")
+    #include "zCMenuItem.inl"
+    #endif
   };
 
   // sizeof 3F0h
@@ -221,7 +223,9 @@ namespace Gothic_I_Classic {
     virtual int HandleEvent( int )                                      zCall( 0x004D1F40 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCMenuItemInput.inl"
+    #if __has_include("zCMenuItemInput.inl")
+    #include "zCMenuItemInput.inl"
+    #endif
   };
 
   // sizeof 400h
@@ -259,7 +263,9 @@ namespace Gothic_I_Classic {
     virtual int HandleEvent( int )                                         zCall( 0x004D6280 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCMenuItemText.inl"
+    #if __has_include("zCMenuItemText.inl")
+    #include "zCMenuItemText.inl"
+    #endif
   };
 
   // sizeof 3E8h
@@ -289,7 +295,9 @@ namespace Gothic_I_Classic {
     virtual int HandleEvent( int )                                       zCall( 0x004D1F80 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCMenuItemSlider.inl"
+    #if __has_include("zCMenuItemSlider.inl")
+    #include "zCMenuItemSlider.inl"
+    #endif
   };
 
   // sizeof 3ECh
@@ -313,7 +321,9 @@ namespace Gothic_I_Classic {
     /* for zCInputCallback num : 1*/
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCMenuItemButton.inl"
+    #if __has_include("zCMenuItemButton.inl")
+    #include "zCMenuItemButton.inl"
+    #endif
   };
 
   // sizeof 3E4h
@@ -345,7 +355,9 @@ namespace Gothic_I_Classic {
     /* for zCInputCallback num : 1*/
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCMenuItemChoice.inl"
+    #if __has_include("zCMenuItemChoice.inl")
+    #include "zCMenuItemChoice.inl"
+    #endif
   };
 
   // sizeof 2Ch
@@ -361,7 +373,9 @@ namespace Gothic_I_Classic {
     zTMenuItemListElement()             zInit( zTMenuItemListElement_OnInit() );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zTMenuItemListElement.inl"
+    #if __has_include("zTMenuItemListElement.inl")
+    #include "zTMenuItemListElement.inl"
+    #endif
   };
 
   // sizeof 3F4h
@@ -403,7 +417,9 @@ namespace Gothic_I_Classic {
     virtual int HandleEvent( int )                                     zCall( 0x004D9640 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCMenuItemList.inl"
+    #if __has_include("zCMenuItemList.inl")
+    #include "zCMenuItemList.inl"
+    #endif
   };
 
 } // namespace Gothic_I_Classic

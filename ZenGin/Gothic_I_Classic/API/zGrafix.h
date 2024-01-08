@@ -53,7 +53,9 @@ namespace Gothic_I_Classic {
     static int& gfxcount;
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCGfx.inl"
+    #if __has_include("zCGfx.inl")
+    #include "zCGfx.inl"
+    #endif
   };
 
 } // namespace Gothic_I_Classic

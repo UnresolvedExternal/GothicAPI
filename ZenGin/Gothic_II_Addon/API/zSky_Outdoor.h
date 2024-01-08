@@ -44,7 +44,9 @@ namespace Gothic_II_Addon {
     ~zCSkyLayerData()            zCall( 0x005E4320 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCSkyLayerData.inl"
+    #if __has_include("zCSkyLayerData.inl")
+    #include "zCSkyLayerData.inl"
+    #endif
   };
 
   // sizeof 98h
@@ -75,7 +77,9 @@ namespace Gothic_II_Addon {
     ~zCSkyState()            zCall( 0x005E43E0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCSkyState.inl"
+    #if __has_include("zCSkyState.inl")
+    #include "zCSkyState.inl"
+    #endif
   };
 
   // sizeof 18h
@@ -104,7 +108,9 @@ namespace Gothic_II_Addon {
     static zCMesh* CreateSkyDomeMesh()   zCall( 0x005E4670 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCSkyLayer.inl"
+    #if __has_include("zCSkyLayer.inl")
+    #include "zCSkyLayer.inl"
+    #endif
   };
 
   // sizeof 40h
@@ -124,7 +130,9 @@ namespace Gothic_II_Addon {
     ~zCSkyPlanet()            zCall( 0x005E66B0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCSkyPlanet.inl"
+    #if __has_include("zCSkyPlanet.inl")
+    #include "zCSkyPlanet.inl"
+    #endif
   };
 
   // sizeof 6BCh
@@ -150,7 +158,9 @@ namespace Gothic_II_Addon {
       zTRainFX() {}
 
       // user API
-      #include "..\..\Gothic_UserAPI\zCSkyControler_Outdoor_zTRainFX.inl"
+      #if __has_include("zCSkyControler_Outdoor_zTRainFX.inl")
+      #include "zCSkyControler_Outdoor_zTRainFX.inl"
+      #endif
     };
 
     int initDone;                          // sizeof 04h    offset 7Ch
@@ -248,7 +258,9 @@ namespace Gothic_II_Addon {
     virtual int GetRenderLightning() const                                                                zCall( 0x005E6780 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCSkyControler_Outdoor.inl"
+    #if __has_include("zCSkyControler_Outdoor.inl")
+    #include "zCSkyControler_Outdoor.inl"
+    #endif
   };
 
   // sizeof 110B0h
@@ -268,7 +280,9 @@ namespace Gothic_II_Addon {
       zSParticle() {}
 
       // user API
-      #include "..\..\Gothic_UserAPI\zCOutdoorRainFX_zSParticle.inl"
+      #if __has_include("zCOutdoorRainFX_zSParticle.inl")
+      #include "zCOutdoorRainFX_zSParticle.inl"
+      #endif
     };
 
     // sizeof 18h
@@ -281,7 +295,9 @@ namespace Gothic_II_Addon {
       zSCacheElement() {}
 
       // user API
-      #include "..\..\Gothic_UserAPI\zCOutdoorRainFX_zSCacheElement.inl"
+      #if __has_include("zCOutdoorRainFX_zSCacheElement.inl")
+      #include "zCOutdoorRainFX_zSCacheElement.inl"
+      #endif
     };
 
     zSParticle m_flyParticleList[zMAX_FLY_PARTICLE];       // sizeof 7000h  offset 00h
@@ -319,7 +335,9 @@ namespace Gothic_II_Addon {
     void RenderParticles( zTRenderContext&, zCOLOR ) zCall( 0x005E25D0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCOutdoorRainFX.inl"
+    #if __has_include("zCOutdoorRainFX.inl")
+    #include "zCOutdoorRainFX.inl"
+    #endif
   };
 
 } // namespace Gothic_II_Addon

@@ -19,7 +19,9 @@ namespace Gothic_I_Addon {
     ~oCLogEntry()                 zCall( 0x0076D680 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\oCLogEntry.inl"
+    #if __has_include("oCLogEntry.inl")
+    #include "oCLogEntry.inl"
+    #endif
   };
 
   // sizeof 24h
@@ -57,7 +59,9 @@ namespace Gothic_I_Addon {
     static char** ms_strStati;
 
     // user API
-    #include "..\..\Gothic_UserAPI\oCLogTopic.inl"
+    #if __has_include("oCLogTopic.inl")
+    #include "oCLogTopic.inl"
+    #endif
   };
 
   // sizeof 08h
@@ -83,7 +87,9 @@ namespace Gothic_I_Addon {
     static oCLogManager& GetLogManager()            zCall( 0x0076CB70 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\oCLogManager.inl"
+    #if __has_include("oCLogManager.inl")
+    #include "oCLogManager.inl"
+    #endif
   };
 
 } // namespace Gothic_I_Addon

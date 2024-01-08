@@ -62,7 +62,9 @@ namespace Gothic_I_Classic {
     static float GetSpawnTime()                       zCall( 0x006CF620 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\oCSpawnManager.inl"
+    #if __has_include("oCSpawnManager.inl")
+    #include "oCSpawnManager.inl"
+    #endif
   };
 
 } // namespace Gothic_I_Classic

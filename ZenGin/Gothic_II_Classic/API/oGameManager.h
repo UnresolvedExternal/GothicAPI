@@ -80,7 +80,9 @@ namespace Gothic_II_Classic {
     virtual ~CGameManager()                                         zCall( 0x00424400 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\CGameManager.inl"
+    #if __has_include("CGameManager.inl")
+    #include "CGameManager.inl"
+    #endif
   };
 
 } // namespace Gothic_II_Classic

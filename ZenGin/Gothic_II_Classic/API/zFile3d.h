@@ -17,7 +17,9 @@ namespace Gothic_II_Classic {
     void Save3DS( zSTRING const&, zCMesh* ) zCall( 0x00559DF0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCFile3DS.inl"
+    #if __has_include("zCFile3DS.inl")
+    #include "zCFile3DS.inl"
+    #endif
   };
 
   // sizeof 04h
@@ -33,7 +35,9 @@ namespace Gothic_II_Classic {
     void LoadQuakeBSP( zSTRING const&, zCMesh*, zCWorld* ) zCall( 0x0055B9F0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCFileQuakeBSP.inl"
+    #if __has_include("zCFileQuakeBSP.inl")
+    #include "zCFileQuakeBSP.inl"
+    #endif
   };
 
   // sizeof 10h
@@ -62,7 +66,9 @@ namespace Gothic_II_Classic {
     void BinSetFile( zFILE* )             zCall( 0x0061F920 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCFileBIN.inl"
+    #if __has_include("zCFileBIN.inl")
+    #include "zCFileBIN.inl"
+    #endif
   };
 
 } // namespace Gothic_II_Classic

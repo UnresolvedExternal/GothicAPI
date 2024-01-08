@@ -42,7 +42,9 @@ namespace Gothic_II_Classic {
       ~TObjectRoutine() zCall( 0x00663910 );
 
       // user API
-      #include "..\..\Gothic_UserAPI\oCGame_TObjectRoutine.inl"
+      #if __has_include("oCGame_TObjectRoutine.inl")
+      #include "oCGame_TObjectRoutine.inl"
+      #endif
     };
 
     float cliprange;                                  // sizeof 04h    offset 1Ch
@@ -222,7 +224,9 @@ namespace Gothic_II_Classic {
     static int& s_bUseQuickSave;
 
     // user API
-    #include "..\..\Gothic_UserAPI\oCGame.inl"
+    #if __has_include("oCGame.inl")
+    #include "oCGame.inl"
+    #endif
   };
 
 } // namespace Gothic_II_Classic

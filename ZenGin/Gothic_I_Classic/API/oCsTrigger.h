@@ -23,7 +23,9 @@ namespace Gothic_I_Classic {
     virtual void UntriggerTarget( zCVob* )                              zCall( 0x004048B0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\oCCSTrigger.inl"
+    #if __has_include("oCCSTrigger.inl")
+    #include "oCCSTrigger.inl"
+    #endif
   };
 
 } // namespace Gothic_I_Classic

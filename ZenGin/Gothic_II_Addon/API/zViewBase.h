@@ -31,7 +31,9 @@ namespace Gothic_II_Addon {
     static const unsigned short& ViewVirtualHeight;
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCViewBase.inl"
+    #if __has_include("zCViewBase.inl")
+    #include "zCViewBase.inl"
+    #endif
   };
 
 } // namespace Gothic_II_Addon

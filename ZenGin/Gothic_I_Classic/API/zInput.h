@@ -30,7 +30,9 @@ namespace Gothic_I_Classic {
     ~zSKeyMapping() zCall( 0x004C2F20 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zSKeyMapping.inl"
+    #if __has_include("zSKeyMapping.inl")
+    #include "zSKeyMapping.inl"
+    #endif
   };
 
   // sizeof 18h
@@ -46,7 +48,9 @@ namespace Gothic_I_Classic {
     zSCtrlValue()                                 zInit( zSCtrlValue_OnInit() );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zSCtrlValue.inl"
+    #if __has_include("zSCtrlValue.inl")
+    #include "zSCtrlValue.inl"
+    #endif
   };
 
   // sizeof 14h
@@ -153,7 +157,9 @@ namespace Gothic_I_Classic {
     static zCArray<zSCtrlValue>& values;
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCInput.inl"
+    #if __has_include("zCInput.inl")
+    #include "zCInput.inl"
+    #endif
   };
 
 } // namespace Gothic_I_Classic

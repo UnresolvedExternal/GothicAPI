@@ -37,7 +37,9 @@ namespace Gothic_II_Classic {
     /* for oCViewDocument num : 1*/
 
     // user API
-    #include "..\..\Gothic_UserAPI\oCViewDocument.inl"
+    #if __has_include("oCViewDocument.inl")
+    #include "oCViewDocument.inl"
+    #endif
   };
 
 } // namespace Gothic_II_Classic

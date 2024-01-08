@@ -21,7 +21,9 @@ namespace Gothic_I_Addon {
     virtual int IsActive() const zCall( 0x004EB460 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCMusicTheme_DM.inl"
+    #if __has_include("zCMusicTheme_DM.inl")
+    #include "zCMusicTheme_DM.inl"
+    #endif
   };
 
   // sizeof 40h
@@ -33,7 +35,9 @@ namespace Gothic_I_Addon {
     zCMusicJingle_DM() : zCtor( zCMusicJingle ) {}
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCMusicJingle_DM.inl"
+    #if __has_include("zCMusicJingle_DM.inl")
+    #include "zCMusicJingle_DM.inl"
+    #endif
   };
 
   // sizeof 1Ch
@@ -84,7 +88,9 @@ namespace Gothic_I_Addon {
     virtual int IsAvailable( zSTRING const& )                                                                zCall( 0x004EE1C0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCMusicSys_DirectMusic.inl"
+    #if __has_include("zCMusicSys_DirectMusic.inl")
+    #include "zCMusicSys_DirectMusic.inl"
+    #endif
   };
 
 } // namespace Gothic_I_Addon

@@ -76,7 +76,9 @@ namespace Gothic_II_Addon {
     virtual void FreeResources()                                          zCall( 0x005BDAE0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCPolyStrip.inl"
+    #if __has_include("zCPolyStrip.inl")
+    #include "zCPolyStrip.inl"
+    #endif
   };
 
   // sizeof F4h
@@ -97,7 +99,9 @@ namespace Gothic_II_Addon {
       virtual void FreeResources()                         zCall( 0x005BF9F0 );
 
       // user API
-      #include "..\..\Gothic_UserAPI\zCLightning_zCBolt.inl"
+      #if __has_include("zCLightning_zCBolt.inl")
+      #include "zCLightning_zCBolt.inl"
+      #endif
     };
 
     zCBolt rootBolt; // sizeof C0h    offset 34h
@@ -107,7 +111,9 @@ namespace Gothic_II_Addon {
     void Generate( zVEC3 const&, zVEC3 const& )    zCall( 0x005BF3D0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCLightning.inl"
+    #if __has_include("zCLightning.inl")
+    #include "zCLightning.inl"
+    #endif
   };
 
   // sizeof 88h
@@ -135,7 +141,9 @@ namespace Gothic_II_Addon {
       zTEffectParams() {}
 
       // user API
-      #include "..\..\Gothic_UserAPI\zCQuadMark_zTEffectParams.inl"
+      #if __has_include("zCQuadMark_zTEffectParams.inl")
+      #include "zCQuadMark_zTEffectParams.inl"
+      #endif
     };
 
     // sizeof 14h
@@ -148,7 +156,9 @@ namespace Gothic_II_Addon {
       zTQuadMarkVert() {}
 
       // user API
-      #include "..\..\Gothic_UserAPI\zCQuadMark_zTQuadMarkVert.inl"
+      #if __has_include("zCQuadMark_zTQuadMarkVert.inl")
+      #include "zCQuadMark_zTQuadMarkVert.inl"
+      #endif
     };
 
     // sizeof 0Ch
@@ -161,7 +171,9 @@ namespace Gothic_II_Addon {
       ~zTQuadMarkPoly() zCall( 0x005D0B70 );
 
       // user API
-      #include "..\..\Gothic_UserAPI\zCQuadMark_zTQuadMarkPoly.inl"
+      #if __has_include("zCQuadMark_zTQuadMarkPoly.inl")
+      #include "zCQuadMark_zTQuadMarkPoly.inl"
+      #endif
     };
 
     // sizeof 30h
@@ -182,7 +194,9 @@ namespace Gothic_II_Addon {
       zTQuadMarkAniState() {}
 
       // user API
-      #include "..\..\Gothic_UserAPI\zCQuadMark_zTQuadMarkAniState.inl"
+      #if __has_include("zCQuadMark_zTQuadMarkAniState.inl")
+      #include "zCQuadMark_zTQuadMarkAniState.inl"
+      #endif
     };
 
     zCMesh* quadMesh;                               // sizeof 04h    offset 34h
@@ -226,7 +240,9 @@ namespace Gothic_II_Addon {
     virtual void SetVisualUsedBy( zCVob* )                                                          zCall( 0x005D0CB0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCQuadMark.inl"
+    #if __has_include("zCQuadMark.inl")
+    #include "zCQuadMark.inl"
+    #endif
   };
 
 } // namespace Gothic_II_Addon

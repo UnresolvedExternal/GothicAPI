@@ -42,7 +42,9 @@ namespace Gothic_II_Addon {
     /* for zCViewBase num : 9*/
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCViewDraw.inl"
+    #if __has_include("zCViewDraw.inl")
+    #include "zCViewDraw.inl"
+    #endif
   };
 
 } // namespace Gothic_II_Addon

@@ -56,7 +56,9 @@ namespace Gothic_I_Classic {
     virtual void AnalyseNow()  zCall( 0x004688D0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCSystemInfo.inl"
+    #if __has_include("zCSystemInfo.inl")
+    #include "zCSystemInfo.inl"
+    #endif
   };
 
 } // namespace Gothic_I_Classic

@@ -28,7 +28,9 @@ namespace Gothic_II_Addon {
     void JumpBack( zCRayCacheElement** )                                   zCall( 0x005D2C30 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCRayCacheElement.inl"
+    #if __has_include("zCRayCacheElement.inl")
+    #include "zCRayCacheElement.inl"
+    #endif
   };
 
   // sizeof 08h
@@ -56,7 +58,9 @@ namespace Gothic_II_Addon {
     static zCRayCache*& s_anchor;
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCRayCache.inl"
+    #if __has_include("zCRayCache.inl")
+    #include "zCRayCache.inl"
+    #endif
   };
 
 } // namespace Gothic_II_Addon

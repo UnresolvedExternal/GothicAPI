@@ -28,7 +28,9 @@ namespace Gothic_II_Addon {
     virtual int GetIsProjectile()                                      zCall( 0x0048BE10 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCAIBase.inl"
+    #if __has_include("zCAIBase.inl")
+    #include "zCAIBase.inl"
+    #endif
   };
 
   // sizeof 2Ch
@@ -45,7 +47,9 @@ namespace Gothic_II_Addon {
     void StartDefaultCollisionSound( zCVob*, zCCollisionReport const& ) zCall( 0x0050C1D0 );
 
     // user API
-    #include "..\..\Gothic_UserAPI\zCAIBaseSound.inl"
+    #if __has_include("zCAIBaseSound.inl")
+    #include "zCAIBaseSound.inl"
+    #endif
   };
 
 } // namespace Gothic_II_Addon
