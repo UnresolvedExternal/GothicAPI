@@ -25,7 +25,7 @@ namespace Gothic_II_Addon {
     oCViewStatusBar() : zCtor( zCViewStatusBar )                                              zInit( oCViewStatusBar_OnInit() );
     oCViewStatusBar( int a0, int a1, int a2, int a3, zTviewID a4 ) : zCtor( zCViewStatusBar ) zInit( oCViewStatusBar_OnInit( a0, a1, a2, a3, a4 ));
     void Init( int, int, float )                                                              zCall( 0x0043D620 );
-    void SetTextures( zSTRING const&, zSTRING const&, zSTRING const&, zSTRING const& )        zCall( 0x0043D7B0 );
+    void SetTextures( zSTRING const&, zSTRING const&, zSTRING const&, zSTRING const& = "" )   zCall( 0x0043D7B0 );
     /* for zCViewBase num : 16*/
     virtual ~oCViewStatusBar()                                                                zCall( 0x0043DA50 );
     virtual void SetMaxRange( float, float )                                                  zCall( 0x0043DBA0 );
