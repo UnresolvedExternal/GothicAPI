@@ -116,11 +116,6 @@ namespace Gothic_II_Addon {
   }
 
   // case Insensitive
-  inline int operator == ( const zSTRING& s1, const char* s2 ) {
-    return s1.operator ==( s2 );
-  }
-
-  // case Insensitive
   inline int operator != ( const zSTRING& s1, const zSTRING& s2 ) {
     return s1.operator !=( s2 );
   }
