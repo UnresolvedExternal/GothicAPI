@@ -1,5 +1,5 @@
 0x004010C0		__thiscall	zSTRING	zSTRING	char const*
-0x00401630	static zCObject*	__cdecl	oCCSManager	_CreateNewInstance
+0x00401630	zCObject*	__cdecl	oCCSManager	_CreateNewInstance
 0x004016F0		__thiscall	oCCSManager	oCCSManager
 0x00402020		__thiscall	zCObject	zCObject
 0x00402190	zCClassDef*	__thiscall	zCObject	_GetClassDef
@@ -36,11 +36,11 @@
 0x00402730	zCEventMessage*	__thiscall	oCCSManager	CreateMessage	int
 0x00402F90		__thiscall	zSTRING	zSTRING
 0x00402FB0	zCCSProps*	__thiscall	oCCSManager	CreateProperties
-0x00403DE0	static zCObject*	__cdecl	oCCSPlayer	_CreateNewInstance
+0x00403DE0	zCObject*	__cdecl	oCCSPlayer	_CreateNewInstance
 0x00403E60	zCClassDef*	__thiscall	oCCSPlayer	_GetClassDef
 0x00403E70		__thiscall	oCCSPlayer	oCCSPlayer
 0x00403EE0	void	__thiscall	oCCSPlayer	ProcessCutscene	zCCSCutsceneContext*	zVEC3 const&
-0x00404480	static zCObject*	__cdecl	oCCSProps	_CreateNewInstance
+0x00404480	zCObject*	__cdecl	oCCSProps	_CreateNewInstance
 0x00404500	zCClassDef*	__thiscall	oCCSProps	_GetClassDef
 0x00404510		__thiscall	oCCSProps	oCCSProps
 0x00404570	void	__thiscall	oCCSProps	Archive	zCArchiver&
@@ -48,7 +48,7 @@
 0x00404590	int	__thiscall	oCCSProps	AcceptRole	zCCSRole*	zCVob*
 0x004045B0	int	__thiscall	oCCSProps	CheckRole	zCCSRole*	zCVob*
 0x00404600	int	__thiscall	oCCSProps	CheckRoleResult
-0x00404840	static zCObject*	__cdecl	oCCSTrigger	_CreateNewInstance
+0x00404840	zCObject*	__cdecl	oCCSTrigger	_CreateNewInstance
 0x004048C0	void	__thiscall	zCVob	OnTick
 0x004048D0	void	__thiscall	zCVob	PostLoad
 0x004048F0	int	__thiscall	zCVob	CanThisCollideWith	zCVob*
@@ -62,12 +62,12 @@
 0x004050B0	void	__thiscall	oCCSTrigger	UntriggerTarget	zCVob*
 0x00405330	void	__thiscall	oCCSTrigger	Archive	zCArchiver&
 0x00405340	void	__thiscall	oCCSTrigger	Unarchive	zCArchiver&
-0x004055C0	static zCObject*	__cdecl	zCCSCutsceneContext	_CreateNewInstance
+0x004055C0	zCObject*	__cdecl	zCCSCutsceneContext	_CreateNewInstance
 0x00405690	zCEventMessage*	__thiscall	zCCSBlockBase	GetCommand
 0x004056C0	zCClassDef*	__thiscall	zCCSCutsceneContext	_GetClassDef
 0x004056D0	int	__thiscall	zCCSCutsceneContext	IsCutscene
 0x004056E0	int	__thiscall	zCCSCutsceneContext	IsOutputUnit
-0x004056F0	static int	__cdecl	zCCSCutsceneContext	DisablePlayCutscenes	int
+0x004056F0	int	__cdecl	zCCSCutsceneContext	DisablePlayCutscenes	int
 0x00405700		__thiscall	zCCSCutsceneContext	zCCSCutsceneContext
 0x00405790		__thiscall	zCCSCutsceneContext	zCCSCutsceneContext	zSTRING&
 0x00405F80	void	__thiscall	zCCSProps	SetName	zSTRING
@@ -105,20 +105,20 @@
 0x0040A680	int	__thiscall	zCCSCutsceneContext	CheckRoleReactions
 0x0040A6F0	void	__thiscall	zCCSCutsceneContext	PrintDebugInfo	zSTRING const&
 0x0040ACD0	int	__thiscall	zCCSCutsceneContext	AddMainRole	zCVob*
-0x0040B520	static zCObject*	__cdecl	zCCSAtomicBlock	_CreateNewInstance
+0x0040B520	zCObject*	__cdecl	zCCSAtomicBlock	_CreateNewInstance
 0x0040B6B0	void	__thiscall	zCCSBlockBase	InsertBlock	zCCSBlockBase*	int
 0x0040B6E0	zCClassDef*	__thiscall	zCCSAtomicBlock	_GetClassDef
 0x0040B6F0	int	__thiscall	zCCSAtomicBlock	IsFinished	zCArray< zCEventManager*> const&
 0x0040B700	zCEventMessage*	__thiscall	zCCSAtomicBlock	GetCommand
-0x0040B910	static zCObject*	__cdecl	zCCSBlock	_CreateNewInstance
+0x0040B910	zCObject*	__cdecl	zCCSBlock	_CreateNewInstance
 0x0040BA10	zCClassDef*	__thiscall	zCCSBlock	_GetClassDef
-0x0040BC20	static zCObject*	__cdecl	zCCSSyncBlock	_CreateNewInstance
+0x0040BC20	zCObject*	__cdecl	zCCSSyncBlock	_CreateNewInstance
 0x0040BD10	zCClassDef*	__thiscall	zCCSBlockBase	_GetClassDef
 0x0040BD40	zCClassDef*	__thiscall	zCCSSyncBlock	_GetClassDef
-0x0040BF50	static zCObject*	__cdecl	zCCutscene	_CreateNewInstance
-0x0040C1E0	static zCObject*	__cdecl	zCCSRole	_CreateNewInstance
+0x0040BF50	zCObject*	__cdecl	zCCutscene	_CreateNewInstance
+0x0040C1E0	zCObject*	__cdecl	zCCSRole	_CreateNewInstance
 0x0040C330	zCClassDef*	__thiscall	zCCSRole	_GetClassDef
-0x0040C540	static zCObject*	__cdecl	zCEvMsgCutscene	_CreateNewInstance
+0x0040C540	zCObject*	__cdecl	zCEvMsgCutscene	_CreateNewInstance
 0x0040C680	zCClassDef*	__thiscall	zCEvMsgCutscene	_GetClassDef
 0x0040C690	int	__thiscall	zCEvMsgCutscene	IsHighPriority
 0x0040C6A0	void	__thiscall	zCEvMsgCutscene	Delete
@@ -241,7 +241,7 @@
 0x004195B0	zCCSBlockBase*	__thiscall	zCCutscene	GetNextBlock	zTCSBlockPosition&
 0x004195E0	void	__thiscall	zCCutscene	SerializeCutscene	zCCutscene*	zTCSBlockPosition&
 0x00419760	void	__thiscall	zCCutscene	SerializeBlock	zCCSBlockBase*	zTCSBlockPosition&
-0x0041A3A0	static zCObject*	__cdecl	zCCSLib	_CreateNewInstance
+0x0041A3A0	zCObject*	__cdecl	zCCSLib	_CreateNewInstance
 0x0041A510	zCClassDef*	__thiscall	zCCSLib	_GetClassDef
 0x0041A520	void	__thiscall	zCCSLib	Archive	zCArchiver&
 0x0041A700	void	__thiscall	zCCSLib	Unarchive	zCArchiver&
@@ -256,7 +256,7 @@
 0x0041B130	void	__thiscall	zCCSLib	Change
 0x0041B140	zCCSBlock*	__thiscall	zCCSLib	GetOU	int
 0x0041B150	void	__thiscall	zCCSLib	CompactLib
-0x0041B560	static zCObject*	__cdecl	zCCSManager	_CreateNewInstance
+0x0041B560	zCObject*	__cdecl	zCCSManager	_CreateNewInstance
 0x0041B5F0	zSTRING	__thiscall	zCCSManager	LibGetSvmModuleName	int
 0x0041B900	int	__thiscall	zCCSManager	LibIsSvmModuleRunning	int
 0x0041BA90	int	__thiscall	zCCSManager	LibSvmModuleStart	int
@@ -307,7 +307,7 @@
 0x0041DCD0	void	__thiscall	zCCSManager	LibForceToLoad
 0x0041DCE0	int	__thiscall	zCCSManager	LibIsLoaded
 0x0041DCF0	zCCSProps*	__thiscall	zCCSManager	CreateProperties
-0x0041E2F0	static zCObject*	__cdecl	zCCSPlayer	_CreateNewInstance
+0x0041E2F0	zCObject*	__cdecl	zCCSPlayer	_CreateNewInstance
 0x0041E420	zCClassDef*	__thiscall	zCCSPlayer	_GetClassDef
 0x0041E430		__thiscall	zCCSPlayer	zCCSPlayer
 0x0041E6C0	void	__thiscall	zCCSPlayer	SetOwnerWorld	zCWorld*
@@ -348,7 +348,7 @@
 0x00422600	void	__thiscall	zCCSPlayer	ProcessList	zVEC3 const&	int	int	int
 0x004227C0	void	__thiscall	zCCSPlayer	ProcessCutscene	zCCSCutsceneContext*	zVEC3 const&
 0x004228C0	void	__thiscall	zCCSPlayer	ToggleDebugInfo
-0x00422D70	static zCObject*	__cdecl	zCCSPoolItem	_CreateNewInstance
+0x00422D70	zCObject*	__cdecl	zCCSPoolItem	_CreateNewInstance
 0x00422EB0	zCClassDef*	__thiscall	zCCSPoolItem	_GetClassDef
 0x00422EC0		__thiscall	zCCSPoolItem	zCCSPoolItem
 0x00423020		__thiscall	zCCSPoolItem	zCCSPoolItem	zCCSCutsceneContext*
@@ -362,7 +362,7 @@
 0x00423880	void	__thiscall	zCCSPoolItem	ClrFlags	long
 0x004238A0	void	__thiscall	zCCSPoolItem	SetFlags	long
 0x004238B0	int	__thiscall	zCCSPoolItem	HasFlags	long
-0x00423B10	static zCObject*	__cdecl	zCCSProps	_CreateNewInstance
+0x00423B10	zCObject*	__cdecl	zCCSProps	_CreateNewInstance
 0x00423B80		__thiscall	zCCSProps	zCCSProps
 0x00423D50	zCClassDef*	__thiscall	zCCSProps	_GetClassDef
 0x00423E80	void	__thiscall	zCCSProps	Archive	zCArchiver&
@@ -467,7 +467,7 @@
 0x00437800	void	__thiscall	oCPlayerInfo	Pack	zCBuffer&
 0x00437820	void	__thiscall	oCPlayerInfo	Unpack	zCBuffer&
 0x00437840	void	__thiscall	oCPlayerInfo	Reset
-0x00437C00	static zCObject*	__cdecl	oCSavegameInfo	_CreateNewInstance
+0x00437C00	zCObject*	__cdecl	oCSavegameInfo	_CreateNewInstance
 0x00437D60	zCClassDef*	__thiscall	oCSavegameInfo	_GetClassDef
 0x00437D70		__thiscall	oCSavegameInfo	oCSavegameInfo
 0x00437EA0		__thiscall	oCSavegameInfo	oCSavegameInfo	int
@@ -498,9 +498,9 @@
 0x0043C070	float	__thiscall	oCSystemInfo	GetGraphicsBonus
 0x0043C0D0	float	__thiscall	oCSystemInfo	GetSoundBonus
 0x0043C0E0	zSTRING	__thiscall	oCSystemInfo	GetScoreDescr	float
-0x0043C7E0	static zCObject*	__cdecl	oCTriggerChangeLevel	_CreateNewInstance
+0x0043C7E0	zCObject*	__cdecl	oCTriggerChangeLevel	_CreateNewInstance
 0x0043C8E0	zCClassDef*	__thiscall	oCTriggerChangeLevel	_GetClassDef
-0x0043CAF0	static zCObject*	__cdecl	oCTriggerScript	_CreateNewInstance
+0x0043CAF0	zCObject*	__cdecl	oCTriggerScript	_CreateNewInstance
 0x0043CBC0	zCClassDef*	__thiscall	oCTriggerScript	_GetClassDef
 0x0043CBD0		__thiscall	oCTriggerChangeLevel	oCTriggerChangeLevel
 0x0043CD10	void	__thiscall	oCTriggerChangeLevel	TriggerTarget	zCVob*
@@ -611,16 +611,16 @@
 0x00442CF0	unsigned long	__thiscall	zCBuffer	ReadObject	zCObject*&
 0x00442EA0		__thiscall	zCBuffer	zCBuffer	zCBuffer const&
 0x00442F10	void	__thiscall	zCBuffer	CopyFrom	zCBuffer const&
-0x00442FA0	static void	__cdecl	zCBuffer	ByteFreq_Reset
+0x00442FA0	void	__cdecl	zCBuffer	ByteFreq_Reset
 0x00442FC0	void	__thiscall	zCBuffer	ByteFreq_Analyse
-0x00442FF0	static void	__cdecl	zCBuffer	ByteFreq_Print
-0x00443640	static zSTRING	__cdecl	zFILE	SetRootDirectory	zSTRING
-0x00443780	static void	__cdecl	zFILE	DirectFileConvert	zSTRING&
-0x00443920	static void	__cdecl	zFILE	DirectFileAccess	bool
+0x00442FF0	void	__cdecl	zCBuffer	ByteFreq_Print
+0x00443640	zSTRING	__cdecl	zFILE	SetRootDirectory	zSTRING
+0x00443780	void	__cdecl	zFILE	DirectFileConvert	zSTRING&
+0x00443920	void	__cdecl	zFILE	DirectFileAccess	bool
 0x00443B20	long	__thiscall	zFILE	GetFreeDiskSpace
-0x00443B30	static int	__cdecl	zFILE	LockDirScan
-0x00443B50	static int	__cdecl	zFILE	UnlockDirScan
-0x00443B70	static void	__cdecl	zFILE	DirectFileAccess	bool	zSTRING&
+0x00443B30	int	__cdecl	zFILE	LockDirScan
+0x00443B50	int	__cdecl	zFILE	UnlockDirScan
+0x00443B70	void	__cdecl	zFILE	DirectFileAccess	bool	zSTRING&
 0x00443D00	long	__thiscall	zDATE	ToTime_t
 0x00443D50	zSTRING	__thiscall	zDATE	ToString	zTDATE_CONVERT
 0x00443F00	int	__thiscall	zFILE_FILE	HandleError	zSTRING const&	zSTRING const&	zERROR_TYPE
@@ -690,12 +690,12 @@
 0x004497B0	bool	__thiscall	zFILE_FILE	FindNext
 0x00449960		__thiscall	zPATH	zPATH
 0x00449A70		__thiscall	zPATH	zPATH	zSTRING
-0x00449B10	static zCBuffer*	__cdecl	zFILE	GetFreeBuffer
-0x00449E00	static void	__cdecl	zFILE	ReleaseBuffer	zCBuffer*
-0x00449E30	static bool	__cdecl	zFILE	InitFileSystem
-0x00449F90	static bool	__cdecl	zFILE	DeinitFileSystem
-0x0044A130	static bool	__cdecl	zFILE_FILE	InitFileSystem
-0x0044A1B0	static bool	__cdecl	zFILE_FILE	DeinitFileSystem
+0x00449B10	zCBuffer*	__cdecl	zFILE	GetFreeBuffer
+0x00449E00	void	__cdecl	zFILE	ReleaseBuffer	zCBuffer*
+0x00449E30	bool	__cdecl	zFILE	InitFileSystem
+0x00449F90	bool	__cdecl	zFILE	DeinitFileSystem
+0x0044A130	bool	__cdecl	zFILE_FILE	InitFileSystem
+0x0044A1B0	bool	__cdecl	zFILE_FILE	DeinitFileSystem
 0x0044A1D0	void	__cdecl		Dir_Clear	zSTRING const&	zSTRING const&
 0x0044A3A0	void	__cdecl		Dir_Copy	zSTRING const&	zSTRING const&
 0x0044A770	void	__thiscall	zFILE_VDFS	Init	zSTRING const&
@@ -724,10 +724,10 @@
 0x0044C430	int	__thiscall	zFILE_VDFS	Read	char*
 0x0044C600	int	__thiscall	zFILE_VDFS	Read	zSTRING&
 0x0044C780	long	__thiscall	zFILE_VDFS	Read	void*	long
-0x0044C920	static bool	__cdecl	zFILE_VDFS	InitFileSystem
-0x0044CD90	static bool	__cdecl	zFILE_VDFS	DeinitFileSystem
-0x0044D120	static bool	__cdecl	zFILE_VDFS	LockCriticalSection
-0x0044D140	static bool	__cdecl	zFILE_VDFS	UnlockCriticalSection
+0x0044C920	bool	__cdecl	zFILE_VDFS	InitFileSystem
+0x0044CD90	bool	__cdecl	zFILE_VDFS	DeinitFileSystem
+0x0044D120	bool	__cdecl	zFILE_VDFS	LockCriticalSection
+0x0044D140	bool	__cdecl	zFILE_VDFS	UnlockCriticalSection
 0x0044D210	void	__cdecl		default_exit
 0x0044D220	void	__cdecl		ErrorBox	zSTRING
 0x0044D440	void	__cdecl		MessageWindow	zSTRING
@@ -772,7 +772,7 @@
 0x00451E10	zCPlayerInfo*	__thiscall	zCGameInfo	GetPlayerByID	int
 0x00451E30	zCPlayerInfo*	__thiscall	zCGameInfo	GetPlayerByVobID	unsigned long
 0x00451E70	void	__thiscall	zCGameInfo	PackToBuffer	zCBuffer&	unsigned char
-0x00451E90	static zCGameInfo*	__cdecl	zCGameInfo	CreateFromBuffer	zCBuffer&
+0x00451E90	zCGameInfo*	__cdecl	zCGameInfo	CreateFromBuffer	zCBuffer&
 0x00451EB0	int	__thiscall	zCGameInfo	GetNumPlayers
 0x00451ED0	void	__thiscall	zCGameInfo	Pack	zCBuffer&	unsigned char
 0x00451F60	void	__thiscall	zCGameInfo	Unpack	zCBuffer&
@@ -849,10 +849,10 @@
 0x00458030	char*	__cdecl		netGetLastErrorString
 0x00458040	long	__stdcall		netWindowProc	HWND__*	unsigned short	unsigned int	long
 0x00458DA0	void	__cdecl		netAcceptPendingConnections
-0x004590C0	static zCObject*	__cdecl	zCNetEventManager	_CreateNewInstance
+0x004590C0	zCObject*	__cdecl	zCNetEventManager	_CreateNewInstance
 0x00459150	int	__thiscall	zCEventManager	GetNumMessages
 0x00459180	zCClassDef*	__thiscall	zCNetEventManager	_GetClassDef
-0x00459190	static int	__cdecl	zCNetEventManager	HandleNetMessage	zCNetMessage*	unsigned short	zCWorld*
+0x00459190	int	__cdecl	zCNetEventManager	HandleNetMessage	zCNetMessage*	unsigned short	zCWorld*
 0x00459E90		__thiscall	zCNetEventManager	zCNetEventManager
 0x00459EE0		__thiscall	zCNetEventManager	zCNetEventManager	zCVob*
 0x00459F10	void	__thiscall	zCNetEventManager	Init
@@ -870,10 +870,10 @@
 0x0045CC40	void	__thiscall	zCNetHost	InitHostAddr	zTNetAddress* const
 0x0045CEF0	void	__thiscall	zCNetHost	Pack	zCBuffer&
 0x0045CF60	void	__thiscall	zCNetHost	Unpack	zCBuffer&
-0x0045D0F0	static zCNetHost*	__cdecl	zCNetHost	CreateFromBuffer	zCBuffer&
+0x0045D0F0	zCNetHost*	__cdecl	zCNetHost	CreateFromBuffer	zCBuffer&
 0x0045D2B0	void	__thiscall	zCNetHost	PackToBuffer	zCBuffer&
 0x0045D2E0	int	__thiscall	zCNetHost	HasAddress	zTNetAddress*
-0x0045D610	static zCObject*	__cdecl	zCNetManager	_CreateNewInstance
+0x0045D610	zCObject*	__cdecl	zCNetManager	_CreateNewInstance
 0x0045D790	zCClassDef*	__thiscall	zCNetManager	_GetClassDef
 0x0045D7A0	int	__thiscall	zCNetManager	Temp_HandleNetMessage	zCNetMessage*&	zCWorld*
 0x0045D810		__thiscall	zCNetManager	zCNetManager
@@ -932,7 +932,7 @@
 0x0045F2B0	zSTRING	__thiscall	zCNetVersion	GetVersionString
 0x0045F2D0	void	__thiscall	zCNetVersion	Pack	zCBuffer&
 0x0045F300	void	__thiscall	zCNetVersion	Unpack	zCBuffer&
-0x0045FA20	static zCObject*	__cdecl	zCNetVobControl	_CreateNewInstance
+0x0045FA20	zCObject*	__cdecl	zCNetVobControl	_CreateNewInstance
 0x0045FB80	zCClassDef*	__thiscall	zCNetVobControl	_GetClassDef
 0x0045FB90	int	__thiscall	zCNetVobControl	IsLocalChained
 0x0045FBA0	void	__thiscall	zCNetVobControl	SetLocalChained	int
@@ -940,7 +940,7 @@
 0x0045FD00	void	__thiscall	zCNetVobControl	Init	zCVob*
 0x0045FD20	int	__thiscall	zCNetVobControl	Process
 0x0045FDE0	int	__thiscall	zCNetVobControl	HandOverToPlayer	zCPlayerInfo*
-0x004602D0	static int	__cdecl	zCNetVobControl	HandleNetMessage	zCNetMessage*	unsigned short const&	zCWorld*
+0x004602D0	int	__cdecl	zCNetVobControl	HandleNetMessage	zCNetMessage*	unsigned short const&	zCWorld*
 0x00460870	zCNetMessage*	__thiscall	zCNetVobControl	CreateNetMessage	unsigned short const&
 0x00460CE0	void	__thiscall	zCNetVobControl	SetCtrlPlayer	zCPlayerInfo*
 0x00461180	int	__thiscall	zCNetVobControl	IsLocalControlled
@@ -1005,7 +1005,7 @@
 0x00468910		__thiscall	zCPlayerGroup	zCPlayerGroup	zSTRING const&
 0x00468C40	zCPlayerInfo*	__thiscall	zCPlayerGroup	GetFirstPlayer	int&
 0x00468C80	zCPlayerInfo*	__thiscall	zCPlayerGroup	GetNextPlayer	int&
-0x00468CD0	static zCPlayerGroup*	__cdecl	zCPlayerGroup	GetFirstGroup	int&
+0x00468CD0	zCPlayerGroup*	__cdecl	zCPlayerGroup	GetFirstGroup	int&
 0x00468D10	zCPlayerGroup*	__thiscall	zCPlayerGroup	GetNextGroup	int&
 0x00468D60	int	__thiscall	zCPlayerGroup	AddPlayer	zCPlayerInfo*
 0x00468D90	int	__thiscall	zCPlayerGroup	RemPlayer	zCPlayerInfo*
@@ -1014,7 +1014,7 @@
 0x00468ED0	void	__thiscall	zCPlayerGroup	ShowDebugInfo
 0x004695C0	zSTRING	__thiscall	zCNetHost	GetHostname
 0x00469610	void	__thiscall	zCPlayerGroup	ResetPlayerList
-0x00469660	static void	__cdecl	zCPlayerGroup	ResetGroupList
+0x00469660	void	__cdecl	zCPlayerGroup	ResetGroupList
 0x00469790	zCPlayerInfo*	__thiscall	zCPlayerGroup	GetNearestPlayerToVob	zCVob*	zCPlayerInfo*
 0x00469BC0		__thiscall	zCPlayerInfo	zCPlayerInfo
 0x0046A090	zCPlayerInfo*	__thiscall	zCPlayerInfo	CreateDistinctPlayer
@@ -1023,9 +1023,9 @@
 0x0046A670	void	__thiscall	zCPlayerInfo	Pack	zCBuffer&
 0x0046A720	void	__thiscall	zCPlayerInfo	Unpack	zCBuffer&
 0x0046A910	unsigned char	__thiscall	zCPlayerInfo	GetID
-0x0046A920	static zCPlayerInfo*	__cdecl	zCPlayerInfo	CreateFromBuffer	zCBuffer&
+0x0046A920	zCPlayerInfo*	__cdecl	zCPlayerInfo	CreateFromBuffer	zCBuffer&
 0x0046A940	void	__thiscall	zCPlayerInfo	PackToBuffer	zCBuffer&
-0x0046A950	static zCPlayerInfo*	__cdecl	zCPlayerInfo	GetActivePlayer
+0x0046A950	zCPlayerInfo*	__cdecl	zCPlayerInfo	GetActivePlayer
 0x0046A960	void	__thiscall	zCPlayerInfo	SetActive
 0x0046AC20	int	__thiscall	zCPlayerInfo	IsActive
 0x0046AC30	void	__thiscall	zCPlayerInfo	Reset
@@ -1169,7 +1169,7 @@
 0x00478830	void	__thiscall	oCMag_Book	Spell_Invest
 0x004789B0	void	__thiscall	oCMag_Book	StartInvestEffect	zCVob*	int	int	int
 0x00478AA0	void	__thiscall	oCMag_Book	Spell_Cast
-0x00478FF0	static int	__cdecl	zCObject	CheckInheritance	zCClassDef const*	zCClassDef const*
+0x00478FF0	int	__cdecl	zCObject	CheckInheritance	zCClassDef const*	zCClassDef const*
 0x00479060	void	__thiscall	oCMag_Book	StartCastEffect	zCVob*	zVEC3 const&
 0x00479150	int	__thiscall	oCMag_Book	Spell_InCast
 0x00479160	void	__thiscall	oCMag_Book	Open	int
@@ -1277,7 +1277,7 @@
 0x00487EA0	void	__thiscall	oCSpell	Reset
 0x00487FF0	void	__thiscall	oCSpell	StopTargetEffects	zCVob*
 0x004881D0	void	__thiscall	oCSpell	CallScriptInvestedMana
-0x004884A0	static int	__cdecl	oCSpell	IsTargetTypeValid	zCVob*	int
+0x004884A0	int	__cdecl	oCSpell	IsTargetTypeValid	zCVob*	int
 0x00488660	int	__thiscall	oCSpell	IsValidTarget	zCVob*
 0x00488AA0	zCVob*	__thiscall	oCSpell	GetVob
 0x00488AB0	int	__thiscall	oCSpell	GetSpellID
@@ -1301,7 +1301,7 @@
 0x0048A750	int	__thiscall	oCSpell	DeleteCaster
 0x0048A770	void	__thiscall	oCSpell	Archive	zCArchiver&
 0x0048A780	void	__thiscall	oCSpell	Unarchive	zCArchiver&
-0x0048A990	static zCObject*	__cdecl	oCSpell	_CreateNewInstance
+0x0048A990	zCObject*	__cdecl	oCSpell	_CreateNewInstance
 0x0048AE10	void	__thiscall	oCTrajectory	Calc
 0x0048B140	void	__thiscall	zMAT4	GetTranslation	zVEC3&
 0x0048B160	void	__thiscall	zCKBSpline	InitVars
@@ -1317,9 +1317,9 @@
 0x0048C1C0		__thiscall	oCEmitterKey	oCEmitterKey
 0x0048C770	void	__thiscall	oCEmitterKey	SetByScript	zSTRING const&
 0x0048C9B0	void	__thiscall	oCEmitterKey	ParseStrings
-0x0048CF00	static void	__cdecl	oCVisualFX	RemoveInstancesOfClass	zCClassDef&	int
-0x0048D100	static void	__cdecl	oCVisualFX	PreSaveGameProcessing	int
-0x0048D110	static void	__cdecl	oCVisualFX	PostSaveGameProcessing
+0x0048CF00	void	__cdecl	oCVisualFX	RemoveInstancesOfClass	zCClassDef&	int
+0x0048D100	void	__cdecl	oCVisualFX	PreSaveGameProcessing	int
+0x0048D110	void	__cdecl	oCVisualFX	PostSaveGameProcessing
 0x0048D120		__thiscall	oCVisualFX	oCVisualFX
 0x0048D570	zCClassDef*	__thiscall	zCEffect	_GetClassDef
 0x0048D640	zCClassDef*	__thiscall	oCVisualFX	_GetClassDef
@@ -1343,8 +1343,8 @@
 0x0048D800	void	__thiscall	oCVisualFX	SetIsProjectile	int
 0x0048E490	void	__thiscall	oCVisualFX	CreateHierachy
 0x0048E760	void	__thiscall	oCVisualFX	DisposeHierachy
-0x0048E980	static void	__cdecl	oCVisualFX	InitParser
-0x0048EC80	static void	__cdecl	oCVisualFX	ExitParser
+0x0048E980	void	__cdecl	oCVisualFX	InitParser
+0x0048EC80	void	__cdecl	oCVisualFX	ExitParser
 0x0048ECB0	void	__thiscall	oCVisualFX	InitValues
 0x0048F200	zCClassDef*	__thiscall	zCAIBase	_GetClassDef
 0x0048F210	int	__thiscall	zCAIBase	CanThisCollideWith	zCVob*
@@ -1362,8 +1362,8 @@
 0x00491380	void	__thiscall	oCVisualFX	UpdateFXByEmitterKey	oCEmitterKey*
 0x00491BD0	void	__thiscall	oCVisualFX	CreateBackup
 0x00491BE0	int	__thiscall	oCVisualFX	FindKey	zSTRING const&
-0x00491D60	static oCVisualFX*	__cdecl	oCVisualFX	CreateAndPlay	zSTRING const&	zCVob const*	zCVob const*	int	float	int	int
-0x004920B0	static oCVisualFX*	__cdecl	oCVisualFX	CreateAndPlay	zSTRING const&	zVEC3 const&	zCVob const*	int	float	int	int
+0x00491D60	oCVisualFX*	__cdecl	oCVisualFX	CreateAndPlay	zSTRING const&	zCVob const*	zCVob const*	int	float	int	int
+0x004920B0	oCVisualFX*	__cdecl	oCVisualFX	CreateAndPlay	zSTRING const&	zVEC3 const&	zCVob const*	int	float	int	int
 0x00492530	oCVisualFX*	__thiscall	oCVisualFX	CreateAndCastFX	zSTRING const&	zCVob const*	zCVob const*
 0x00492890	oCVisualFX*	__thiscall	oCVisualFX	CreateAndCastFX	zSTRING const&	zMAT4 const&
 0x00492CF0	void	__thiscall	oCVisualFX	CalcTrajectory	int const&
@@ -1421,17 +1421,17 @@
 0x0049BAA0	void	__thiscall	oCVisualFX	Archive	zCArchiver&
 0x0049BAB0	void	__thiscall	oCVisualFX	Unarchive	zCArchiver&
 0x0049BAC0	void	__thiscall	oCVisualFXAI	DoAI	zCVob*	int&
-0x0049BCE0	static zCObject*	__cdecl	oCVisualFX	_CreateNewInstance
+0x0049BCE0	zCObject*	__cdecl	oCVisualFX	_CreateNewInstance
 0x0049C0E0	zCParticleFX*	__cdecl		zDYNAMIC_CAST	zCObject const*
 0x0049C110	zCPolyStrip*	__cdecl		zDYNAMIC_CAST	zCObject const*
 0x0049C480	void	__thiscall	oCVisualFX	Edit
-0x0049CAC0	static void	__cdecl	oCVisualFX	CreateNewScriptFX	zSTRING const&
+0x0049CAC0	void	__cdecl	oCVisualFX	CreateNewScriptFX	zSTRING const&
 0x0049CD50	void	__thiscall	oCEmitterKey	Edit
-0x0049D1C0	static void	__cdecl	oCEmitterKey	CreateNewScriptKey	zSTRING const&
-0x0049D450	static void	__cdecl	oCVisualFX	FxConsole_ParameterChanged	zSTRING const&
-0x0049E2D0	static void	__cdecl	oCVisualFX	EmConsole_ParameterChanged	zSTRING const&
-0x0049E5D0	static int	__cdecl	oCVisualFX	FxConsole_EvalFunc	zSTRING const&	zSTRING&
-0x0049F400	static int	__cdecl	oCVisualFX	EmConsole_EvalFunc	zSTRING const&	zSTRING&
+0x0049D1C0	void	__cdecl	oCEmitterKey	CreateNewScriptKey	zSTRING const&
+0x0049D450	void	__cdecl	oCVisualFX	FxConsole_ParameterChanged	zSTRING const&
+0x0049E2D0	void	__cdecl	oCVisualFX	EmConsole_ParameterChanged	zSTRING const&
+0x0049E5D0	int	__cdecl	oCVisualFX	FxConsole_EvalFunc	zSTRING const&	zSTRING&
+0x0049F400	int	__cdecl	oCVisualFX	EmConsole_EvalFunc	zSTRING const&	zSTRING&
 0x004A09C0	void	__thiscall	oCEmitterKey	SetDefaultByFX	oCVisualFX*
 0x004A0E40	void	__thiscall	oCVisualFX	SetupEmitterKeysByVisual
 0x004A11C0		__thiscall	oCVisFX_Lightning	oCVisFX_Lightning
@@ -1457,7 +1457,7 @@
 0x004A42B0	void	__thiscall	zMAT4	SetAtVector	zVEC3 const&
 0x004A42D0	void	__thiscall	zMAT4	SetUpVector	zVEC3 const&
 0x004A42F0	void	__thiscall	zMAT4	SetRightVector	zVEC3 const&
-0x004A4570	static zCObject*	__cdecl	oCVisFX_Lightning	_CreateNewInstance
+0x004A4570	zCObject*	__cdecl	oCVisFX_Lightning	_CreateNewInstance
 0x004A47A0		__thiscall	oCVisFX_MultiTarget	oCVisFX_MultiTarget
 0x004A47E0	zCClassDef*	__thiscall	oCVisFX_MultiTarget	_GetClassDef
 0x004A47F0	void	__thiscall	oCVisFX_MultiTarget	Play	float	zMAT4 const*	zMAT4 const*
@@ -1474,15 +1474,15 @@
 0x004A5150	void	__thiscall	oCVisFX_MultiTarget	SetDamageType	int
 0x004A51A0	void	__thiscall	oCVisFX_MultiTarget	Archive	zCArchiver&
 0x004A51B0	void	__thiscall	oCVisFX_MultiTarget	Unarchive	zCArchiver&
-0x004A53C0	static zCObject*	__cdecl	oCVisFX_MultiTarget	_CreateNewInstance
-0x004A59B0	static zCAICamera*	__cdecl	zCAICamera	GetCurrent
+0x004A53C0	zCObject*	__cdecl	oCVisFX_MultiTarget	_CreateNewInstance
+0x004A59B0	zCAICamera*	__cdecl	zCAICamera	GetCurrent
 0x004A59C0		__thiscall	zCAICamera	zCAICamera
 0x004A5C10	zCClassDef*	__thiscall	zCAICamera	_GetClassDef
-0x004A5E40	static zCAICamera*	__cdecl	zCAICamera	Create
+0x004A5E40	zCAICamera*	__cdecl	zCAICamera	Create
 0x004A5F10	void	__thiscall	zCAICamera	StartUp
 0x004A6460	void	__thiscall	zCAICamera	CleanUp
-0x004A64A0	static void	__cdecl	zCAICamera	GlobalStartUp
-0x004A64B0	static void	__cdecl	zCAICamera	GlobalCleanUp
+0x004A64A0	void	__cdecl	zCAICamera	GlobalStartUp
+0x004A64B0	void	__cdecl	zCAICamera	GlobalCleanUp
 0x004A6520	float	__thiscall	zCAICamera	GetBestRange
 0x004A6580	float	__thiscall	zCAICamera	GetMinRange
 0x004A6590	float	__thiscall	zCAICamera	GetMaxRange
@@ -1510,7 +1510,7 @@
 0x004AA2C0	void	__thiscall	zCAICamera	CheckKeys
 0x004AADF0	void	__thiscall	zCAICamera	DoAI	zCVob*	int&
 0x004AB370	void	__thiscall	zCAICamera	SetRotateEnabled	int
-0x004AB590	static zCObject*	__cdecl	zCAICamera	_CreateNewInstance
+0x004AB590	zCObject*	__cdecl	zCAICamera	_CreateNewInstance
 0x004AB620	void	__cdecl		zClamp	float&	float	float
 0x004AB780		__thiscall	zCPathSearch	zCPathSearch
 0x004ABA40	void	__thiscall	zCPathSearch	CamVobChanged
@@ -1522,9 +1522,9 @@
 0x004AC940	void	__thiscall	zCSphereCoordsCache	GetBestScoredSearch	float&	float&	float&	zSPathSearchState_Internal*&
 0x004ACA90		__thiscall	zCSphereCoordsCache	zCSphereCoordsCache
 0x004ACB10	void	__thiscall	zCSphereCoordsCache	DeleteList
-0x004ACC40	static zSPathSearchResult*	__cdecl	zCPathSearch	GetReport
+0x004ACC40	zSPathSearchResult*	__cdecl	zCPathSearch	GetReport
 0x004ACC80		__thiscall	zSPathSearchResult	zSPathSearchResult
-0x004ACCA0	static zCPathSearch*	__cdecl	zCPathSearch	GetSearch
+0x004ACCA0	zCPathSearch*	__cdecl	zCPathSearch	GetSearch
 0x004ACE90	int	__thiscall	zCPathSearch	SphereSearch	zSEvasionSearchDesc const&
 0x004AD570	int	__thiscall	zCPathSearch	SwitchSearch	zSEvasionSearchDesc const&
 0x004AD580	int	__thiscall	zCPathSearch	ShoulderSearch	zSEvasionSearchDesc const&
@@ -1553,7 +1553,7 @@
 0x004B5A50	int	__thiscall	zCPathSearch	AdjustCenterSphere	zVEC3&	zVEC3 const&	float
 0x004B5D10	zVEC3&	__thiscall	zCPathSearch	GetPolyNearestPoint	zCPolygon*	zVEC3 const&
 0x004B7650	void	__thiscall	zCAICamera	StartupDialogCam
-0x004B78D0	static void	__cdecl	zCAICamera	GlobalDialogCamCleanUp
+0x004B78D0	void	__cdecl	zCAICamera	GlobalDialogCamCleanUp
 0x004B79D0	void	__thiscall	zCAICamera	InitDialogCam
 0x004B7A10	void	__thiscall	zCAICamera	SetDialogCamDuration	float
 0x004B7A20	void	__thiscall	zCAICamera	ReleaseLastDialogCam
@@ -1563,7 +1563,7 @@
 0x004B9890	zCCamTrj_KeyFrame*	__thiscall	zCCSCamera	GetCamKey	int
 0x004B98B0	zCCamTrj_KeyFrame*	__thiscall	zCCSCamera	GetTargetKey	int
 0x004B98D0	int	__thiscall	zCAICamera	DialogPresetIsValid	zCCSCamera*
-0x004B9A80	static zCMovementTracker*	__cdecl	zCMovementTracker	GetTracker
+0x004B9A80	zCMovementTracker*	__cdecl	zCMovementTracker	GetTracker
 0x004B9AD0		__thiscall	zCMovementTracker	zCMovementTracker
 0x004BA050	float	__thiscall	zCMovementTracker	GetAzimuth
 0x004BA060	float	__thiscall	zCMovementTracker	GetElevation
@@ -1631,7 +1631,7 @@
 0x004C3FB0	void	__thiscall	zCCamTrj_KeyFrame	Archive	zCArchiver&
 0x004C4100	void	__thiscall	zCCamTrj_KeyFrame	Unarchive	zCArchiver&
 0x004C4240	void	__thiscall	zCCamTrj_KeyFrame	Changed
-0x004C42B0	static zCVob*	__cdecl	zCCSCamera	GetPlayerVob
+0x004C42B0	zCVob*	__cdecl	zCCSCamera	GetPlayerVob
 0x004C42C0		__thiscall	zCCSCamera	zCCSCamera
 0x004C4640	zCClassDef*	__thiscall	zCCSCamera	_GetClassDef
 0x004C48B0	void	__thiscall	zCCSCamera	InsertCamKey	zCCamTrj_KeyFrame*
@@ -1695,11 +1695,11 @@
 0x004CD7B0	zSTRING	__thiscall	zCCSCamera_EventMsgActivate	MD_GetVobRefName
 0x004CD800	void	__thiscall	zCCSCamera_EventMsgActivate	MD_SetVobRefName	zSTRING const&
 0x004CD940	void	__thiscall	zCCSCamera_EventMsgActivate	MD_SetVobParam	zCVob*
-0x004CD950	static void	__cdecl	zCCSCamera	SetDrawEnabled	int
-0x004CDB60	static zCObject*	__cdecl	zCCSCamera_EventMsg	_CreateNewInstance
-0x004CDED0	static zCObject*	__cdecl	zCCSCamera_EventMsgActivate	_CreateNewInstance
-0x004CE210	static zCObject*	__cdecl	zCCSCamera	_CreateNewInstance
-0x004CE4A0	static zCObject*	__cdecl	zCCamTrj_KeyFrame	_CreateNewInstance
+0x004CD950	void	__cdecl	zCCSCamera	SetDrawEnabled	int
+0x004CDB60	zCObject*	__cdecl	zCCSCamera_EventMsg	_CreateNewInstance
+0x004CDED0	zCObject*	__cdecl	zCCSCamera_EventMsgActivate	_CreateNewInstance
+0x004CE210	zCObject*	__cdecl	zCCSCamera	_CreateNewInstance
+0x004CE4A0	zCObject*	__cdecl	zCCamTrj_KeyFrame	_CreateNewInstance
 0x004CEA50	void	__cdecl		D_Reset
 0x004CEA60	void	__cdecl		D_Print	zVEC3 const&	zSTRING const&	TDebug
 0x004CEA70	void	__cdecl		D_Print	float const&	zSTRING const&	TDebug
@@ -1711,18 +1711,18 @@
 0x004CEAD0	void	__cdecl		D_DrawPolyWire	zCPolygon const&	zCOLOR const&
 0x004CEAE0	void	__cdecl		D_ClrWin
 0x004CEBE0		__thiscall	zCExceptionHandler	zCExceptionHandler
-0x004CEC00	static void	__cdecl	zCExceptionHandler	SetIsActive	int
-0x004CEC30	static int	__cdecl	zCExceptionHandler	GetIsActive
-0x004CEC40	static void	__cdecl	zCExceptionHandler	SetLogFileName	char*
-0x004CEC70	static long	__stdcall	zCExceptionHandler	UnhandledExceptionFilter	_EXCEPTION_POINTERS*
-0x004CF280	static void	__cdecl	zCExceptionHandler	AddUnhandledExceptionReleaseCallback	void (__cdecl*)(void)
-0x004CF3C0	static void	__cdecl	zCExceptionHandler	RemoveUnhandledExceptionReleaseCallback	void (__cdecl*)(void)
-0x004CF420	static void	__cdecl	zCExceptionHandler	AddUnhandledExceptionInfoCallback	void (__cdecl*)(EXCEPTION_DESCR*)
-0x004CF560	static void	__cdecl	zCExceptionHandler	RemoveUnhandledExceptionInfoCallback	void (__cdecl*)(EXCEPTION_DESCR*)
-0x004CF5C0	static void	__cdecl	zCExceptionHandler	WalkReleaseCallbacks
-0x004CF610	static long	__stdcall	zCExceptionHandler	AssertExceptionFilter	_EXCEPTION_POINTERS*	ASSERT_FAIL_INFO*	EXCEPTION_INFO*
-0x004CFBD0	static long	__stdcall	zCExceptionHandler	BoundsExceptionFilter	_EXCEPTION_POINTERS*	ASSERT_FAIL_INFO*	EXCEPTION_INFO*
-0x004D0180	static void	__cdecl	zCExceptionHandler	RecordModuleList	void*
+0x004CEC00	void	__cdecl	zCExceptionHandler	SetIsActive	int
+0x004CEC30	int	__cdecl	zCExceptionHandler	GetIsActive
+0x004CEC40	void	__cdecl	zCExceptionHandler	SetLogFileName	char*
+0x004CEC70	long	__stdcall	zCExceptionHandler	UnhandledExceptionFilter	_EXCEPTION_POINTERS*
+0x004CF280	void	__cdecl	zCExceptionHandler	AddUnhandledExceptionReleaseCallback	void (__cdecl*)(void)
+0x004CF3C0	void	__cdecl	zCExceptionHandler	RemoveUnhandledExceptionReleaseCallback	void (__cdecl*)(void)
+0x004CF420	void	__cdecl	zCExceptionHandler	AddUnhandledExceptionInfoCallback	void (__cdecl*)(EXCEPTION_DESCR*)
+0x004CF560	void	__cdecl	zCExceptionHandler	RemoveUnhandledExceptionInfoCallback	void (__cdecl*)(EXCEPTION_DESCR*)
+0x004CF5C0	void	__cdecl	zCExceptionHandler	WalkReleaseCallbacks
+0x004CF610	long	__stdcall	zCExceptionHandler	AssertExceptionFilter	_EXCEPTION_POINTERS*	ASSERT_FAIL_INFO*	EXCEPTION_INFO*
+0x004CFBD0	long	__stdcall	zCExceptionHandler	BoundsExceptionFilter	_EXCEPTION_POINTERS*	ASSERT_FAIL_INFO*	EXCEPTION_INFO*
+0x004D0180	void	__cdecl	zCExceptionHandler	RecordModuleList	void*
 0x004D0480		__thiscall	zCFlash	zCFlash
 0x004D0650	zCClassDef*	__thiscall	zCVisual	_GetClassDef
 0x004D0660	zCOBBox3D*	__thiscall	zCVisual	GetOBBox3D
@@ -1777,7 +1777,7 @@
 0x004D2310	void	__thiscall	zCInput	GetMouseSensitivity	float&	float&
 0x004D2320	void	__thiscall	zCInput	SetMouseFlipXY	int	int
 0x004D2330	void	__thiscall	zCInput	GetMouseFlipXY	int&	int&
-0x004D2400	static int	__cdecl	zCInput	CompareKeyMaps	void const*	void const*
+0x004D2400	int	__cdecl	zCInput	CompareKeyMaps	void const*	void const*
 0x004D2420	void	__thiscall	zCInput	Bind	unsigned short	zCArray<unsigned short> const&
 0x004D2610	void	__thiscall	zCInput	BindOption	zSTRING	unsigned short	zCArray<unsigned short>
 0x004D2880	void	__thiscall	zCInput	Unbind	unsigned short
@@ -1787,8 +1787,8 @@
 0x004D2C30	unsigned short	__thiscall	zCInput	GetFirstBindedLogicalKey	unsigned short
 0x004D2C90	void	__thiscall	zCInput	InitializeControlValues
 0x004D5420	void	__thiscall	zCInput	BindKeys	int
-0x004D63A0	static unsigned short	__cdecl	zCInput	GetControlValueByName	zSTRING const&
-0x004D6440	static zSTRING	__cdecl	zCInput	GetNameByControlValue	unsigned short
+0x004D63A0	unsigned short	__cdecl	zCInput	GetControlValueByName	zSTRING const&
+0x004D6440	zSTRING	__cdecl	zCInput	GetNameByControlValue	unsigned short
 0x004D6FD0		__thiscall	zSCtrlValue	zSCtrlValue
 0x004D7060	char	__cdecl		GetCharFromDIK	char	char
 0x004D7390	int	__cdecl		InitDInput	HWND__*	HINSTANCE__*
@@ -1867,21 +1867,21 @@
 0x004DD8A0	void	__thiscall	zCPose	GetPoseAbs	zMAT4&
 0x004DD8E0	zMAT4&	__thiscall	zCPose	GetRotMatAbs
 0x004DD910	zMAT4&	__thiscall	zCPose	GetRotMat
-0x004DDA20	static int	__cdecl	zCMenu	CompareNames	void const*	void const*
-0x004DDA90	static void	__cdecl	zCMenu	CreateParser
-0x004DDB20	static void	__cdecl	zCMenu	Startup
-0x004DDE70	static void	__cdecl	zCMenu	Shutdown
+0x004DDA20	int	__cdecl	zCMenu	CompareNames	void const*	void const*
+0x004DDA90	void	__cdecl	zCMenu	CreateParser
+0x004DDB20	void	__cdecl	zCMenu	Startup
+0x004DDE70	void	__cdecl	zCMenu	Shutdown
 0x004DDF60		__thiscall	zCMenu	zCMenu
 0x004DE130		__thiscall	zCMenu	zCMenu	zSTRING const&
 0x004DE4B0	void	__thiscall	zCMenu	InitValues
 0x004DE700	void	__thiscall	zCMenu	Release
-0x004DE730	static void	__cdecl	zCMenu	DefineExternal	zSTRING&	int (__cdecl*)(void)	int	int	...
-0x004DE760	static zCMenu*	__cdecl	zCMenu	Create	zSTRING const&
+0x004DE730	void	__cdecl	zCMenu	DefineExternal	zSTRING&	int (__cdecl*)(void)	int	int	...
+0x004DE760	zCMenu*	__cdecl	zCMenu	Create	zSTRING const&
 0x004DE9E0	void	__thiscall	zCMenu	Register
 0x004DEC30	void	__thiscall	zCMenu	Unregister
 0x004DECF0	int	__thiscall	zCMenu	IsRegistered
-0x004DED80	static zCParser*	__cdecl	zCMenu	GetParser
-0x004DED90	static zCMenu*	__cdecl	zCMenu	GetByName	zSTRING const&
+0x004DED80	zCParser*	__cdecl	zCMenu	GetParser
+0x004DED90	zCMenu*	__cdecl	zCMenu	GetByName	zSTRING const&
 0x004DEFC0	void	__thiscall	zCMenu	SetByScript	zSTRING const&
 0x004DF240	void	__thiscall	zCMenu	ClearAllEvents
 0x004DF260	void	__thiscall	zCMenu	PreviousOption
@@ -1905,7 +1905,7 @@
 0x004E14E0	void	__thiscall	zCMenu	Render
 0x004E15C0	zSTRING&	__thiscall	zCMenu	GetBackWorld
 0x004E1600	zSTRING&	__thiscall	zCMenu	GetBackDatFile
-0x004E1610	static zCMenu*	__cdecl	zCMenu	GetActive
+0x004E1610	zCMenu*	__cdecl	zCMenu	GetActive
 0x004E1630	zCMenuItem*	__thiscall	zCMenu	GetActiveItem
 0x004E1640	int	__thiscall	zCMenu	GetNumberOfActiveItem
 0x004E16B0	int	__thiscall	zCMenu	SetActiveItem	zCMenuItem*
@@ -1914,12 +1914,12 @@
 0x004E1980	int	__thiscall	zCMenu	HandleEnterItem	zCMenuItem*
 0x004E1990	int	__thiscall	zCMenu	HandleLeaveItem	zCMenuItem*
 0x004E19A0	int	__thiscall	zCMenu	HandleActivateItem	zCMenuItem*
-0x004E1D00	static int	__cdecl	zCMenuItem	CompareNames	void const*	void const*
-0x004E1D70	static void	__cdecl	zCMenuItem	Startup
-0x004E1DF0	static void	__cdecl	zCMenuItem	Shutdown
-0x004E1F30	static zCMenuItem*	__cdecl	zCMenuItem	GetByName	zSTRING const&
+0x004E1D00	int	__cdecl	zCMenuItem	CompareNames	void const*	void const*
+0x004E1D70	void	__cdecl	zCMenuItem	Startup
+0x004E1DF0	void	__cdecl	zCMenuItem	Shutdown
+0x004E1F30	zCMenuItem*	__cdecl	zCMenuItem	GetByName	zSTRING const&
 0x004E2120	zCMenuItem*	__thiscall	zCMenuItem	GetSelItem
-0x004E2160	static zCMenuItem*	__cdecl	zCMenuItem	Create	zSTRING const&
+0x004E2160	zCMenuItem*	__cdecl	zCMenuItem	Create	zSTRING const&
 0x004E2750	void	__thiscall	zCMenuItem	SetMinValue	float
 0x004E2760	void	__thiscall	zCMenuItem	SetMaxValue	float
 0x004E2770	int	__thiscall	zCMenuItem	HasBeenCanceled
@@ -2037,7 +2037,7 @@
 0x004EAC10	void	__thiscall	zCMenuItemList	JumpToTopEntry
 0x004EAC30	void	__thiscall	zCMenuItemList	JumpToLastEntry
 0x004EB190		__thiscall	zTMenuItemListElement	zTMenuItemListElement
-0x004EB200	static void	__cdecl	zCMusicSystem	DisableMusicSystem	int
+0x004EB200	void	__cdecl	zCMusicSystem	DisableMusicSystem	int
 0x004EB430	int	__thiscall	zCMusicTheme	IsActive
 0x004EB460	int	__thiscall	zCMusicTheme_DM	IsActive
 0x004EB490		__thiscall	zCMusicSys_DirectMusic	zCMusicSys_DirectMusic
@@ -2116,10 +2116,10 @@
 0x004EF420	int	__thiscall	zCSndSys_MSS	GetReverbEnabled
 0x004EF780	void	__thiscall	zCSndSys_MSS	InitializeMSS
 0x004F0830	_DIG_DRIVER*	__thiscall	zCSndSys_MSS	GetDigitalDriverHandle
-0x004F0840	static int	__cdecl	zCSndSys_MSS	EvalFunc	zSTRING const&	zSTRING&
-0x004F1550	static void	__cdecl	zCSndSys_MSS	FrmCon_ParamChanged	zSTRING const&
-0x004F18A0	static void	__cdecl	zCSndSys_MSS	SfxCon_ParamChanged	zSTRING const&
-0x004F18B0	static void	__cdecl	zCSndSys_MSS	CloseProvider
+0x004F0840	int	__cdecl	zCSndSys_MSS	EvalFunc	zSTRING const&	zSTRING&
+0x004F1550	void	__cdecl	zCSndSys_MSS	FrmCon_ParamChanged	zSTRING const&
+0x004F18A0	void	__cdecl	zCSndSys_MSS	SfxCon_ParamChanged	zSTRING const&
+0x004F18B0	void	__cdecl	zCSndSys_MSS	CloseProvider
 0x004F19D0	void	__thiscall	zCSndSys_MSS	SetNumAudioChannels	int
 0x004F19F0	float	__thiscall	zCSndSys_MSS	GetMasterVolume
 0x004F1A30	int	__thiscall	zCSndSys_MSS	GetNumSoundsPlaying
@@ -2194,7 +2194,7 @@
 0x004FA2C0	float	__thiscall	zCSndFX_MSS	GetPlayingTimeMSEC
 0x004FA310	unsigned long	__thiscall	zCSndFX_MSS	GetResSizeBytes
 0x004FA3C0	void	__thiscall	zCSndFX_MSS	CheckCanBeCachedOut
-0x004FA470	static void	__cdecl	zCSndFX_MSS	NewFrame
+0x004FA470	void	__cdecl	zCSndFX_MSS	NewFrame
 0x004FA560	void	__thiscall	zCSndFX_MSS	SetLooping	int
 0x004FA5B0	void	__thiscall	zCSndFX_MSS	GetChannelFrame	int	int
 0x004FA5C0	void	__thiscall	zCSndFX_MSS	SetChannelFrame	int	int
@@ -2204,35 +2204,35 @@
 0x004FA760	void	__thiscall	zCSndFX_MSS	CacheOutActChannel
 0x004FA7E0	void	__thiscall	zCSndFX_MSS	ChooseVariance
 0x004FA840		__thiscall	zCActiveSnd	zCActiveSnd
-0x004FA8D0	static int	__cdecl	zCActiveSnd	GetNextFreeHandle
-0x004FA9C0	static zCActiveSnd*	__cdecl	zCActiveSnd	AllocNextFreeSnd
+0x004FA8D0	int	__cdecl	zCActiveSnd	GetNextFreeHandle
+0x004FA9C0	zCActiveSnd*	__cdecl	zCActiveSnd	AllocNextFreeSnd
 0x004FABA0	void	__thiscall	zCActiveSnd	Release
 0x004FAC20	void	__thiscall	zCActiveSnd	Initialize
-0x004FAC90	static int	__cdecl	zCActiveSnd	GetHandleIndex	int
-0x004FADF0	static int	__cdecl	zCActiveSnd	GetHandleActive	int
-0x004FAF10	static int	__cdecl	zCActiveSnd	GetSoundActive	zCActiveSnd*
-0x004FAFB0	static int	__cdecl	zCActiveSnd	GetFrameActive	zCSndFrame*
-0x004FAFF0	static zCActiveSnd*	__cdecl	zCActiveSnd	GetHandleSound	int
-0x004FB0C0	static void	__cdecl	zCActiveSnd	AddSound	zCActiveSnd*
-0x004FB290	static void	__cdecl	zCActiveSnd	RemoveSound	zCActiveSnd*
-0x004FB540	static void	__cdecl	zCActiveSnd	RemoveSoundsByFrame	zCSndFrame*
-0x004FB580	static void	__cdecl	zCActiveSnd	RemoveSoundByVobSlot	zCVob const*	int
-0x004FB5E0	static void	__cdecl	zCActiveSnd	StopSoundsByFrame	zCSndFrame*
-0x004FB640	static void	__cdecl	zCActiveSnd	ResumeSoundsByFrame	zCSndFrame*
-0x004FB690	static void	__cdecl	zCActiveSnd	UpdateSoundsByFrame	zCSndFrame*
-0x004FB9C0	static int	__cdecl	zCActiveSnd	GetNumActive
-0x004FB9D0	static void	__cdecl	zCActiveSnd	NewFrame
+0x004FAC90	int	__cdecl	zCActiveSnd	GetHandleIndex	int
+0x004FADF0	int	__cdecl	zCActiveSnd	GetHandleActive	int
+0x004FAF10	int	__cdecl	zCActiveSnd	GetSoundActive	zCActiveSnd*
+0x004FAFB0	int	__cdecl	zCActiveSnd	GetFrameActive	zCSndFrame*
+0x004FAFF0	zCActiveSnd*	__cdecl	zCActiveSnd	GetHandleSound	int
+0x004FB0C0	void	__cdecl	zCActiveSnd	AddSound	zCActiveSnd*
+0x004FB290	void	__cdecl	zCActiveSnd	RemoveSound	zCActiveSnd*
+0x004FB540	void	__cdecl	zCActiveSnd	RemoveSoundsByFrame	zCSndFrame*
+0x004FB580	void	__cdecl	zCActiveSnd	RemoveSoundByVobSlot	zCVob const*	int
+0x004FB5E0	void	__cdecl	zCActiveSnd	StopSoundsByFrame	zCSndFrame*
+0x004FB640	void	__cdecl	zCActiveSnd	ResumeSoundsByFrame	zCSndFrame*
+0x004FB690	void	__cdecl	zCActiveSnd	UpdateSoundsByFrame	zCSndFrame*
+0x004FB9C0	int	__cdecl	zCActiveSnd	GetNumActive
+0x004FB9D0	void	__cdecl	zCActiveSnd	NewFrame
 0x004FBBF0	int	__thiscall	zCActiveSnd	CalcListenerPan
 0x004FBC00	int	__thiscall	zCActiveSnd	CalcListenerVolume
-0x004FBC60	static int	__cdecl	zCActiveSnd	GetNum3DSamplesUsed
-0x004FBC90	static int	__cdecl	zCActiveSnd	GetNumAmbientSamplesUsed
+0x004FBC60	int	__cdecl	zCActiveSnd	GetNum3DSamplesUsed
+0x004FBC90	int	__cdecl	zCActiveSnd	GetNumAmbientSamplesUsed
 0x004FBCC0	int	__thiscall	zCActiveSnd	RequestChannel
 0x004FBFA0	int	__thiscall	zCActiveSnd	RequestChannel3D
 0x004FC2C0	float	__thiscall	zCActiveSnd	GetVolume
 0x004FC530	void	__cdecl		zClamp01	float&
-0x004FC560	static void	__cdecl	zCActiveSnd	DebugInfo
-0x004FD5E0	static void	__cdecl	zCActiveSnd	InitPreAllocedData
-0x004FD730	static void	__cdecl	zCActiveSnd	CleanupPreAllocedData
+0x004FC560	void	__cdecl	zCActiveSnd	DebugInfo
+0x004FD5E0	void	__cdecl	zCActiveSnd	InitPreAllocedData
+0x004FD730	void	__cdecl	zCActiveSnd	CleanupPreAllocedData
 0x004FD800	int	__thiscall	zCActiveSnd	HasBeenUpdatedThisFrame
 0x004FD830		__thiscall	zCSndChannel	zCSndChannel
 0x004FD9B0		__thiscall	zCSndFrame	zCSndFrame
@@ -2353,12 +2353,12 @@
 0x0050EB50	void	__thiscall	zCLineCache	Line3D	zVEC3 const&	zVEC3 const&	zCOLOR	int
 0x0050EF00	void	__thiscall	zCLineCache	LineCS3D	zVEC3 const&	zVEC3 const&	zCOLOR
 0x0050F170	void	__thiscall	zCVertex	Draw	zCOLOR const&	int
-0x0050F260	static void	__cdecl	zCVertex	ResetVertexTransforms
+0x0050F260	void	__cdecl	zCVertex	ResetVertexTransforms
 0x0050F290	zCVertexTransform*	__thiscall	zCVertex	CreateVertexTransform
 0x0050F7F0	void	__thiscall	zCAIBaseSound	RemoveSlideSound
 0x0050F810	void	__thiscall	zCAIBaseSound	CheckSlideSound	zCVob*
 0x0050F8A0	void	__thiscall	zCAIBaseSound	StartDefaultCollisionSound	zCVob*	zCCollisionReport const&
-0x0050FB50	static zCObject*	__cdecl	zCAIPlayer	_CreateNewInstance
+0x0050FB50	zCObject*	__cdecl	zCAIPlayer	_CreateNewInstance
 0x0050FCB0		__thiscall	zCAIPlayer	zCAIPlayer
 0x0050FE40	zCClassDef*	__thiscall	zCAIPlayer	_GetClassDef
 0x00510020	void	__thiscall	zCSparseArrayIterator	Reset
@@ -2521,7 +2521,7 @@
 0x0051FDB0	zCArchiver*	__thiscall	zCArchiverFactory	CreateArchiverWrite	zFILE*	zTArchiveMode	int	int
 0x0051FE00	zCObject*	__fastcall	zCArchiver	ReadObjectAccount	char const*	int	zCObject*
 0x0051FE30	zCObject*	__fastcall	zCArchiver	ReadObjectAccount	char const*	int	char const*	zCObject*
-0x005200A0	static zCObject*	__cdecl	zCArchiverBinSafe	_CreateNewInstance
+0x005200A0	zCObject*	__cdecl	zCArchiverBinSafe	_CreateNewInstance
 0x00520170	void	__fastcall	zCArchiverBinSafe	RestoreString	zSTRING&
 0x00520180	void	__fastcall	zCArchiverBinSafe	WriteType	zTArchiveTypeID	void*	unsigned long
 0x005201F0	int	__fastcall	zCArchiverBinSafe	ReadType	zTArchiveTypeID	void*	unsigned long
@@ -2621,7 +2621,7 @@
 0x00525BA0	void	__fastcall	zCArchiverBinSafe	ReadColor	char const*	zCOLOR&
 0x00525BD0	void	__fastcall	zCArchiverBinSafe	ReadEnum	char const*	int&
 0x00525C00	zCObject*	__fastcall	zCArchiverBinSafe	GetParentObject
-0x00526C50	static zCObject*	__cdecl	zCArchiverGeneric	_CreateNewInstance
+0x00526C50	zCObject*	__cdecl	zCArchiverGeneric	_CreateNewInstance
 0x00526DD0		__thiscall	zCArchiverGeneric	zCArchiverGeneric
 0x00526F00	zCClassDef*	__thiscall	zCArchiverGeneric	_GetClassDef
 0x00526F10	void	__fastcall	zCArchiverGeneric	SkipOpenChunk
@@ -2711,17 +2711,17 @@
 0x0052CA50	void	__fastcall	zCArchiverGeneric	ReadString	char const*	zSTRING&
 0x0052CA80	void	__fastcall	zCArchiverGeneric	ReadColor	char const*	zCOLOR&
 0x0052CB10	void	__fastcall	zCArchiverGeneric	ReadEnum	char const*	int&
-0x0052CB60	static void	__cdecl	zCArchiverGeneric	TestClassIntegrity	void (__cdecl*)(zCObject*	int	zCClassDef*	int&)
+0x0052CB60	void	__cdecl	zCArchiverGeneric	TestClassIntegrity	void (__cdecl*)(zCObject*	int	zCClassDef*	int&)
 0x0052D3E0	zCObject*	__fastcall	zCArchiverGeneric	GetParentObject
 0x0052D770		__thiscall	zCRndAlphaSortObject_Vob	zCRndAlphaSortObject_Vob
 0x0052D790	int	__thiscall	zCRndAlphaSortObject	IsAlphaPoly
-0x0052D890	static zCRndAlphaSortObject_Vob*	__cdecl	zCRndAlphaSortObject_Vob	GetFreeAlphaVob
-0x0052D980	static void	__cdecl	zCRndAlphaSortObject_Vob	ResetFreeList
+0x0052D890	zCRndAlphaSortObject_Vob*	__cdecl	zCRndAlphaSortObject_Vob	GetFreeAlphaVob
+0x0052D980	void	__cdecl	zCRndAlphaSortObject_Vob	ResetFreeList
 0x0052D990	void	__thiscall	zCRndAlphaSortObject_Vob	Draw	int
-0x0052DA50	static void	__cdecl	zCRndAlphaSortObject_Vob	ClearList
-0x0052DAB0	static void	__cdecl	zCBspBase	ReleaseStaticReferences
-0x0052DBB0	static int	__cdecl	zCBspSector	CompareOutdoorPortalBBox2D	void const*	void const*
-0x0052DBF0	static void	__cdecl	zCBspSector	InitHorizonByOutdoorPortals
+0x0052DA50	void	__cdecl	zCRndAlphaSortObject_Vob	ClearList
+0x0052DAB0	void	__cdecl	zCBspBase	ReleaseStaticReferences
+0x0052DBB0	int	__cdecl	zCBspSector	CompareOutdoorPortalBBox2D	void const*	void const*
+0x0052DBF0	void	__cdecl	zCBspSector	InitHorizonByOutdoorPortals
 0x0052DDB0	void	__thiscall	zCBspSector	CalcCenterByPortals
 0x0052DE50	int	__thiscall	zCBspSector	IsRendered
 0x0052DE70	void	__thiscall	zCBspSector	Rendered
@@ -2737,8 +2737,8 @@
 0x0052F450	void	__thiscall	zCBspTree	InitTree
 0x0052F530		__thiscall	zCBspLeaf	zCBspLeaf
 0x0052F5B0	void	__thiscall	zCBspTree	DisposeTree
-0x0052F7D0	static void	__cdecl	zCBspTree	S_SetStaticMeshLODValue	float
-0x0052F820	static float	__cdecl	zCBspTree	S_GetStaticMeshLODValue
+0x0052F7D0	void	__cdecl	zCBspTree	S_SetStaticMeshLODValue	float
+0x0052F820	float	__cdecl	zCBspTree	S_GetStaticMeshLODValue
 0x0052F830	zCBspBase*	__thiscall	zCBspTree	BuildRecursive	zCCBspNode*
 0x0052FB30	void	__thiscall	zCBspTree	Build	zCCBspTree*
 0x0052FFA0		__thiscall	zCBspNode	zCBspNode
@@ -2761,7 +2761,7 @@
 0x00532480	void	__thiscall	zCBspBase	RenderTrivInIndoor
 0x005324C0	void	__fastcall	zCBspBase	RenderIndoor	int
 0x00532560	void	__fastcall	zCBspBase	RenderNodeOutdoor	int
-0x00532890	static void	__fastcall	zCBspBase	RenderOutdoor	zCBspBase*	zTBBox3D	int	int
+0x00532890	void	__fastcall	zCBspBase	RenderOutdoor	zCBspBase*	zTBBox3D	int	int
 0x00532B30		__thiscall	zTBBox3D	zTBBox3D	zTBBox3D const&
 0x00533550	void	__thiscall	zCCamera	Project	zVEC3 const* const	float&	float&
 0x005335A0	void	__thiscall	zCBspTree	Render
@@ -2786,7 +2786,7 @@
 0x00535270	int	__fastcall	zCBspBase	CheckRayAgainstPolysCache	zVEC3 const&	zVEC3 const&	zVEC3&
 0x00535450	int	__fastcall	zCBspBase	RayIntersection	zVEC3 const&	zVEC3 const&	zVEC3&
 0x005356E0	int	__thiscall	zCBspTree	TraceRay	zVEC3 const&	zVEC3 const&	int	zVEC3&	zCPolygon*&	zCArray< zCVob*>*
-0x005358E0	static void	__cdecl	zCBspTree	SetRayCache	zCRayCache*
+0x005358E0	void	__cdecl	zCBspTree	SetRayCache	zCRayCache*
 0x005358F0	int	__thiscall	zCCBspNode	CheckRayAgainstPolysNearestHit	zVEC3 const&	zVEC3 const&	zVEC3&
 0x00535A20	int	__thiscall	zCCBspNode	RayIntersectionOctree	zVEC3 const&	zVEC3 const&	zVEC3&
 0x00535C60	int	__thiscall	zCCBspNode	TraceRay	zVEC3 const&	zVEC3 const&	zCPolygon*&	zVEC3&
@@ -2801,7 +2801,7 @@
 0x00536B70	void	__thiscall	zCBspSector	RenderSector
 0x00536CB0	void	__thiscall	zCBspSector	ActivateSectorRec	zTBBox2D const&	zCBspSector*	int
 0x005371D0	void	__thiscall	zCBspSector	ActivateSectorRecIndoor	zTBBox2D const&	zCBspSector*	int
-0x005376C0	static void	__cdecl	zCBspSector	RenderActiveSectorList
+0x005376C0	void	__cdecl	zCBspSector	RenderActiveSectorList
 0x005376F0	zCBspSector*	__thiscall	zCCBspTree	GetBspSectorByName	zSTRING const&
 0x005377A0	zSTRING const*	__thiscall	zCBspTree	GetSectorNameVobIsIn	zCVob const*
 0x005377C0	void	__thiscall	zCCBspTree	GetPolyNeighbours	zCPolygon*	zCPolygon**&	int&
@@ -2813,7 +2813,7 @@
 0x0053A0F0		__thiscall	zTBBox2D	zTBBox2D
 0x0053A100	zCBspSector*	__thiscall	zCBspTree	GetBspSectorByName	zSTRING const&
 0x0053A1B0	void	__thiscall	zCBspTree	CreateBspSectors2	zCCBspTree*
-0x0053A540	static unsigned short	__cdecl	zCBspTree	GetFileVersion
+0x0053A540	unsigned short	__cdecl	zCBspTree	GetFileVersion
 0x0053A550	void	__thiscall	zCBspBase	SaveBINRec	zCFileBIN&
 0x0053A650	void	__thiscall	zCBspBase	LoadBINRec	zCFileBIN&
 0x0053A7E0	void	__thiscall	zCBspTree	SaveBIN	zCFileBIN&
@@ -2962,12 +2962,12 @@
 0x0054F390	void	__fastcall	zCCollisionDetector	RegisterStaticIntersectionTest	zCCollisionObjectDef*	zCCollisionObjectDef*	int (__cdecl*)(float	zCCollisionObject*	zMAT4 const&	zCCollisionObject*	zMAT4 const&	zCCollisionReport**)
 0x0054F3C0	void	__fastcall	zCCollisionDetector	RegisterDynamicIntersectionTest	zCCollisionObjectDef*	zCCollisionObjectDef*	int (__cdecl*)(zCCollisionObject*	zCCollisionObject*	zCCollisionReport**)
 0x0054F3F0	int	__fastcall	zCCollisionDetector	CanCollide	zCCollisionObjectDef*	zCCollisionObjectDef*
-0x0054F430	static void	__cdecl	zCCollisionDetector	S_ResetFreeCollReportList
-0x0054F440	static zCCollisionReport*	__cdecl	zCCollisionDetector	S_GetNextFreeCollReport
+0x0054F430	void	__cdecl	zCCollisionDetector	S_ResetFreeCollReportList
+0x0054F440	zCCollisionReport*	__cdecl	zCCollisionDetector	S_GetNextFreeCollReport
 0x0054F530	void	__fastcall	zCCollisionDetector	DoDynamicIntersectionTests	zCCollisionObject*	zCArray< zCCollisionObject*>&	zCArray< zCCollisionReport*>&
 0x0054F6F0	void	__fastcall	zCCollisionDetector	DoStaticIntersectionTests	zCCollisionObject*	zCArray< zCCollisionObject*>&	zCArray< zCCollisionReport*>&
 0x0054FB10	void	__fastcall	zCCollisionDetector	DetectCollisions	zCCollisionObject*	zCArray< zCCollisionObject*> const&	zCArray< zCCollisionReport*>&
-0x0054FF00	static zCCollisionObject*	__cdecl	zCCollisionObject	_CreateNewInstance
+0x0054FF00	zCCollisionObject*	__cdecl	zCCollisionObject	_CreateNewInstance
 0x0054FF40	zCCollisionObjectDef*	__thiscall	zCCollisionObject	GetCollObjClass
 0x0054FF50	void	__fastcall	zCCollisionObject	DetectCollisionsSelf	zCArray< zCCollisionObject*> const&	zCArray< zCCollisionReport*>&
 0x0054FF60	void	__fastcall	zCCollisionObject	CollisionResponse	zCArray< zCCollisionReport*> const&	int&
@@ -2976,20 +2976,20 @@
 0x0054FFB0		__thiscall	zCCollisionObjectDef	zCCollisionObjectDef	int	zCCollisionObject* (__cdecl*)(void)
 0x00550180	void	__fastcall	zCCollisionObject	CalcIntermediateTrafo	float	zMAT4&
 0x00550300	void	__fastcall	zCCollisionObject	GetLargestBBox3DLocal	zTBBox3D&
-0x005503E0	static zCCollisionObject*	__cdecl	zCCollObjectUndef	_CreateNewInstance
+0x005503E0	zCCollisionObject*	__cdecl	zCCollObjectUndef	_CreateNewInstance
 0x00550420	zCCollisionObjectDef*	__thiscall	zCCollObjectUndef	GetCollObjClass
-0x005504A0	static zCCollisionObject*	__cdecl	zCCollObjectLevelPolys	_CreateNewInstance
+0x005504A0	zCCollisionObject*	__cdecl	zCCollObjectLevelPolys	_CreateNewInstance
 0x005504F0	zCCollisionObjectDef*	__thiscall	zCCollObjectLevelPolys	GetCollObjClass
-0x005505D0	static zCCollisionObject*	__cdecl	zCCollObjectCharacter	_CreateNewInstance
-0x00550680	static zCCollisionObject*	__cdecl	zCCollObjectPoint	_CreateNewInstance
+0x005505D0	zCCollisionObject*	__cdecl	zCCollObjectCharacter	_CreateNewInstance
+0x00550680	zCCollisionObject*	__cdecl	zCCollObjectPoint	_CreateNewInstance
 0x005506C0	zCCollisionObjectDef*	__thiscall	zCCollObjectPoint	GetCollObjClass
-0x00550740	static zCCollisionObject*	__cdecl	zCCollObjectProjectile	_CreateNewInstance
+0x00550740	zCCollisionObject*	__cdecl	zCCollObjectProjectile	_CreateNewInstance
 0x00550780	zCCollisionObjectDef*	__thiscall	zCCollObjectProjectile	GetCollObjClass
-0x00550800	static zCCollisionObject*	__cdecl	zCCollObjectComplex	_CreateNewInstance
+0x00550800	zCCollisionObject*	__cdecl	zCCollObjectComplex	_CreateNewInstance
 0x00550840	zCCollisionObjectDef*	__thiscall	zCCollObjectComplex	GetCollObjClass
-0x005508C0	static zCCollisionObject*	__cdecl	zCCollObjectBoxBlocker	_CreateNewInstance
+0x005508C0	zCCollisionObject*	__cdecl	zCCollObjectBoxBlocker	_CreateNewInstance
 0x00550900	zCCollisionObjectDef*	__thiscall	zCCollObjectBoxBlocker	GetCollObjClass
-0x00550980	static zCCollisionObject*	__cdecl	zCCollObjectBoxPassThrough	_CreateNewInstance
+0x00550980	zCCollisionObject*	__cdecl	zCCollObjectBoxPassThrough	_CreateNewInstance
 0x005509C0	zCCollisionObjectDef*	__thiscall	zCCollObjectBoxPassThrough	GetCollObjClass
 0x005509D0	int	__fastcall	zCCollObjectBoxPassThrough	SuppressCollisionResponse
 0x00550A10	void	__fastcall	zCCollObjectPoint	GetLargestBBox3DLocal	zTBBox3D&
@@ -3005,10 +3005,10 @@
 0x005511A0	int	__cdecl		TestDynamic_Projectile_Char	zCCollisionObject*	zCCollisionObject*	zCCollisionReport**
 0x00551470	zVEC3	__thiscall	zTBBox3D	GetCenter
 0x005514C0	int	__cdecl		TestDynamic_XXX_BoxPassThrough	zCCollisionObject*	zCCollisionObject*	zCCollisionReport**
-0x00551730	static float	__fastcall	zCCollObjectBase	S_CalcAdaptiveCollStepFromVisualBBox	zCVisual*
-0x005517B0	static void	__fastcall	zCCollObjectBase	S_CalcGeneric_CollNormal_ContactPoint	zCVob const*	zCVob const*	zCCollisionReport&
+0x00551730	float	__fastcall	zCCollObjectBase	S_CalcAdaptiveCollStepFromVisualBBox	zCVisual*
+0x005517B0	void	__fastcall	zCCollObjectBase	S_CalcGeneric_CollNormal_ContactPoint	zCVob const*	zCVob const*	zCCollisionReport&
 0x005519A0	void	__fastcall	zCCollObjectBase	GetLargestBBox3DLocal	zTBBox3D&
-0x00551A30	static void	__fastcall	zCCollObjectBase	S_RegisterCollisionTestFuncs	zCCollisionDetector*
+0x00551A30	void	__fastcall	zCCollObjectBase	S_RegisterCollisionTestFuncs	zCCollisionDetector*
 0x005525D0		__thiscall	zCCollObjectCharacter	zCCollObjectCharacter
 0x00552780	zCCollisionObjectDef*	__thiscall	zCCollObjectCharacter	GetCollObjClass
 0x00552790	int	__thiscall	zCCollObjectCharacter	IsDead
@@ -3017,7 +3017,7 @@
 0x005527C0	void	__thiscall	zCCollObjectCharacter	PushAround	zVEC3 const&
 0x005528B0	zCConvexPrimitive*	__thiscall	zCCollObjectCharacter	GetPrimitiveCC
 0x005529A0	void	__fastcall	zCCollObjectCharacter	GetFallbackTrafoCC	zMAT4 const&	zMAT4 const&	zVEC3 const&	int	zMAT4&
-0x00552E80	static zVEC3	__fastcall	zCCollObjectCharacter	S_SlideCC	zVEC3 const&	float	zVEC3 const&
+0x00552E80	zVEC3	__fastcall	zCCollObjectCharacter	S_SlideCC	zVEC3 const&	float	zVEC3 const&
 0x00553190	int	__cdecl		TestStatic_Char_Char	float	zCCollisionObject*	zMAT4 const&	zCCollisionObject*	zMAT4 const&	zCCollisionReport**
 0x005538D0	void	__fastcall	zCCollObjectCharacter	GetCollisionPoleYDims	float&	float&
 0x00553900	int	__fastcall	zCCollObjectCharacter	CalcSlideVector	zVEC3 const&	zVEC3 const&	zVEC3&	zVEC3&	float&
@@ -3026,7 +3026,7 @@
 0x00553F10	void	__fastcall	zCCollObjectCharacter	FindFloorWaterCeiling	zVEC3 const&	zCCollObjectCharacter::zTSpatialState&
 0x005541F0	void	__thiscall	zCCollObjectCharacter	MarkSpatialStateAsUninited	int
 0x00554250	int	__fastcall	zCCollObjectCharacter	TestHardCollisions	zVEC3 const&	zVEC3 const&	zVEC3&	zCCollObjectCharacter::zTSpatialState&	zVEC3&
-0x00554F10	static int	__fastcall	zCCollObjectCharacter	S_CalcAvgNormalVariance	zTTraceRayReport const (&)[4]	zVEC3&	float&
+0x00554F10	int	__fastcall	zCCollObjectCharacter	S_CalcAvgNormalVariance	zTTraceRayReport const (&)[4]	zVEC3&	float&
 0x005550B0	zVEC3	__fastcall	zCCollObjectCharacter	GetSurfaceAlignScanOrigin	zVEC3 const&
 0x005552E0	int	__fastcall	zCCollObjectCharacter	TestSoftCollisions	zVEC3 const&	zVEC3 const&	zVEC3&	zVEC3&
 0x005564D0	void	__fastcall	zCCollObjectCharacter	DetectCollisionsSelf	zCArray< zCCollisionObject*> const&	zCArray< zCCollisionReport*>&
@@ -3037,13 +3037,13 @@
 0x00556F20	int	__cdecl		zArraySortDefaultCompare	void const*	void const*
 0x00556F40	void	__cdecl		insertionsort	void*	unsigned int	unsigned int	int (__cdecl*)(void const*	void const*)	bool
 0x005571E0	void	__thiscall	zCConvexPrimitive	PointNearestToPlane	zVEC3&	zVEC3 const&	zMAT4 const&	zMAT3 const&
-0x005572A0	static int	__cdecl	zCConvexPrimitive	CheckCollision	zCConvexPrimitive const*	zCConvexPrimitive const*	zMAT4 const&	zMAT4 const&	zCConvexCollisionCache*	zVEC3&	float&	zVEC3&
-0x00557C90	static float	__cdecl	zCConvexPrimitive	Distance	zCConvexPrimitive const*	zCConvexPrimitive const*	zMAT4 const&	zMAT4 const&	zVEC3 const&	zVEC3&	zVEC3&
-0x00557EA0	static zCConvexCollisionCache*	__cdecl	zCConvexPrimitive	GetCache	void const*	void const*
+0x005572A0	int	__cdecl	zCConvexPrimitive	CheckCollision	zCConvexPrimitive const*	zCConvexPrimitive const*	zMAT4 const&	zMAT4 const&	zCConvexCollisionCache*	zVEC3&	float&	zVEC3&
+0x00557C90	float	__cdecl	zCConvexPrimitive	Distance	zCConvexPrimitive const*	zCConvexPrimitive const*	zMAT4 const&	zMAT4 const&	zVEC3 const&	zVEC3&	zVEC3&
+0x00557EA0	zCConvexCollisionCache*	__cdecl	zCConvexPrimitive	GetCache	void const*	void const*
 0x00558050		__thiscall	zCConvexCollisionCache	zCConvexCollisionCache	zCCacheIndex const&
 0x005580A0	void	__thiscall	zCConvexPrimitive	Draw	zMAT4 const&	zCOLOR	zCCamera const*
-0x00558140	static void	__cdecl	zCConvexPrimitive	DrawLine	zVEC3 const&	zVEC3 const&
-0x00558290	static void	__cdecl	zCConvexPrimitive	DrawLineStrip	zVEC3 const&
+0x00558140	void	__cdecl	zCConvexPrimitive	DrawLine	zVEC3 const&	zVEC3 const&
+0x00558290	void	__cdecl	zCConvexPrimitive	DrawLineStrip	zVEC3 const&
 0x00558360	void	__thiscall	zCConvexPrimitive	DrawVirtual
 0x00558560		__thiscall	zCConvexPrimitiveUnitSphere	zCConvexPrimitiveUnitSphere
 0x005585B0	void	__thiscall	zCConvexPrimitive	GetCenterLocal	zVEC3&
@@ -3066,12 +3066,12 @@
 0x00558D70		__thiscall	zTBBox3D	zTBBox3D
 0x00558D80	int	__thiscall	zCConvexPrimitiveEllipsoid	SymetryRotation	zVEC3&
 0x00558E00	void	__thiscall	zCConvexPrimitiveEllipsoid	Snap
-0x00559650	static zCObject*	__cdecl	zCDecal	_CreateNewInstance
+0x00559650	zCObject*	__cdecl	zCDecal	_CreateNewInstance
 0x00559780	zCClassDef*	__thiscall	zCDecal	_GetClassDef
 0x00559790	int	__thiscall	zCDecal	IsBBox3DLocal
 0x005597A0		__thiscall	zCDecal	zCDecal
-0x00559900	static void	__cdecl	zCDecal	CleanupDecals
-0x00559980	static void	__cdecl	zCDecal	CreateDecalMeshes
+0x00559900	void	__cdecl	zCDecal	CleanupDecals
+0x00559980	void	__cdecl	zCDecal	CreateDecalMeshes
 0x005599F0	zSTRING const*	__thiscall	zCDecal	GetFileExtension	int
 0x00559A50	zCVisual*	__thiscall	zCDecal	LoadVisualVirtual	zSTRING const&
 0x00559BD0	unsigned long	__thiscall	zCDecal	GetRenderSortKey
@@ -3109,13 +3109,13 @@
 0x0055B940	void	__thiscall	zCMgcEigenD	IncrSortEigenStuff4
 0x0055B980	void	__thiscall	zCMgcEigenD	IncrSortEigenStuffN
 0x0055B9D0	void	__thiscall	zCMgcEigenD	IncrSortEigenStuff
-0x0055BAC0	static int	__cdecl	zCMgcEigenD	Number	unsigned int
-0x0055BAE0	static void	__cdecl	zCMgcEigenD	Report	unsigned int
+0x0055BAC0	int	__cdecl	zCMgcEigenD	Number	unsigned int
+0x0055BAE0	void	__cdecl	zCMgcEigenD	Report	unsigned int
 0x0055BC20	ostream&	__cdecl		flush	ostream&
-0x0055BC50	static void	__cdecl	zCMgcEigenD	Report	ostream&
+0x0055BC50	void	__cdecl	zCMgcEigenD	Report	ostream&
 0x0055BCF0		__thiscall	zCEngine	zCEngine
-0x0055BD30	static int	__cdecl	zCEngine	Init	HWND__**
-0x0055C380	static int	__cdecl	zCEngine	Shutdown
+0x0055BD30	int	__cdecl	zCEngine	Init	HWND__**
+0x0055C380	int	__cdecl	zCEngine	Shutdown
 0x0055C680	void	__thiscall	TPoly3ds	CheckForWrap
 0x0055EAB0	void	__thiscall	zCFile3DS	Load3DS	zSTRING const&	zCMesh*
 0x0055EE90	zSTRING	__thiscall	zPATH	GetFilename
@@ -3137,16 +3137,16 @@
 0x00561EF0	void	__cdecl		zClamp	int&	int	int
 0x00561F40		__thiscall	zCFileQuakeBSP	zCFileQuakeBSP
 0x00561F70	void	__thiscall	zCFileQuakeBSP	LoadQuakeBSP	zSTRING const&	zCMesh*	zCWorld*
-0x005639F0	static zCObject*	__cdecl	zCLensFlareFX	_CreateNewInstance
+0x005639F0	zCObject*	__cdecl	zCLensFlareFX	_CreateNewInstance
 0x00563B50	zCClassDef*	__thiscall	zCLensFlareFX	_GetClassDef
-0x00563B90	static void	__cdecl	zCLensFlareFX	LoadLensFlareScript
-0x00563E90	static void	__cdecl	zCLensFlareFX	ReleaseLensFlareScript
+0x00563B90	void	__cdecl	zCLensFlareFX	LoadLensFlareScript
+0x00563E90	void	__cdecl	zCLensFlareFX	ReleaseLensFlareScript
 0x00564000	void	__thiscall	zCLensFlareFX	Archive	zCArchiver&
 0x00564120	void	__thiscall	zCLensFlareFX	Unarchive	zCArchiver&
 0x005645C0	void	__thiscall	zCLensFlareFX	RenderLensFlares	zCVob*
 0x00564D40	void	__thiscall	zCLensFlareFX	RenderLensFlares	zVEC2&
 0x00564F20	void	__thiscall	zCLensFlareFX	SetAlpha	int
-0x00565270	static zCObject*	__cdecl	zCMaterial	_CreateNewInstance
+0x00565270	zCObject*	__cdecl	zCMaterial	_CreateNewInstance
 0x00565360	zCClassDef*	__thiscall	zCMaterial	_GetClassDef
 0x00565370		__thiscall	zCMaterial	zCMaterial
 0x00565450		__thiscall	zCMaterial	zCMaterial	zSTRING const&
@@ -3168,8 +3168,8 @@
 0x00566450	void	__thiscall	zCMaterial	SetTexScale	zVEC2
 0x00566470	void	__thiscall	zCMaterial	RemoveTexture
 0x005664A0	zSTRING const&	__thiscall	zCMaterial	GetTextureName
-0x005664C0	static zCMaterial*	__cdecl	zCMaterial	SearchName	zSTRING&
-0x00566570	static zSTRING const&	__cdecl	zCMaterial	GetMatGroupString	zTMat_Group
+0x005664C0	zCMaterial*	__cdecl	zCMaterial	SearchName	zSTRING&
+0x00566570	zSTRING const&	__cdecl	zCMaterial	GetMatGroupString	zTMat_Group
 0x005665C0	zSTRING const&	__thiscall	zCMaterial	GetMatGroupString
 0x00566610	void	__thiscall	zCMaterial	SetMatGroupByString	zSTRING const&
 0x00566800	void	__thiscall	zCMaterial	RefreshAvgColorFromTexture
@@ -3204,9 +3204,9 @@
 0x00567840	void	__thiscall	zCMemPoolBase	Free	void*
 0x00567880	void	__thiscall	zCMemPoolBase	PreAlloc	unsigned int	int
 0x00567A90	void	__thiscall	zCMemPoolBase	PoolAdd	void*	int	int
-0x00567BF0	static void	__cdecl	zCMemPoolBase	SetMemDebug	char const*	char const*	int
-0x00567C10	static void	__cdecl	zCMemPoolBase	DisablePools	int
-0x00567E50	static zCObject*	__cdecl	zCMesh	_CreateNewInstance
+0x00567BF0	void	__cdecl	zCMemPoolBase	SetMemDebug	char const*	char const*	int
+0x00567C10	void	__cdecl	zCMemPoolBase	DisablePools	int
+0x00567E50	zCObject*	__cdecl	zCMesh	_CreateNewInstance
 0x00567EC0		__thiscall	zCMesh	zCMesh
 0x00568100	int	__thiscall	zCVisual	IsBBox3DLocal
 0x00568110	void	__thiscall	zCVisual	SetVisualUsedBy	zCVob*
@@ -3218,8 +3218,8 @@
 0x00568340	zSTRING const*	__thiscall	zCMesh	GetFileExtension	int
 0x00568360	zCVisual*	__thiscall	zCMesh	LoadVisualVirtual	zSTRING const&
 0x00568370	void	__thiscall	zCMesh	DeleteAll
-0x005686A0	static zCMesh*	__cdecl	zCMesh	SearchName	zSTRING const&
-0x00568710	static zCMesh*	__cdecl	zCMesh	Load	zSTRING const&
+0x005686A0	zCMesh*	__cdecl	zCMesh	SearchName	zSTRING const&
+0x00568710	zCMesh*	__cdecl	zCMesh	Load	zSTRING const&
 0x00569160	zSTRING	__thiscall	zPATH	GetDir
 0x00569180		__thiscall	zCFileBIN	zCFileBIN
 0x00569220	void	__thiscall	zCFileBIN	BinCreate	zSTRING const&
@@ -3267,15 +3267,15 @@
 0x0056C6E0	void	__thiscall	zCMesh	SetLightStatAlpha	unsigned char
 0x0056C720	void	__thiscall	zCMesh	ResetLightDynToLightStat
 0x0056C760	void	__thiscall	zCMesh	AddToLightDyn	zCOLOR
-0x0056C7A0	static zCMesh*	__cdecl	zCMesh	CreateQuadMesh	int
-0x0056CB10	static zCMesh*	__cdecl	zCMesh	CreateTriMesh
-0x0056CD10	static int	__cdecl	zCMesh	CheckTexUVOnPlane	zCArray< zCVertex*> const&	zCArray< zCVertFeature> const&
-0x0056D2D0	static void	__cdecl	zCMesh	ConvertTrisToNPolys	zCPolygon**	int	zCMesh*	int
+0x0056C7A0	zCMesh*	__cdecl	zCMesh	CreateQuadMesh	int
+0x0056CB10	zCMesh*	__cdecl	zCMesh	CreateTriMesh
+0x0056CD10	int	__cdecl	zCMesh	CheckTexUVOnPlane	zCArray< zCVertex*> const&	zCArray< zCVertFeature> const&
+0x0056D2D0	void	__cdecl	zCMesh	ConvertTrisToNPolys	zCPolygon**	int	zCMesh*	int
 0x0056DDC0		__thiscall	zCVertFeature	zCVertFeature
-0x0056DDE0	static unsigned short	__cdecl	zCMesh	GetFileVersion
+0x0056DDE0	unsigned short	__cdecl	zCMesh	GetFileVersion
 0x0056DDF0	void	__thiscall	zCMesh	SaveMSH	zCFileBIN&
 0x0056DE10	void	__thiscall	zCMesh	SaveMSH	zSTRING const&
-0x0056DF70	static void	__cdecl	zCMesh	SaveMSH	zCFileBIN&	zCPolygon**	int	zCMesh*
+0x0056DF70	void	__cdecl	zCMesh	SaveMSH	zCFileBIN&	zCPolygon**	int	zCMesh*
 0x0056F2E0	int	__thiscall	zCMesh	LoadMSH	zCFileBIN&	int
 0x00570850		__thiscall	zCVertex	zCVertex
 0x00570860	int	__thiscall	zCMesh	LoadMSH	zSTRING const&	int
@@ -3296,7 +3296,7 @@
 0x00573A60		__thiscall	zCCombine	zCCombine
 0x00573AB0	int	__thiscall	zCCombine	CombineWith	zCLightMap*
 0x00573B70	int	__thiscall	zCCombine	CombineWith	zCLightMap*	int	int
-0x00575020	static zCObject*	__cdecl	zCModel	_CreateNewInstance
+0x00575020	zCObject*	__cdecl	zCModel	_CreateNewInstance
 0x00575170	zCClassDef*	__thiscall	zCVisualAnimate	_GetClassDef
 0x005751A0	zCClassDef*	__thiscall	zCModel	_GetClassDef
 0x005751B0	int	__thiscall	zCModel	IsBBox3DLocal
@@ -3304,7 +3304,7 @@
 0x005751D0	void	__thiscall	zCModel	StartAnimation	zSTRING const&
 0x005751E0	void	__thiscall	zCModel	StopAnimation	zSTRING const&
 0x00575280	int	__thiscall	zCModel	IsAnimationActive	zSTRING const&
-0x00575580	static zCObject*	__cdecl	zCModelAni	_CreateNewInstance
+0x00575580	zCObject*	__cdecl	zCModelAni	_CreateNewInstance
 0x00575710		__thiscall	zCModelAniActive	zCModelAniActive
 0x00575820	void	__thiscall	zCModelAniActive	SetDirection	zTMdl_AniDir
 0x00575870	float	__thiscall	zCModelAniActive	GetProgressPercent
@@ -3419,7 +3419,7 @@
 0x00581040	unsigned long	__thiscall	zCModel	GetRenderSortKey
 0x00581060	int	__thiscall	zCModel	TraceRay	zVEC3 const&	zVEC3 const&	int	zTTraceRayReport&
 0x00581870		__thiscall	zTAniAttachment	zTAniAttachment
-0x00581880	static int	__cdecl	zCModel	AniAttachmentCompare	void const*	void const*
+0x00581880	int	__cdecl	zCModel	AniAttachmentCompare	void const*	void const*
 0x005818B0	zTAniAttachment*	__thiscall	zCModel	SearchAniAttachList	int
 0x00581950	void	__thiscall	zCModel	RemoveAniAttachment	int
 0x00581AD0	void	__thiscall	zCModel	RemoveAllAniAttachments
@@ -3429,12 +3429,12 @@
 0x00581EE0	float	__thiscall	zCModel	GetRandAniFreq	int
 0x00581F80	void	__thiscall	zCModel	SetRandAniFreq	int	float
 0x00581FA0	void	__fastcall	zCModel	RecalcRootPosLocal	int
-0x00582E60	static zCObject*	__cdecl	zCModelMeshLib	_CreateNewInstance
+0x00582E60	zCObject*	__cdecl	zCModelMeshLib	_CreateNewInstance
 0x00582FD0		__thiscall	zCModelNode	zCModelNode
 0x00583110		__thiscall	zCModelNode	zCModelNode	zCModelNode const&
 0x00583350	void	__thiscall	zCModelNode	SetNodeVisualS	zCVisual*
-0x005833F0	static void	__cdecl	zTMdl_AniSample	CalcSamplePosConstants	float	float
-0x00583410	static void	__cdecl	zTMdl_AniSample	SetSamplePosConstants	float	float
+0x005833F0	void	__cdecl	zTMdl_AniSample	CalcSamplePosConstants	float	float
+0x00583410	void	__cdecl	zTMdl_AniSample	SetSamplePosConstants	float	float
 0x00583430	void	__fastcall	zTMdl_AniSample	Pack	zCQuat const&	zVEC3 const&
 0x005834F0	void	__fastcall	zTMdl_AniSample	Unpack	zCQuat&	zVEC3&
 0x00583560	void	__fastcall	zTMdl_AniSample	PackTrans	zVEC3 const&
@@ -3475,16 +3475,16 @@
 0x005879A0	void	__thiscall	zCModelPrototype	ReleaseMeshSoftSkinList
 0x00587A00	void	__thiscall	zCModelPrototype	ReleaseMeshes
 0x00587A90	int	__thiscall	zCModelPrototype	Release
-0x00587AC0	static int	__cdecl	zCModelPrototype	NumInList
+0x00587AC0	int	__cdecl	zCModelPrototype	NumInList
 0x00587AE0	zSTRING const&	__thiscall	zCModelPrototype	GetModelProtoFileName
 0x00587AF0	void	__thiscall	zCModelPrototype	SetModelProtoName	zSTRING const&
 0x00587C90	void	__thiscall	zCModelPrototype	SetFileSourceType	zCModelPrototype::zTFileSourceType
-0x00587E10	static zCModelPrototype*	__cdecl	zCModelPrototype	Load	zSTRING const&	zCModelPrototype*
+0x00587E10	zCModelPrototype*	__cdecl	zCModelPrototype	Load	zSTRING const&	zCModelPrototype*
 0x00588050	zSTRING	__thiscall	zPATH	GetFile
 0x00588070	int	__thiscall	zCModelPrototype	PrepareAsModelProtoOverlay	zCModelPrototype*
 0x005884B0	void	__thiscall	zCModelPrototype	CalcNodeListChecksum
 0x00588510	void	__thiscall	zCModelPrototype	CollectNodeMeshes	zCArray< zCModelNode*>&
-0x00588690	static zCModelPrototype*	__cdecl	zCModelPrototype	SearchName	zSTRING
+0x00588690	zCModelPrototype*	__cdecl	zCModelPrototype	SearchName	zSTRING
 0x00588770	zCModelNode*	__thiscall	zCModelPrototype	SearchNode	zSTRING const&
 0x00588820	zCTree< zCModelNode>*	__thiscall	zCModelPrototype	FindMeshTreeNode	zSTRING const&	zCTree< zCModelNode>*
 0x005888C0	int	__thiscall	zCModelPrototype	FindMeshTreeNodeIndex	zSTRING const&	zCTree< zCModelNode>*
@@ -3493,7 +3493,7 @@
 0x00588C60	int	__fastcall	zCModelPrototype	SearchAniIndex	zSTRING const&
 0x00588D30	zCModelAni*	__thiscall	zCModelPrototype	SearchAni	zSTRING const&
 0x00588D50	void	__thiscall	zCModelPrototype	DescribeTree	zCTree< zCModelNode>*	int
-0x00588FC0	static unsigned long	__cdecl	zCModelPrototype	GetMDHFileVersion
+0x00588FC0	unsigned long	__cdecl	zCModelPrototype	GetMDHFileVersion
 0x00588FD0	int	__thiscall	zCModelPrototype	LoadMDH	zSTRING const&
 0x00589250	int	__thiscall	zCModelPrototype	LoadMDH	zCFileBIN&
 0x005896D0	int	__thiscall	zCFileBIN	BinReadCompareSrcFileStats
@@ -3554,17 +3554,17 @@
 0x0059A500	void	__thiscall	zCModelMeshLib	RemoveFromModel	zCModel*
 0x0059A5F0	void	__thiscall	zCModelMeshLib	BuildFromModel	zCModelPrototype*
 0x0059A800	void	__thiscall	zCModelMeshLib	BuildFromModel	zCModel*
-0x0059AA20	static unsigned long	__cdecl	zCModelMeshLib	GetMDMFileVersion
+0x0059AA20	unsigned long	__cdecl	zCModelMeshLib	GetMDMFileVersion
 0x0059AA50	void	__thiscall	zCModelMeshLib	SaveMDM	zCModelPrototype*
 0x0059AC90	void	__thiscall	zCModelMeshLib	SaveMDM	zCFileBIN&	zCModelPrototype*
-0x0059B130	static int	__cdecl	zCModelMeshLib	LoadMDM	zSTRING const&	zCModelPrototype*	zCModel*	zCModelMeshLib**
-0x0059B4A0	static int	__cdecl	zCModelMeshLib	LoadMDM_Try	zSTRING const&	zCModelPrototype*	zCModel*	zCModelMeshLib**
-0x0059B6B0	static int	__cdecl	zCModelMeshLib	LoadMDM	zCFileBIN&	zCModelPrototype*	zCModel*	zCModelMeshLib**
+0x0059B130	int	__cdecl	zCModelMeshLib	LoadMDM	zSTRING const&	zCModelPrototype*	zCModel*	zCModelMeshLib**
+0x0059B4A0	int	__cdecl	zCModelMeshLib	LoadMDM_Try	zSTRING const&	zCModelPrototype*	zCModel*	zCModelMeshLib**
+0x0059B6B0	int	__cdecl	zCModelMeshLib	LoadMDM	zCFileBIN&	zCModelPrototype*	zCModel*	zCModelMeshLib**
 0x0059C330	void	__thiscall	zCFileBIN	BinSkipChunk
-0x0059C360	static int	__cdecl	zCModelMeshLib	ConvertMDM	zSTRING const&	zCModelPrototype*
+0x0059C360	int	__cdecl	zCModelMeshLib	ConvertMDM	zSTRING const&	zCModelPrototype*
 0x0059C6C0		__thiscall	zCModelConvertFileHandler	zCModelConvertFileHandler
 0x0059C7F0	int	__thiscall	zCModelConvertFileHandler	HandleFile	zSTRING const&	char const*	_finddata_t
-0x0059DD60	static zCObject*	__cdecl	zCMorphMesh	_CreateNewInstance
+0x0059DD60	zCObject*	__cdecl	zCMorphMesh	_CreateNewInstance
 0x0059DE40	zCClassDef*	__thiscall	zCMorphMesh	_GetClassDef
 0x0059DE50	int	__thiscall	zCMorphMesh	IsBBox3DLocal
 0x0059DE60	zCOBBox3D*	__thiscall	zCMorphMesh	GetOBBox3D
@@ -3579,8 +3579,8 @@
 0x0059E460	void	__thiscall	zCMorphMeshAni	Save	zCFileBIN&
 0x0059E570		__thiscall	zCMorphMeshProto	zCMorphMeshProto
 0x0059E9A0	int	__thiscall	zCMorphMeshProto	Release
-0x0059E9D0	static zCMorphMeshProto*	__cdecl	zCMorphMeshProto	SearchName	zSTRING const&
-0x0059EA40	static zCMorphMeshProto*	__cdecl	zCMorphMeshProto	Load	zSTRING const&
+0x0059E9D0	zCMorphMeshProto*	__cdecl	zCMorphMeshProto	SearchName	zSTRING const&
+0x0059EA40	zCMorphMeshProto*	__cdecl	zCMorphMeshProto	Load	zSTRING const&
 0x0059ED20	zCMorphMeshAni*	__thiscall	zCMorphMeshProto	SearchAni	zSTRING const&
 0x0059EDD0	int	__thiscall	zCMorphMeshProto	LoadMMB	zSTRING const&
 0x0059F5A0	void	__thiscall	zCMorphMeshProto	SaveMMB	zSTRING const&
@@ -3593,7 +3593,7 @@
 0x005A1440	zSTRING	__thiscall	zPATH	GetDrive
 0x005A1460	void	__thiscall	zCMorphMesh	Init
 0x005A1470		__thiscall	zCMorphMesh	zCMorphMesh	zCMorphMeshProto*
-0x005A1650	static zCMorphMesh*	__cdecl	zCMorphMesh	Load	zSTRING const&
+0x005A1650	zCMorphMesh*	__cdecl	zCMorphMesh	Load	zSTRING const&
 0x005A1720	zSTRING const*	__thiscall	zCMorphMesh	GetFileExtension	int
 0x005A1780	zCVisual*	__thiscall	zCMorphMesh	LoadVisualVirtual	zSTRING const&
 0x005A1790	zTBBox3D	__thiscall	zCMorphMesh	GetBBox3D
@@ -3623,40 +3623,40 @@
 0x005A36F0		__thiscall	CMov_Movement	CMov_Movement	zCVob*
 0x005A3730	void	__thiscall	CMov_Movement	IncreaseSpeed	double
 0x005A37C0	void	__thiscall	CMov_Movement	Movement
-0x005A4200	static zCObject*	__cdecl	zCObjectFactory	_CreateNewInstance
-0x005A4520	static int	__cdecl	zCObject	CheckInheritance	zCObject const*	zCObject const*
-0x005A4570	static int	__cdecl	zCObject	CheckInheritance	zSTRING const&	zSTRING const&
-0x005A46E0	static zCObject*	__cdecl	zCObject	CreateNewInstance	zSTRING const&
+0x005A4200	zCObject*	__cdecl	zCObjectFactory	_CreateNewInstance
+0x005A4520	int	__cdecl	zCObject	CheckInheritance	zCObject const*	zCObject const*
+0x005A4570	int	__cdecl	zCObject	CheckInheritance	zSTRING const&	zSTRING const&
+0x005A46E0	zCObject*	__cdecl	zCObject	CreateNewInstance	zSTRING const&
 0x005A4830	zCObject*	__thiscall	zCObject	CreateCopy
-0x005A48F0	static void	__cdecl	zCObject	PrintClassHierarchy	int	zCClassDef*	int	int
-0x005A5480	static void	__cdecl	zCObject	GetMemStats	int&	int&	zCClassDef*
+0x005A48F0	void	__cdecl	zCObject	PrintClassHierarchy	int	zCClassDef*	int	int
+0x005A5480	void	__cdecl	zCObject	GetMemStats	int&	int&	zCClassDef*
 0x005A54F0	zSTRING const&	__thiscall	zCObject	GetObjectName
 0x005A5500	int	__thiscall	zCObject	SetObjectName	zSTRING const&
-0x005A5820	static int	__cdecl	zCClassDef	CompareClassDefNames	void const*	void const*
-0x005A5880	static zCClassDef*	__cdecl	zCClassDef	GetClassDef	zSTRING const&
-0x005A59C0	static zCClassDef*	__cdecl	zCClassDef	GetClassDefTypeInsensitive	zSTRING const&
+0x005A5820	int	__cdecl	zCClassDef	CompareClassDefNames	void const*	void const*
+0x005A5880	zCClassDef*	__cdecl	zCClassDef	GetClassDef	zSTRING const&
+0x005A59C0	zCClassDef*	__cdecl	zCClassDef	GetClassDefTypeInsensitive	zSTRING const&
 0x005A5BF0		__thiscall	zCClassDef	zCClassDef
 0x005A5D80	void	__thiscall	zCClassDef	Init
-0x005A60E0	static void	__cdecl	zCClassDef	EndStartup
+0x005A60E0	void	__cdecl	zCClassDef	EndStartup
 0x005A6240		__thiscall	zCClassDef	zCClassDef	zSTRING const&	zSTRING const&	zCObject* (__cdecl*)(void)	unsigned long	unsigned long	unsigned short	zSTRING const&
 0x005A6540	zCObject*	__thiscall	zCClassDef	CreateNewInstance
 0x005A6600	void	__thiscall	zCClassDef	OverwriteCreateNewInstance	zCClassDef*
 0x005A6620	void	__thiscall	zCClassDef	ResetCreateNewInstance
 0x005A6630	unsigned short	__thiscall	zCClassDef	GetClassID
-0x005A66C0	static zCObject*	__cdecl	zCClassDef	CreateNewInstanceID	unsigned short
+0x005A66C0	zCObject*	__cdecl	zCClassDef	CreateNewInstanceID	unsigned short
 0x005A66E0	unsigned long	__thiscall	zCClassDef	GetHashIndex	zSTRING const&
 0x005A6710	unsigned long	__thiscall	zCClassDef	GetHashIndex	zCObject*
 0x005A6740	void	__thiscall	zCClassDef	InsertHashTable	zCObject*
 0x005A6780	void	__thiscall	zCClassDef	RemoveHashTable	zCObject*
 0x005A67C0	zCObject*	__thiscall	zCClassDef	SearchHashTable	zSTRING const&
 0x005A6860	float	__thiscall	zCClassDef	CalcHashTableSpread
-0x005A68A0	static void	__cdecl	zCClassDef	ObjectCreated	zCObject*	zCClassDef*
-0x005A69D0	static void	__cdecl	zCClassDef	ObjectDeleted	zCObject*	zCClassDef*
-0x005A6A70	static void	__cdecl	zCClassDef	ObjectCreated	zCObject*	int	zCClassDef*
-0x005A6AB0	static void	__cdecl	zCClassDef	ObjectDeleted	zCObject*	int	zCClassDef*
+0x005A68A0	void	__cdecl	zCClassDef	ObjectCreated	zCObject*	zCClassDef*
+0x005A69D0	void	__cdecl	zCClassDef	ObjectDeleted	zCObject*	zCClassDef*
+0x005A6A70	void	__cdecl	zCClassDef	ObjectCreated	zCObject*	int	zCClassDef*
+0x005A6AB0	void	__cdecl	zCClassDef	ObjectDeleted	zCObject*	int	zCClassDef*
 0x005A6B70	void	__thiscall	zCClassDef	ReportLeaks
-0x005A6F80	static void	__cdecl	zCClassDef	GetLivingObjectsState	zCLivingObjectsState&
-0x005A7030	static void	__cdecl	zCClassDef	CompareLivingObjectsState	zCLivingObjectsState const&
+0x005A6F80	void	__cdecl	zCClassDef	GetLivingObjectsState	zCLivingObjectsState&
+0x005A7030	void	__cdecl	zCClassDef	CompareLivingObjectsState	zCLivingObjectsState const&
 0x005A7330	zFILE*	__thiscall	zCObjectFactory	CreateZFile	zSTRING const&
 0x005A73B0	zCEventManager*	__thiscall	zCObjectFactory	CreateEventManager	zCVob*
 0x005A74F0	zCNetVobControl*	__thiscall	zCObjectFactory	CreateNetVobControl	zCVob*
@@ -3665,11 +3665,11 @@
 0x005A7720	zCSession*	__thiscall	zCObjectFactory	CreateSession
 0x005A7790	zCCSManager*	__thiscall	zCObjectFactory	CreateCSManager
 0x005A7800	zCWorld*	__thiscall	zCObjectFactory	CreateWorld
-0x005A7C60	static zCObject*	__cdecl	zCParticleFX	_CreateNewInstance
-0x005A7DB0	static void	__cdecl	zCParticleFX	ParseParticleFXScript
-0x005A82B0	static void	__cdecl	zCParticleFX	InitParticleFX
+0x005A7C60	zCObject*	__cdecl	zCParticleFX	_CreateNewInstance
+0x005A7DB0	void	__cdecl	zCParticleFX	ParseParticleFXScript
+0x005A82B0	void	__cdecl	zCParticleFX	InitParticleFX
 0x005A8690		__thiscall	zSParticle	zSParticle
-0x005A86A0	static void	__cdecl	zCParticleFX	CleanupParticleFX
+0x005A86A0	void	__cdecl	zCParticleFX	CleanupParticleFX
 0x005A8760		__thiscall	zCParticleFX	zCParticleFX
 0x005A8860	zCClassDef*	__thiscall	zCParticleFX	_GetClassDef
 0x005A8870	int	__thiscall	zCParticleFX	IsBBox3DLocal
@@ -3684,7 +3684,7 @@
 0x005A9340	void	__thiscall	zCParticleFX	FreeParticles
 0x005A9390	void	__thiscall	zCParticleFX	SetVisualUsedBy	zCVob*
 0x005A9470	zSTRING	__thiscall	zCParticleFX	GetVisualName
-0x005A9520	static zCParticleEmitter*	__cdecl	zCParticleFX	SearchParticleEmitter	zSTRING const&
+0x005A9520	zCParticleEmitter*	__cdecl	zCParticleFX	SearchParticleEmitter	zSTRING const&
 0x005A9700	void	__thiscall	zCParticleFX	RemoveEmitter
 0x005A9740	int	__thiscall	zCParticleFX	SetEmitter	zCParticleEmitter*	int
 0x005A98B0		__thiscall	zCParticleEmitter	zCParticleEmitter	zCParticleEmitter const&
@@ -3693,10 +3693,10 @@
 0x005AA430	int	__thiscall	zCParticleFX	SetAndStartEmitter	zCParticleEmitter*	int
 0x005AA460	void	__thiscall	zCParticleFX	StopEmitterOutput
 0x005AA470	void	__thiscall	zCParticleFX	RestoreEmitterOutput
-0x005AA4B0	static zCParticleFX*	__cdecl	zCParticleFX	Load	zSTRING const&
+0x005AA4B0	zCParticleFX*	__cdecl	zCParticleFX	Load	zSTRING const&
 0x005AA6A0	zTBBox3D	__thiscall	zCParticleFX	GetBBox3D
 0x005AA7D0	int	__thiscall	zCParticleFX	CalcIsDead
-0x005AA830	static float	__cdecl	zCParticleFX	PartRand
+0x005AA830	float	__cdecl	zCParticleFX	PartRand
 0x005AA850	void	__thiscall	zCParticleFX	UpdateParticleFX
 0x005AA930	void	__thiscall	zCParticleFX	CreateParticlesUpdateDependencies
 0x005AABF0	void	__thiscall	zCParticleFX	UpdateParticle	zSParticle*
@@ -3709,8 +3709,8 @@
 0x005ADDF0	void	__thiscall	zCParticleEmitter	AddCompoundReferences
 0x005ADE40	void	__thiscall	zCParticleEmitter	ResetStrings
 0x005AE120	void	__thiscall	zCParticleEmitter	Reset
-0x005AE140	static zVEC3	__cdecl	zCParticleEmitter	String2Vec3	zSTRING const&
-0x005AE420	static zVEC2	__cdecl	zCParticleEmitter	String2Vec2	zSTRING const&
+0x005AE140	zVEC3	__cdecl	zCParticleEmitter	String2Vec3	zSTRING const&
+0x005AE420	zVEC2	__cdecl	zCParticleEmitter	String2Vec2	zSTRING const&
 0x005AE680	void	__thiscall	zCParticleEmitter	UpdateInternals
 0x005AF1D0	void	__thiscall	zCParticleEmitter	SetOutputDir	zVEC3 const&
 0x005AF420	void	__thiscall	zCParticleEmitter	ConvertAnglesIntoBox
@@ -3744,13 +3744,13 @@
 0x005B16F0		__thiscall	zCPluecker	zCPluecker
 0x005B1710	float	__thiscall	zCPluecker	Length2
 0x005B1740	void	__thiscall	zCPluecker	Normalize
-0x005B18F0	static void*	__cdecl	zCPolygon	S_AllocPointers	int
-0x005B1920	static void	__cdecl	zCPolygon	S_DeletePointers	int	void*
-0x005B1950	static zCVertFeature*	__cdecl	zCPolygon	S_AllocVertFeatures	int
-0x005B19C0	static void	__cdecl	zCPolygon	S_DeleteVertFeatures	int	zCVertFeature*
+0x005B18F0	void*	__cdecl	zCPolygon	S_AllocPointers	int
+0x005B1920	void	__cdecl	zCPolygon	S_DeletePointers	int	void*
+0x005B1950	zCVertFeature*	__cdecl	zCPolygon	S_AllocVertFeatures	int
+0x005B19C0	void	__cdecl	zCPolygon	S_DeleteVertFeatures	int	zCVertFeature*
 0x005B19F0		__thiscall	zCPolygon	zCPolygon
 0x005B1B00	int	__fastcall	zCPolygon	ClipToPlane	zCVertex**	zCVertFeature**	int	zCVertex**	zCVertFeature**	int&	zTPlane const&
-0x005B2060	static void	__cdecl	zCPolygon	PrepareRendering
+0x005B2060	void	__cdecl	zCPolygon	PrepareRendering
 0x005B2080	void	__thiscall	zCPolygon	Unclip
 0x005B2100	void	__thiscall	zCPolygon	CopyClipFeaturesForTexAniMapping
 0x005B2170	int	__fastcall	zCPolygon	ClipToFrustum	int
@@ -3760,7 +3760,7 @@
 0x005B28B0		__thiscall	zVEC4	zVEC4	zVEC3 const&	float
 0x005B28D0	void	__thiscall	zCPolygon	GetScreenBBox2D	zTBBox2D&
 0x005B2970	void	__thiscall	zCPolygon	DrawWire	zCOLOR
-0x005B2A40	static void	__cdecl	zCPolygon	LightPolyList	zCArray< zCVobLight*> const&	zCPolygon**	int	zMAT4*
+0x005B2A40	void	__cdecl	zCPolygon	LightPolyList	zCArray< zCVobLight*> const&	zCPolygon**	int	zMAT4*
 0x005B31B0	void	__thiscall	zCPolygon	LightDynCamSpace	zVEC3 const&	int
 0x005B3370	void	__fastcall	zCPolygon	LightClippedPoly	zCArray< zCVobLight*> const&	int
 0x005B3950	zVEC3	__thiscall	zCPolygon	GetLightStatAtPos	zVEC3 const&
@@ -3786,8 +3786,8 @@
 0x005B4F30	void	__thiscall	zCPolygon	TexShearV	float
 0x005B4FF0	void	__thiscall	zCPolygon	TexApplyPlanarMapping	zVEC3 const&	zVEC3 const&	zVEC3 const&	int
 0x005B51C0	void	__thiscall	zCPolygon	TexApplyPlanarMapping	float	float	int
-0x005B5290	static void	__cdecl	zCPolygon	TexApplyPlanarMapping	zCList< zCPolygon> const&	float	float	int
-0x005B54E0	static void	__cdecl	zCPolygon	AlignPolyListToAvgPlane	zCArray< zCPolygon*>
+0x005B5290	void	__cdecl	zCPolygon	TexApplyPlanarMapping	zCList< zCPolygon> const&	float	float	int
+0x005B54E0	void	__cdecl	zCPolygon	AlignPolyListToAvgPlane	zCArray< zCPolygon*>
 0x005B5840	void	__thiscall	zCPolygon	TexCorrectUV
 0x005B59A0	void	__thiscall	zCPolygon	AllocVerts	int
 0x005B5B30	void	__thiscall	zCPolygon	AddVertex	zCVertex*
@@ -3812,7 +3812,7 @@
 0x005B6800	void	__thiscall	zCPolygon	SplitPoly	zTPlane const&	zCPolygon*	zCPolygon*	zCMesh*
 0x005B6DC0	int	__fastcall	zCPolygon	IsIntersectingProjection	zCPolygon*	zVEC3 const&
 0x005B75F0	int	__fastcall	zCPolygon	IsIntersecting	zCPolygon*
-0x005B7930	static zCObject*	__cdecl	zCPolyStrip	_CreateNewInstance
+0x005B7930	zCObject*	__cdecl	zCPolyStrip	_CreateNewInstance
 0x005B79A0		__thiscall	zCPolyStrip	zCPolyStrip
 0x005B7C20	int	__thiscall	zCPolyStrip	IsBBox3DLocal
 0x005B7C30	zTBBox3D	__thiscall	zCPolyStrip	GetBBox3D
@@ -3837,9 +3837,9 @@
 0x005B9A50	void	__thiscall	zCLightning	SetVisualUsedBy	zCVob*
 0x005B9AA0	void	__thiscall	zCLightning	SetProjectionSphere	zTBSphere3D const&
 0x005B9AD0	void	__thiscall	zCLightning	Generate	zVEC3 const&	zVEC3 const&
-0x005BA2E0	static int	__cdecl	zCPrime	IsPrime	unsigned long
-0x005BA3C0	static unsigned short	__cdecl	zCPrime	PrimeNo	unsigned short
-0x005BA4B0	static unsigned long	__cdecl	zCPrime	NextPrime	unsigned long
+0x005BA2E0	int	__cdecl	zCPrime	IsPrime	unsigned long
+0x005BA3C0	unsigned short	__cdecl	zCPrime	PrimeNo	unsigned short
+0x005BA4B0	unsigned long	__cdecl	zCPrime	NextPrime	unsigned long
 0x005BA880		__thiscall	Vertex	Vertex	zVEC3 const&	int
 0x005BAB20	void	__thiscall	Vertex	CalcQuadric
 0x005BAB30	int	__thiscall	Vertex	IsBorder
@@ -3872,8 +3872,8 @@
 0x005C0C20	unsigned long	__cdecl		CalcArraySize	zCArray< zTPMTriangleEdges>
 0x005C0C40	unsigned long	__cdecl		CalcArraySize	zCArray< zTPMEdge>
 0x005C0C60	void	__cdecl		SetAndCopyArrayAdapt	unsigned char*&	zCArrayAdapt<float>&	zCArray<float> const&
-0x005C0F10	static zCObject*	__cdecl	zCProgMeshProto	_CreateNewInstance
-0x005C1180	static zCObject*	__cdecl	zCMeshSoftSkin	_CreateNewInstance
+0x005C0F10	zCObject*	__cdecl	zCProgMeshProto	_CreateNewInstance
+0x005C1180	zCObject*	__cdecl	zCMeshSoftSkin	_CreateNewInstance
 0x005C1250	int	__thiscall	zCProgMeshProto	IsBBox3DLocal
 0x005C1260	zTBBox3D	__thiscall	zCProgMeshProto	GetBBox3D
 0x005C1290	zCOBBox3D*	__thiscall	zCProgMeshProto	GetOBBox3D
@@ -3884,21 +3884,21 @@
 0x005C1450		__thiscall	zCProgMeshProto	zCProgMeshProto
 0x005C1590	zCClassDef*	__thiscall	zCProgMeshProto	_GetClassDef
 0x005C16C0	void	__thiscall	zCProgMeshProto	CalcRenderSortKey
-0x005C1700	static void	__cdecl	zCProgMeshProto	SetLODParamStrengthModifier	float
-0x005C1760	static float	__cdecl	zCProgMeshProto	GetLODParamStrengthModifier
+0x005C1700	void	__cdecl	zCProgMeshProto	SetLODParamStrengthModifier	float
+0x005C1760	float	__cdecl	zCProgMeshProto	GetLODParamStrengthModifier
 0x005C1780	void	__thiscall	zCProgMeshProto	PackStaticVertexBuffers
 0x005C1990	zSTRING const*	__thiscall	zCProgMeshProto	GetFileExtension	int
 0x005C19B0	zCVisual*	__thiscall	zCProgMeshProto	LoadVisualVirtual	zSTRING const&
 0x005C19C0	zSTRING	__thiscall	zCProgMeshProto	GetVisualName
-0x005C1A10	static zCVisual*	__cdecl	zCProgMeshProto	Load	zSTRING const&
-0x005C2520	static int	__cdecl	zCProgMeshProto	BuildProgMeshProto	zCMesh*	zCProgMeshProto*	zCArray<int>*	int
+0x005C1A10	zCVisual*	__cdecl	zCProgMeshProto	Load	zSTRING const&
+0x005C2520	int	__cdecl	zCProgMeshProto	BuildProgMeshProto	zCMesh*	zCProgMeshProto*	zCArray<int>*	int
 0x005C2590	int	__fastcall	zCProgMeshProto	CheckRayPolyIntersection	zCProgMeshProto::zCSubMesh*	int	zVEC3 const&	zVEC3 const&	zVEC3&	float&
 0x005C28A0	int	__fastcall	zCProgMeshProto	CheckRayPolyIntersection2Sided	zCProgMeshProto::zCSubMesh*	int	zVEC3 const&	zVEC3 const&	zVEC3&	float&
 0x005C2B90	int	__thiscall	zCProgMeshProto	TraceRay	zVEC3 const&	zVEC3 const&	int	zTTraceRayReport&
 0x005C2D70	int	__thiscall	zCProgMeshProto	GetNumTri
-0x005C2D90	static void	__cdecl	zCProgMeshProto	InitProgMeshProto
-0x005C2EF0	static int	__cdecl	zCProgMeshProto	CreateDynamicVertexBuffer
-0x005C2F60	static void	__cdecl	zCProgMeshProto	CleanupProgMeshProto
+0x005C2D90	void	__cdecl	zCProgMeshProto	InitProgMeshProto
+0x005C2EF0	int	__cdecl	zCProgMeshProto	CreateDynamicVertexBuffer
+0x005C2F60	void	__cdecl	zCProgMeshProto	CleanupProgMeshProto
 0x005C2FD0	float	__fastcall	zCProgMeshProto	CalcLODRenderVertPerc	zTRenderContext const&
 0x005C31D0	int	__fastcall	zCProgMeshProto	CalcLODRenderArgs	zTRenderContext const&	zCProgMeshProto::zTLODRenderArgs&
 0x005C33C0	int	__fastcall	zCProgMeshProto	CalcLODRenderArgsSubMesh	zTRenderContext const&	zCProgMeshProto::zTLODRenderArgs const&	zCProgMeshProto::zCSubMesh const*	zCProgMeshProto::zTLODRenderArgsSubMesh&
@@ -3913,7 +3913,7 @@
 0x005C4A40	void	__fastcall	zCProgMeshProto	CalcSubdivSubMesh	zCProgMeshProto::zCSubMesh*	zCVertexBuffer*	zCProgMeshProto::zTLODRenderArgs const*	zCRenderLightContainer*	zCProgMeshProto::zTLODRenderArgsSubMesh&
 0x005C4DB0	int	__fastcall	zCProgMeshProto	RenderDynamicSubdiv	zTRenderContext&	int	zCProgMeshProto::zTLODRenderArgs*	zCRenderLightContainer*	float	float
 0x005C5210	int	__fastcall	zCProgMeshProto	RenderStaticLODShadow	zTRenderContext&	int	zCProgMeshProto::zTLODRenderArgs*	zCRenderLightContainer*
-0x005C55D0	static unsigned short	__cdecl	zCProgMeshProto	GetFileVersion
+0x005C55D0	unsigned short	__cdecl	zCProgMeshProto	GetFileVersion
 0x005C55E0	int	__thiscall	zCProgMeshProto	Save	zCFileBIN&
 0x005C5A20	int	__thiscall	zCProgMeshProto	Load	zCFileBIN&
 0x005C6270		__thiscall	zCMeshSoftSkin	zCMeshSoftSkin
@@ -3926,13 +3926,13 @@
 0x005C6560	void	__thiscall	zCMeshSoftSkin	BuildNodeIndexList
 0x005C6720	void	__thiscall	zCMeshSoftSkin	DeleteNodeOBBList
 0x005C6790	void	__thiscall	zCMeshSoftSkin	BuildNodeOBBList
-0x005C6D50	static unsigned short	__cdecl	zCMeshSoftSkin	GetFileVersion
+0x005C6D50	unsigned short	__cdecl	zCMeshSoftSkin	GetFileVersion
 0x005C6D60	int	__thiscall	zCMeshSoftSkin	Load	zCFileBIN&
 0x005C7060	int	__thiscall	zCMeshSoftSkin	Save	zCFileBIN&
 0x005C7580	int	__fastcall	zCMeshSoftSkin	RenderSoftSkin	zTRenderContext&	zCArray< zMAT4*> const&	zCRenderLightContainer*	float
 0x005C7C80		__thiscall	zCProgMeshConvertFileHandler	zCProgMeshConvertFileHandler
 0x005C7D60	int	__thiscall	zCProgMeshConvertFileHandler	HandleFile	zSTRING const&	char const*	_finddata_t
-0x005C8420	static zCObject*	__cdecl	zCQuadMark	_CreateNewInstance
+0x005C8420	zCObject*	__cdecl	zCQuadMark	_CreateNewInstance
 0x005C8490		__thiscall	zCQuadMark	zCQuadMark
 0x005C85E0	zCClassDef*	__thiscall	zCQuadMark	_GetClassDef
 0x005C85F0	int	__thiscall	zCQuadMark	IsBBox3DLocal
@@ -3959,21 +3959,21 @@
 0x005CAA70	void	__thiscall	zCRayCacheElement	JumpBack	zCRayCacheElement**
 0x005CAAA0	char*	__thiscall	zCRayCache	Hit
 0x005CAAB0	zCArray<unsigned short>&	__thiscall	zCRayCache	HitList
-0x005CAAC0	static float	__cdecl	zCRayCache	LastTraceRayEffort
+0x005CAAC0	float	__cdecl	zCRayCache	LastTraceRayEffort
 0x005CAAF0	void	__thiscall	zCRayCache	StartTraceRay	zVEC3 const&	zVEC3 const&
 0x005CAD60	void	__thiscall	zCRayCache	StopTraceRay
 0x005CAF60	void	__thiscall	zCRayCache	NextNode	zCBspBase const*
-0x005CB4F0	static void	__cdecl	zCRayCache	NodeDeleted	zCBspLeaf*
+0x005CB4F0	void	__cdecl	zCRayCache	NodeDeleted	zCBspLeaf*
 0x005CB5A0	zTRnd_AlphaBlendFunc	__thiscall	zCRenderer	AlphaBlendFuncStringToType	zSTRING const&
 0x005CB690	zSTRING	__thiscall	zCRenderer	AlphaBlendFuncTypeToString	zTRnd_AlphaBlendFunc
 0x005CB910	int	__thiscall	zCRenderer	Vid_SetMode	int	int	int	HWND__**
 0x005CB9B0	zTRnd_TexFormatInfo	__thiscall	zCRenderer	GetTexFormatInfo	zTRnd_TextureFormat
 0x005CB9E0	void	__thiscall	zCRenderer	DrawTile	zCTexture*	zVEC2 const&	zVEC2 const&	float	zVEC2 const&	zVEC2 const&	zCOLOR
 0x005CC250		__thiscall	zTRndSimpleVertex	zTRndSimpleVertex
-0x005CC290	static int	__cdecl	zCRenderLightContainer	CompareLightScore	void const*	void const*
+0x005CC290	int	__cdecl	zCRenderLightContainer	CompareLightScore	void const*	void const*
 0x005CC2B0	void	__thiscall	zCRenderLightContainer	CreatePrelightConfig	zTBBox3D const&
 0x005CC4F0	int	__fastcall	zCRenderLightContainer	CollectLights_FastPath	zTRenderContext const&
-0x005CC770	static void	__cdecl	zCRenderLightContainer	S_ReleaseVobLightRefs
+0x005CC770	void	__cdecl	zCRenderLightContainer	S_ReleaseVobLightRefs
 0x005CC780	void	__fastcall	zCRenderLightContainer	CollectLights_DynLights	zTRenderContext const&
 0x005CC920	void	__thiscall	zCDynVobLightCacheElement	UpdateContents	zCVob const*
 0x005CCD00	void	__fastcall	zCRenderLightContainer	CollectLights_StatLights	zTRenderContext const&
@@ -3987,15 +3987,15 @@
 0x005CE2C0	void	__thiscall	zCShader	InsertStage	int	zCShaderStage*
 0x005CE2F0		__thiscall	zCShaderStage	zCShaderStage
 0x005CE350		__thiscall	zCRndAlphaSortObject_WorldPoly	zCRndAlphaSortObject_WorldPoly
-0x005CE410	static zCRndAlphaSortObject_WorldPoly*	__cdecl	zCRndAlphaSortObject_WorldPoly	GetFreeAlphaWorldPoly
-0x005CE520	static void	__cdecl	zCRndAlphaSortObject_WorldPoly	ResetFreeList
+0x005CE410	zCRndAlphaSortObject_WorldPoly*	__cdecl	zCRndAlphaSortObject_WorldPoly	GetFreeAlphaWorldPoly
+0x005CE520	void	__cdecl	zCRndAlphaSortObject_WorldPoly	ResetFreeList
 0x005CE540	void	__thiscall	zCRndAlphaSortObject_WorldPoly	SetZValueByPoly	zCPolygon*	zTPlane const&
 0x005CE5A0	void	__thiscall	zCRndAlphaSortObject_WorldPoly	Draw	int
 0x005CE830		__thiscall	zCRenderManager	zCRenderManager
 0x005CE910	void	__thiscall	zCRenderManager	InitRenderManager
 0x005CEA20	void	__thiscall	zCRenderManager	CleanupRenderManager
-0x005CEA90	static zCShader*	__cdecl	zCRenderManager	GetFreeShader
-0x005CEB90	static zCShaderStage*	__cdecl	zCRenderManager	GetFreeShaderStage
+0x005CEA90	zCShader*	__cdecl	zCRenderManager	GetFreeShader
+0x005CEB90	zCShaderStage*	__cdecl	zCRenderManager	GetFreeShaderStage
 0x005CECA0	void	__fastcall	zCRenderManager	AddPoly	zCPolygon*
 0x005CEDD0	void	__thiscall	zCRenderManager	Flush
 0x005CF090	void	__fastcall	zCRenderManager	SortMaterialPolys	zCMaterial*
@@ -4009,8 +4009,8 @@
 0x005CFCC0	void	__fastcall	zCRenderManager	DrawVertexBuffer	zCVertexBuffer*	int	int	unsigned short*	unsigned long	zCMaterial*
 0x005CFD10	void	__fastcall	zCRenderManager	DrawVertexBuffer	zCVertexBuffer*	int	int	unsigned short*	unsigned long	zCShader*
 0x005CFFD0	void	__fastcall	zCRenderManager	PackVB	zCArray< zCPolygon*> const&	zCShader*
-0x005D0FA0	static void	__cdecl	zCMapDetailTexture	S_Init
-0x005D1410	static void	__cdecl	zCMapDetailTexture	S_Cleanup
+0x005D0FA0	void	__cdecl	zCMapDetailTexture	S_Init
+0x005D1410	void	__cdecl	zCMapDetailTexture	S_Cleanup
 0x005D25A0	void	__cdecl	std	_Construct	std::pair< zSTRING const	zCMapDetailTexture::zTMapDetailTextureEntry>*	std::pair< zSTRING const	zCMapDetailTexture::zTMapDetailTextureEntry> const&
 0x005D28A0		__thiscall	zCResource	zCResource
 0x005D2A40	zCClassDef*	__thiscall	zCResource	_GetClassDef
@@ -4071,7 +4071,7 @@
 0x005D5140	void	__thiscall	zCSession	SetTime	int	int	int
 0x005D5150	void	__thiscall	zCSession	GetTime	int&	int&	int&
 0x005D5160	void	__thiscall	zCSession	SetWorld	zCWorld*
-0x005D57B0	static zCObject*	__cdecl	zCSkyControler_Indoor	_CreateNewInstance
+0x005D57B0	zCObject*	__cdecl	zCSkyControler_Indoor	_CreateNewInstance
 0x005D58C0	void	__thiscall	zCSkyControler	SetFillBackground	int
 0x005D58D0	int	__thiscall	zCSkyControler	GetFillBackground
 0x005D58E0	int	__thiscall	zCSkyControler	GetRelightCtr
@@ -4083,7 +4083,7 @@
 0x005D5980	void	__thiscall	zCSkyControler_Indoor	ResetTime
 0x005D5990	void	__thiscall	zCSkyControler_Indoor	UpdateWorldDependencies
 0x005D5A90	zCClassDef*	__thiscall	zCSkyControler	_GetClassDef
-0x005D5CA0	static zCObject*	__cdecl	zCSkyControler_Outdoor	_CreateNewInstance
+0x005D5CA0	zCObject*	__cdecl	zCSkyControler_Outdoor	_CreateNewInstance
 0x005D5D30		__thiscall	zCOutdoorRainFX	zCOutdoorRainFX
 0x005D5F70	void	__thiscall	zCOutdoorRainFX	UpdateSound	float
 0x005D6190	void	__thiscall	zCOutdoorRainFX	SetEffectWeight	float	float
@@ -4148,7 +4148,7 @@
 0x005DC6F0	int	__thiscall	zCSkyControler_Outdoor	GetRelightCtr
 0x005DC700	zCOLOR	__thiscall	zCSkyControler_Outdoor	GetDaylightColorFromIntensity	int
 0x005DC720	void	__thiscall	zCSkyControler_Outdoor	CalcPolyLightCLUT	zVEC3 const&	zVEC3 const&
-0x005DC840	static zCMesh*	__cdecl	zCSkyLayer	CreateSkyPoly
+0x005DC840	zCMesh*	__cdecl	zCSkyLayer	CreateSkyPoly
 0x005DCA30		__thiscall	zCSkyLayer	zCSkyLayer
 0x005DCAE0	void	__thiscall	zCSkyLayer	SetSkyBoxTexture	int	zCTexture*
 0x005DCB30	void	__thiscall	zCSkyLayer	SetSkyPolyTexture	zCTexture*
@@ -4160,7 +4160,7 @@
 0x005DDA70	void	__thiscall	zCSkyControler_Outdoor	RenderSetup
 0x005DDAC0	void	__thiscall	zCSkyControler_Outdoor	RenderSkyPlane
 0x005DDD40	void	__thiscall	zCSkyControler_Outdoor	RenderSkyDome
-0x005DDD60	static zCMesh*	__cdecl	zCSkyLayer	CreateSkyBoxMesh	int
+0x005DDD60	zCMesh*	__cdecl	zCSkyLayer	CreateSkyBoxMesh	int
 0x005DDD70	void	__thiscall	zCSkyLayer	RenderSkyBox	zCSkyState*
 0x005DDE00	void	__thiscall	zCSkyControler_Outdoor	InitSkyPFX
 0x005DE020	void	__thiscall	zCSkyControler_Outdoor	CalcFog
@@ -4211,15 +4211,15 @@
 0x005E3A80	void	__thiscall	zCSparseArrayBase	CheckResize
 0x005E3AB0	void	__cdecl		Hash	void const*	unsigned long	unsigned long&	unsigned long&	unsigned long
 0x005E3B80		__thiscall	zCCacheBase	zCCacheBase
-0x005E3C40	static void	__cdecl	zCCacheBase	S_PurgeCaches
-0x005E3C80	static void	__cdecl	zCCacheBase	S_ClearCaches
-0x005E40E0	static zCObject*	__cdecl	zCTextureFileFormatTGA	_CreateNewInstance
+0x005E3C40	void	__cdecl	zCCacheBase	S_PurgeCaches
+0x005E3C80	void	__cdecl	zCCacheBase	S_ClearCaches
+0x005E40E0	zCObject*	__cdecl	zCTextureFileFormatTGA	_CreateNewInstance
 0x005E4220	zCClassDef*	__thiscall	zCTextureFileFormatTGA	_GetClassDef
 0x005E4230	int	__thiscall	zCTextureFileFormatTGA	SaveTexture	zSTRING const&	zCTextureExchange*
 0x005E4240	int	__thiscall	zCTextureFileFormatTGA	SaveTexture	zFILE&	zCTextureExchange*
 0x005E4250	int	__thiscall	zCTextureFileFormatTGA	CanSave
 0x005E4260	int	__thiscall	zCTextureFileFormatTGA	CanLoad
-0x005E4470	static zCObject*	__cdecl	zCTextureFileFormatInternal	_CreateNewInstance
+0x005E4470	zCObject*	__cdecl	zCTextureFileFormatInternal	_CreateNewInstance
 0x005E4590	zCClassDef*	__thiscall	zCTextureFileFormatInternal	_GetClassDef
 0x005E45A0	int	__thiscall	zCTextureFileFormatInternal	CanSave
 0x005E45B0	int	__thiscall	zCTextureFileFormatInternal	CanLoad
@@ -4249,15 +4249,15 @@
 0x005E7140	int	__thiscall	zCTexture	GetChromaKeyingEnabled
 0x005E7150	void	__thiscall	zCTexture	SetChromaKeyingEnabled	int
 0x005E7190	void	__thiscall	zCTexture	InitValues
-0x005E7280	static zCTexture*	__cdecl	zCTexture	SearchName	zSTRING&
+0x005E7280	zCTexture*	__cdecl	zCTexture	SearchName	zSTRING&
 0x005E72A0	int	__thiscall	zCTexture	IsLightmap
 0x005E72F0	zCTexture*	__thiscall	zCTexture	GetAniTexture
 0x005E7340	void	__thiscall	zCTexture	AddAniTex	int	zCTexture*
 0x005E7370	void	__thiscall	zCTexture	PrecacheTexAniFrames	float
-0x005E73B0	static zCTexture*	__cdecl	zCTexture	Load	zSTRING&	int
-0x005E8060	static zCTexture*	__cdecl	zCTexture	LoadSingle	zSTRING&	int
-0x005E8230	static void	__cdecl	zCTexture	AutoDetectRendererTexScale
-0x005E89A0	static void	__cdecl	zCTexture	RefreshTexMaxSize	int
+0x005E73B0	zCTexture*	__cdecl	zCTexture	Load	zSTRING&	int
+0x005E8060	zCTexture*	__cdecl	zCTexture	LoadSingle	zSTRING&	int
+0x005E8230	void	__cdecl	zCTexture	AutoDetectRendererTexScale
+0x005E89A0	void	__cdecl	zCTexture	RefreshTexMaxSize	int
 0x005E8A30	int	__thiscall	zCTextureConvert	LoadFromFileFormat	zSTRING const&
 0x005E8B10	int	__thiscall	zCTextureConvert	SaveToFileFormat	zSTRING const&
 0x005E8BF0	int	__thiscall	zCTextureConvert	LoadFromFileFormat	zFILE&	zCTextureFileFormat*
@@ -4267,17 +4267,17 @@
 0x005E8DB0	void	__thiscall	zCTextureConvert	ConvertToNewFormat	zTRnd_TextureFormat const&
 0x005E8DF0	void	__thiscall	zCTextureConvert	ConvertToNewSize	int	int
 0x005E8EE0	void	__thiscall	zCTextureConvert	GenerateMipMaps
-0x005E8F40	static int	__cdecl	zCTextureConvert	CalcNumMipMaps	unsigned long	unsigned long
-0x005E8F70	static void	__cdecl	zCTextureConvert	CorrectAspectRatio	int&	int&
-0x005E8FF0	static void	__cdecl	zCTextureConvert	CorrectPow2	int&	int&
+0x005E8F40	int	__cdecl	zCTextureConvert	CalcNumMipMaps	unsigned long	unsigned long
+0x005E8F70	void	__cdecl	zCTextureConvert	CorrectAspectRatio	int&	int&
+0x005E8FF0	void	__cdecl	zCTextureConvert	CorrectPow2	int&	int&
 0x005E9020	int	__thiscall	zCTexture	LoadResourceData
 0x005E9080	int	__thiscall	zCTexture	ReleaseResourceData
 0x005E90F0	unsigned long	__thiscall	zCTexture	GetResSizeBytes
 0x005E9120	void	__thiscall	zCTexture	GetCacheConfig	unsigned long&	unsigned long&
-0x005E9340	static int	__cdecl	zCTexture	ConvertTexture	zSTRING const&
+0x005E9340	int	__cdecl	zCTexture	ConvertTexture	zSTRING const&
 0x005E9B60	void	__thiscall	zCTexture	ForceConvertAndReloadTexture
-0x005E9C30	static zTRnd_TextureFormat	__cdecl	zCTexture	CalcNextBestTexFormat	zTRnd_TextureFormat
-0x005E9D60	static void	__cdecl	zCTexture	CalcDesiredBPP	zSTRING const*	zCTexture::zTTexFileDesiredBPP&	zTRnd_TextureFormat&	int&
+0x005E9C30	zTRnd_TextureFormat	__cdecl	zCTexture	CalcNextBestTexFormat	zTRnd_TextureFormat
+0x005E9D60	void	__cdecl	zCTexture	CalcDesiredBPP	zSTRING const*	zCTexture::zTTexFileDesiredBPP&	zTRnd_TextureFormat&	int&
 0x005E9EE0	int	__thiscall	zCTexture	LoadAndConvertInternal	zFILE&
 0x005EA2E0	int	__thiscall	zCTexture	SaveAndConvertInternal	zFILE&
 0x005EA4D0	int	__thiscall	zCTexture	CacheInNamed	zSTRING const*
@@ -4285,12 +4285,12 @@
 0x005EB070	int	__thiscall	zCTexture	CreateTextureTile	zCTextureExchange*
 0x005EB740	void	__thiscall	zCTexture	GetPixelSize	int&	int&
 0x005EB780	int	__thiscall	zCTextureFileHandler	HandleFile	zSTRING const&	char const*	_finddata_t
-0x005EBAD0	static void	__cdecl	zCTexture	ScanConvertTextures
-0x005EBD00	static int	__cdecl	zCTextureExchange	CopyContents	zCTextureExchange*	zCTextureExchange*
+0x005EBAD0	void	__cdecl	zCTexture	ScanConvertTextures
+0x005EBD00	int	__cdecl	zCTextureExchange	CopyContents	zCTextureExchange*	zCTextureExchange*
 0x005EBE10	int	__thiscall	zCTextureExchange	GetMemSizeBytes
 0x005EBEC0	zVEC4	__thiscall	zCTextureExchange	GetRGBAAtTexel	float	float
 0x005EC350	zVEC4	__thiscall	zCTextureExchange	GetRGBAAtPtr	unsigned char*	zTTexPalette*	zTRnd_TextureFormat
-0x005EC970	static zCObject*	__cdecl	zCLightMap	_CreateNewInstance
+0x005EC970	zCObject*	__cdecl	zCLightMap	_CreateNewInstance
 0x005ECA50	zCClassDef*	__thiscall	zCLightMap	_GetClassDef
 0x005ECA60		__thiscall	zCLightMap	zCLightMap
 0x005ECB90	void	__thiscall	zCLightMap	SetTexture	zCTexture*
@@ -4312,15 +4312,15 @@
 0x005ED2C0		__thiscall	zCTimer	zCTimer
 0x005ED2F0	void	__thiscall	zCTimer	ResetTimer
 0x005ED3C0	void	__thiscall	zCTimer	SetFrameTime	float
-0x005ED410	static void	__cdecl	zCTimer	FrameUpdate
+0x005ED410	void	__cdecl	zCTimer	FrameUpdate
 0x005ED480	void	__thiscall	zCTimer	LimitFPS	int
-0x005ED4B0	static unsigned long	__cdecl	zCChecksum	GetBufferCRC32	unsigned char*	unsigned long	unsigned long
+0x005ED4B0	unsigned long	__cdecl	zCChecksum	GetBufferCRC32	unsigned char*	unsigned long	unsigned long
 0x005ED5F0	void	__thiscall	zCChecksum	BeginChecksum
 0x005ED600	unsigned long	__thiscall	zCChecksum	EndChecksum
 0x005ED610	void	__thiscall	zCChecksum	CalcBufferChecksum	unsigned char*	unsigned long
 0x005ED630	void	__thiscall	zCChecksum	CalcFileChecksum	zFILE*
 0x005ED6A0	void	__thiscall	zCChecksum	CalcFileChecksum	zSTRING const&
-0x005ED740	static unsigned short	__cdecl	zCChecksum16	GetBufferCRC16	unsigned char*	unsigned long	unsigned short
+0x005ED740	unsigned short	__cdecl	zCChecksum16	GetBufferCRC16	unsigned char*	unsigned long	unsigned short
 0x005ED8B0	void	__thiscall	zCChecksum16	BeginChecksum
 0x005ED8C0	unsigned short	__thiscall	zCChecksum16	EndChecksum
 0x005ED8D0	void	__thiscall	zCChecksum16	CalcBufferChecksum	unsigned char*	unsigned long
@@ -4384,12 +4384,12 @@
 0x005F0A40	void	__thiscall	zCVertexBufferManager	UnlockOpenVertexBuffers
 0x005F0C10	void	__thiscall	zCVertexBufferManager	StartChangeWorld
 0x005F0C20	void	__thiscall	zCVertexBufferManager	EndChangeWorld
-0x005F0EF0	static zCObject*	__cdecl	zCEventMessage	_CreateNewInstance
-0x005F1250	static zCObject*	__cdecl	zCEventCore	_CreateNewInstance
-0x005F1550	static zCObject*	__cdecl	zCVobLightPreset	_CreateNewInstance
+0x005F0EF0	zCObject*	__cdecl	zCEventMessage	_CreateNewInstance
+0x005F1250	zCObject*	__cdecl	zCEventCore	_CreateNewInstance
+0x005F1550	zCObject*	__cdecl	zCVobLightPreset	_CreateNewInstance
 0x005F16B0	zCClassDef*	__thiscall	zCVobLightPreset	_GetClassDef
-0x005F1980	static zCObject*	__cdecl	zCVob	_CreateNewInstance
-0x005F1BF0	static zCObject*	__cdecl	zCVobLevelCompo	_CreateNewInstance
+0x005F1980	zCObject*	__cdecl	zCVob	_CreateNewInstance
+0x005F1BF0	zCObject*	__cdecl	zCVobLevelCompo	_CreateNewInstance
 0x005F1CB0	zCClassDef*	__thiscall	zCVobLevelCompo	_GetClassDef
 0x005F21B0	void	__thiscall	zCVob	OnTrigger	zCVob*	zCVob*
 0x005F21C0	void	__thiscall	zCVob	OnUntrigger	zCVob*	zCVob*
@@ -4399,10 +4399,10 @@
 0x005F2200	void	__thiscall	zCVob	OnDamage	zCVob*	zCVob*	float	int	zVEC3 const&
 0x005F2210	void	__thiscall	zCVob	OnMessage	zCEventMessage*	zCVob*
 0x005F2220		__thiscall	zCVob	zCVob
-0x005F2710	static void	__cdecl	zCVob	InitVobSystem
-0x005F2850	static void	__cdecl	zCVob	CleanupVobSystem
-0x005F28E0	static void	__cdecl	zCVob	ResetIDCtr
-0x005F28F0	static unsigned long	__cdecl	zCVob	GetNextFreeVobID
+0x005F2710	void	__cdecl	zCVob	InitVobSystem
+0x005F2850	void	__cdecl	zCVob	CleanupVobSystem
+0x005F28E0	void	__cdecl	zCVob	ResetIDCtr
+0x005F28F0	unsigned long	__cdecl	zCVob	GetNextFreeVobID
 0x005F2900	void	__thiscall	zCVob	SetVobID	unsigned long const&
 0x005F2910	void	__thiscall	zCVob	SetAI	zCAIBase*
 0x005F2960	void	__thiscall	zCVob	SetVobPresetName	zSTRING const&
@@ -4422,8 +4422,8 @@
 0x005F43C0	zCOLOR	__thiscall	zCVob	GetLightColorDyn
 0x005F45E0	int	__fastcall	zCVob	CalcStaticLight	zVEC3&
 0x005F4B10	zSTRING const*	__thiscall	zCVob	GetSectorNameVobIsIn
-0x005F4B30	static void	__cdecl	zCVob	LoadGroundShadowMesh
-0x005F4C50	static void	__cdecl	zCVob	DeleteGroundShadowMesh
+0x005F4B30	void	__cdecl	zCVob	LoadGroundShadowMesh
+0x005F4C50	void	__cdecl	zCVob	DeleteGroundShadowMesh
 0x005F4C80	void	__fastcall	zCVob	SetGroundShadowSize	zVEC2 const&
 0x005F4CC0	zVEC2	__fastcall	zCVob	GetGroundShadowSize
 0x005F4D10	void	__fastcall	zCVob	RenderGroundShadow	zTRenderContext&
@@ -4457,7 +4457,7 @@
 0x005F7AD0	zMAT4	__thiscall	zCVob	GetTrafoModelNodeToWorld	zSTRING const&
 0x005F7C20	zMAT4	__thiscall	zCVob	GetTrafoModelNodeToWorld	zCModelNodeInst*
 0x005F7CF0	zTBBox2D	__thiscall	zCVob	GetScreenBBox2D
-0x005F7FD0	static void	__cdecl	zCVob	RepairIllegalFloats	zMAT4&
+0x005F7FD0	void	__cdecl	zCVob	RepairIllegalFloats	zMAT4&
 0x005F80C0	void	__thiscall	zCVob	PackStateBinary	zCBuffer&
 0x005F81A0	void	__thiscall	zCVob	UnpackStateBinary	zCBuffer&
 0x005F8250		__thiscall	zCVobLevelCompo	zCVobLevelCompo
@@ -4468,13 +4468,13 @@
 0x005F84F0	void	__thiscall	zCVobLevelCompo	SetVisual	zSTRING const&
 0x005F8530		__thiscall	zCEventMessage	zCEventMessage	unsigned short
 0x005F86A0	unsigned long	__thiscall	zCEventMessage	GetMessageID
-0x005F86C0	static void	__cdecl	zCEventMessage	AnalyzeMessageID	unsigned long	unsigned short&	unsigned short&
-0x005F86E0	static zCEventMessage*	__cdecl	zCEventMessage	CreateFromID	unsigned long
+0x005F86C0	void	__cdecl	zCEventMessage	AnalyzeMessageID	unsigned long	unsigned short&	unsigned short&
+0x005F86E0	zCEventMessage*	__cdecl	zCEventMessage	CreateFromID	unsigned long
 0x005F8700	void	__thiscall	zCEventMessage	PackToBuffer	zCBuffer&	zCEventManager*
-0x005F8750	static zCEventMessage*	__cdecl	zCEventMessage	CreateFromBuffer	zCBuffer&	zCEventManager*
+0x005F8750	zCEventMessage*	__cdecl	zCEventMessage	CreateFromBuffer	zCBuffer&	zCEventManager*
 0x005F8790	void	__thiscall	zCEventMessage	Archive	zCArchiver&
 0x005F89E0	void	__thiscall	zCEventMessage	Unarchive	zCArchiver&
-0x005F8A00	static void	__cdecl	zCEventMessage	TestClassIntegrity
+0x005F8A00	void	__cdecl	zCEventMessage	TestClassIntegrity
 0x005F9100	void	__thiscall	zCEventCore	Clear
 0x005F9160	void	__thiscall	zCEventCore	Pack	zCBuffer&	zCEventManager*
 0x005F9210	void	__thiscall	zCEventCore	Unpack	zCBuffer&	zCEventManager*
@@ -4486,21 +4486,21 @@
 0x005F98C0	void	__thiscall	zCVisual	AddEndLODVisual	zCVisual*
 0x005F98F0	void	__thiscall	zCVisual	GetLODVisualAndAlpha	float	zCVisual*&	float&
 0x005F9960	int	__thiscall	zCVisual	TraceRay	zVEC3 const&	zVEC3 const&	int	zTTraceRayReport&
-0x005F9970	static void	__cdecl	zCVisual	InitVisualSystem
-0x005F9B20	static void	__cdecl	zCVisual	CleanupVisualSystem
-0x005F9B70	static zCVisual*	__cdecl	zCVisual	LoadVisual	zSTRING const&
+0x005F9970	void	__cdecl	zCVisual	InitVisualSystem
+0x005F9B20	void	__cdecl	zCVisual	CleanupVisualSystem
+0x005F9B70	zCVisual*	__cdecl	zCVisual	LoadVisual	zSTRING const&
 0x005FAC20	void	__cdecl	std	_Construct	std::pair< zCClassDef* const	zCVisual*>*	std::pair< zCClassDef* const	zCVisual*> const&
-0x005FAE70	static zCObject*	__cdecl	zCVobLight	_CreateNewInstance
+0x005FAE70	zCObject*	__cdecl	zCVobLight	_CreateNewInstance
 0x005FAF60	zCClassDef*	__thiscall	zCVobLight	_GetClassDef
 0x005FAFC0		__thiscall	zCVobLight	zCVobLight
-0x005FB160	static void	__cdecl	zCVobLight	CleanupVobLight
+0x005FB160	void	__cdecl	zCVobLight	CleanupVobLight
 0x005FB1D0	void	__thiscall	zCVobLight	OnTrigger	zCVob*	zCVob*
 0x005FB2A0	void	__thiscall	zCVobLight	OnUntrigger	zCVob*	zCVob*
 0x005FB340	void	__thiscall	zCVobLight	DoAnimation
 0x005FB5F0	void	__thiscall	zCVobLight	SetRange	float	int
-0x005FB6E0	static zCOLOR	__cdecl	zCVobLight	SumLightsAtPositionWS	zCArray< zCVobLight*> const&	zVEC3 const&	int
-0x005FB970	static void	__cdecl	zCVobLight	LoadLightPresets
-0x005FBAD0	static void	__cdecl	zCVobLight	SaveLightPresets
+0x005FB6E0	zCOLOR	__cdecl	zCVobLight	SumLightsAtPositionWS	zCArray< zCVobLight*> const&	zVEC3 const&	int
+0x005FB970	void	__cdecl	zCVobLight	LoadLightPresets
+0x005FBAD0	void	__cdecl	zCVobLight	SaveLightPresets
 0x005FBC00	void	__thiscall	zCVobLight	AddThisToPresetList	zSTRING const&
 0x005FBF00	int	__thiscall	zCVobLight	SetByPreset	zSTRING const&
 0x005FC1A0	int	__thiscall	zCVobLight	SetByPresetInUse
@@ -4514,63 +4514,63 @@
 0x005FCE10	void	__thiscall	zCVobLightData	Unarchive	zCArchiver&
 0x005FD8C0		__thiscall	zCVobLightData	zCVobLightData
 0x005FD9A0	void	__thiscall	zCVobLightData	SetRange	float	int
-0x005FDEF0	static zCObject*	__cdecl	zCVobStair	_CreateNewInstance
+0x005FDEF0	zCObject*	__cdecl	zCVobStair	_CreateNewInstance
 0x005FDF90	zCClassDef*	__thiscall	zCVobStair	_GetClassDef
-0x005FE3E0	static zCObject*	__cdecl	zCTriggerUntouch	_CreateNewInstance
+0x005FE3E0	zCObject*	__cdecl	zCTriggerUntouch	_CreateNewInstance
 0x005FE4D0	zCClassDef*	__thiscall	zCTriggerBase	_GetClassDef
 0x005FE500	zCClassDef*	__thiscall	zCTriggerUntouch	_GetClassDef
 0x005FE510	void	__thiscall	zCTriggerUntouch	OnTouch	zCVob*
 0x005FE520	void	__thiscall	zCTriggerUntouch	OnTrigger	zCVob*	zCVob*
 0x005FE530	void	__thiscall	zCTriggerUntouch	OnUntrigger	zCVob*	zCVob*
-0x005FE7D0	static zCObject*	__cdecl	zCMessageFilter	_CreateNewInstance
+0x005FE7D0	zCObject*	__cdecl	zCMessageFilter	_CreateNewInstance
 0x005FE8F0	zCClassDef*	__thiscall	zCMessageFilter	_GetClassDef
 0x005FE900	void	__thiscall	zCMessageFilter	OnTouch	zCVob*
 0x005FE910	void	__thiscall	zCMessageFilter	OnUntouch	zCVob*
-0x005FEB20	static zCObject*	__cdecl	zCCodeMaster	_CreateNewInstance
+0x005FEB20	zCObject*	__cdecl	zCCodeMaster	_CreateNewInstance
 0x005FED40	zCClassDef*	__thiscall	zCCodeMaster	_GetClassDef
 0x005FED50	void	__thiscall	zCCodeMaster	OnUntouch	zCVob*
 0x005FED60	void	__thiscall	zCCodeMaster	OnTouch	zCVob*
-0x005FEFD0	static zCObject*	__cdecl	zCMoverControler	_CreateNewInstance
+0x005FEFD0	zCObject*	__cdecl	zCMoverControler	_CreateNewInstance
 0x005FF100	zCClassDef*	__thiscall	zCMoverControler	_GetClassDef
 0x005FF110	void	__thiscall	zCMoverControler	OnUntrigger	zCVob*	zCVob*
 0x005FF120	void	__thiscall	zCMoverControler	OnUntouch	zCVob*
 0x005FF130	void	__thiscall	zCMoverControler	OnTouch	zCVob*
-0x005FF340	static zCObject*	__cdecl	zCTriggerWorldStart	_CreateNewInstance
+0x005FF340	zCObject*	__cdecl	zCTriggerWorldStart	_CreateNewInstance
 0x005FF460	zCClassDef*	__thiscall	zCTriggerWorldStart	_GetClassDef
 0x005FF470	void	__thiscall	zCTriggerWorldStart	OnTouch	zCVob*
 0x005FF480	void	__thiscall	zCTriggerWorldStart	OnUntouch	zCVob*
 0x005FF490	void	__thiscall	zCTriggerWorldStart	OnUntrigger	zCVob*	zCVob*
-0x005FF6A0	static zCObject*	__cdecl	zCTrigger	_CreateNewInstance
-0x005FF930	static zCObject*	__cdecl	zCTriggerList	_CreateNewInstance
+0x005FF6A0	zCObject*	__cdecl	zCTrigger	_CreateNewInstance
+0x005FF930	zCObject*	__cdecl	zCTriggerList	_CreateNewInstance
 0x005FFB80	zCClassDef*	__thiscall	zCTriggerList	_GetClassDef
-0x005FFD90	static zCObject*	__cdecl	zCMover	_CreateNewInstance
-0x00600020	static zCObject*	__cdecl	zCTriggerTeleport	_CreateNewInstance
+0x005FFD90	zCObject*	__cdecl	zCMover	_CreateNewInstance
+0x00600020	zCObject*	__cdecl	zCTriggerTeleport	_CreateNewInstance
 0x006001C0	zCClassDef*	__thiscall	zCTriggerTeleport	_GetClassDef
-0x006005D0	static zCObject*	__cdecl	zCEarthquake	_CreateNewInstance
+0x006005D0	zCObject*	__cdecl	zCEarthquake	_CreateNewInstance
 0x006006B0	zCClassDef*	__thiscall	zCEarthquake	_GetClassDef
-0x006008C0	static zCObject*	__cdecl	zCPFXControler	_CreateNewInstance
+0x006008C0	zCObject*	__cdecl	zCPFXControler	_CreateNewInstance
 0x006009A0	zCClassDef*	__thiscall	zCPFXControler	_GetClassDef
-0x00600BB0	static zCObject*	__cdecl	zCTouchDamage	_CreateNewInstance
+0x00600BB0	zCObject*	__cdecl	zCTouchDamage	_CreateNewInstance
 0x00600CD0	zCClassDef*	__thiscall	zCTouchDamage	_GetClassDef
-0x00600EE0	static zCObject*	__cdecl	zCTouchAnimate	_CreateNewInstance
+0x00600EE0	zCObject*	__cdecl	zCTouchAnimate	_CreateNewInstance
 0x00601000	zCClassDef*	__thiscall	zCTouchAnimate	_GetClassDef
-0x00601210	static zCObject*	__cdecl	zCTouchAnimateSound	_CreateNewInstance
+0x00601210	zCObject*	__cdecl	zCTouchAnimateSound	_CreateNewInstance
 0x006013E0	zCClassDef*	__thiscall	zCTouchAnimateSound	_GetClassDef
-0x006015F0	static zCObject*	__cdecl	zCVobAnimate	_CreateNewInstance
+0x006015F0	zCObject*	__cdecl	zCVobAnimate	_CreateNewInstance
 0x006016D0	zCClassDef*	__thiscall	zCVobAnimate	_GetClassDef
-0x006018E0	static zCObject*	__cdecl	zCVobLensFlare	_CreateNewInstance
+0x006018E0	zCObject*	__cdecl	zCVobLensFlare	_CreateNewInstance
 0x006019C0	zCClassDef*	__thiscall	zCVobLensFlare	_GetClassDef
-0x00601BD0	static zCObject*	__cdecl	zCVobScreenFX	_CreateNewInstance
+0x00601BD0	zCObject*	__cdecl	zCVobScreenFX	_CreateNewInstance
 0x00601D20	zCClassDef*	__thiscall	zCVobScreenFX	_GetClassDef
-0x00601F30	static zCObject*	__cdecl	zCEventCommon	_CreateNewInstance
+0x00601F30	zCObject*	__cdecl	zCEventCommon	_CreateNewInstance
 0x006020B0	zCClassDef*	__thiscall	zCEventCommon	_GetClassDef
 0x006020C0	int	__thiscall	zCEventCommon	MD_GetNumOfSubTypes
 0x006020D0	int	__thiscall	zCEventCommon	IsNetRelevant
-0x00602320	static zCObject*	__cdecl	zCEventMover	_CreateNewInstance
+0x00602320	zCObject*	__cdecl	zCEventMover	_CreateNewInstance
 0x006024A0	zCClassDef*	__thiscall	zCEventMover	_GetClassDef
 0x006024B0	int	__thiscall	zCEventMover	MD_GetNumOfSubTypes
 0x006024C0	int	__thiscall	zCEventMover	IsNetRelevant
-0x00602710	static zCObject*	__cdecl	zCEventScreenFX	_CreateNewInstance
+0x00602710	zCObject*	__cdecl	zCEventScreenFX	_CreateNewInstance
 0x00602800	zCClassDef*	__thiscall	zCEventScreenFX	_GetClassDef
 0x00602810	int	__thiscall	zCEventScreenFX	MD_GetNumOfSubTypes
 0x00602860	zSTRING	__thiscall	zCEventCommon	MD_GetSubTypeString	int
@@ -4748,10 +4748,10 @@
 0x0060D790	void	__thiscall	zCTriggerWorldStart	OnTrigger	zCVob*	zCVob*
 0x0060D7B0	void	__thiscall	zCTriggerWorldStart	Archive	zCArchiver&
 0x0060D810	void	__thiscall	zCTriggerWorldStart	Unarchive	zCArchiver&
-0x0060D970	static zCVob*	__cdecl	zCVob	GetAutoLinkParent	zCVob*
-0x0060D9B0	static int	__cdecl	zCVob	CanAutoLinkWith	zCVob*	zCVob*
-0x0060DB00	static void	__cdecl	zCVob	CheckAutoLink	zCVob*	zCVob*
-0x0060DDB0	static void	__cdecl	zCVob	CheckAutoUnlink	zCVob*
+0x0060D970	zCVob*	__cdecl	zCVob	GetAutoLinkParent	zCVob*
+0x0060D9B0	int	__cdecl	zCVob	CanAutoLinkWith	zCVob*	zCVob*
+0x0060DB00	void	__cdecl	zCVob	CheckAutoLink	zCVob*	zCVob*
+0x0060DDB0	void	__cdecl	zCVob	CheckAutoUnlink	zCVob*
 0x0060DFE0	void	__thiscall	zCVob	CalcGroundPoly
 0x0060E170	void	__thiscall	zCVob	SetCollTypeDefaultFromVisual
 0x0060E2E0	void	__thiscall	zCVob	TouchMovement
@@ -4828,7 +4828,7 @@
 0x00612760	void	__fastcall	zCVob	ExecuteCollisionResponse	zCArray< zCCollisionReport*> const&	int&
 0x00612850	void	__thiscall	zCVob	CheckAndResolveCollisions
 0x00612CE0	int	__thiscall	zCVob	IsColliding
-0x00613150	static zCObject*	__cdecl	zCWorld	_CreateNewInstance
+0x00613150	zCObject*	__cdecl	zCWorld	_CreateNewInstance
 0x006131C0		__thiscall	zCWorld	zCWorld
 0x00613730	zCClassDef*	__thiscall	zCWorld	_GetClassDef
 0x00613740	zCPlayerGroup*	__thiscall	zCWorld	GetPlayerGroup
@@ -4836,7 +4836,7 @@
 0x00613A90	void	__thiscall	zCWorld	SetSkyControlerIndoor	zCSkyControler*
 0x00613AD0	void	__thiscall	zCWorld	SetSkyControlerOutdoor	zCSkyControler*
 0x00613B10	void	__thiscall	zCWorld	RenderWaynet	zCCamera*
-0x00613B30	static int	__cdecl	zCWorld	ActiveZoneListCompare	void const*	void const*
+0x00613B30	int	__cdecl	zCWorld	ActiveZoneListCompare	void const*	void const*
 0x00613B80	void	__thiscall	zCWorld	AddZone	zCZone*
 0x00613D10	void	__thiscall	zCWorld	RemoveZone	zCZone*
 0x00613E40	void	__thiscall	zCWorld	RemoveAllZones
@@ -4961,29 +4961,29 @@
 0x00629AB0	void	__thiscall	zCVobCallback_PrintBigBBox	HandleVob	zCVob*	void*
 0x0062A2A0	void	__thiscall	zCShowMemCallback	DoWorldPerFrameCallback	zCWorld*	zCCamera*
 0x0062ADB0	void	__cdecl		zDieter_ShutDown
-0x0062B430	static zCObject*	__cdecl	zCZoneReverb	_CreateNewInstance
+0x0062B430	zCObject*	__cdecl	zCZoneReverb	_CreateNewInstance
 0x0062B500	zCClassDef*	__thiscall	zCZone	_GetClassDef
 0x0062B510	void	__thiscall	zCZone	ProcessZoneList	zCArraySort< zCZone*> const&	zCArraySort< zCZone*> const&	zCWorld*
 0x0062B520	zCClassDef*	__thiscall	zCZone	GetDefaultZoneClass
 0x0062B550	zCClassDef*	__thiscall	zCZoneReverb	_GetClassDef
-0x0062B760	static zCObject*	__cdecl	zCZoneReverbDefault	_CreateNewInstance
+0x0062B760	zCObject*	__cdecl	zCZoneReverbDefault	_CreateNewInstance
 0x0062B850	zCClassDef*	__thiscall	zCZoneReverbDefault	_GetClassDef
 0x0062B860	void	__thiscall	zCZoneReverbDefault	ProcessZoneList	zCArraySort< zCZone*> const&	zCArraySort< zCZone*> const&	zCWorld*
-0x0062BB10	static zCObject*	__cdecl	zCZoneVobFarPlane	_CreateNewInstance
+0x0062BB10	zCObject*	__cdecl	zCZoneVobFarPlane	_CreateNewInstance
 0x0062BC00	zCClassDef*	__thiscall	zCZoneVobFarPlane	_GetClassDef
-0x0062BE10	static zCObject*	__cdecl	zCZoneVobFarPlaneDefault	_CreateNewInstance
+0x0062BE10	zCObject*	__cdecl	zCZoneVobFarPlaneDefault	_CreateNewInstance
 0x0062BF00	zCClassDef*	__thiscall	zCZoneVobFarPlaneDefault	_GetClassDef
-0x0062C1B0	static zCObject*	__cdecl	zCZoneMusic	_CreateNewInstance
+0x0062C1B0	zCObject*	__cdecl	zCZoneMusic	_CreateNewInstance
 0x0062C290	zCClassDef*	__thiscall	zCZoneMusic	_GetClassDef
-0x0062C540	static zCObject*	__cdecl	zCZoneZFog	_CreateNewInstance
+0x0062C540	zCObject*	__cdecl	zCZoneZFog	_CreateNewInstance
 0x0062C630	zCClassDef*	__thiscall	zCZoneZFog	_GetClassDef
-0x0062C840	static zCObject*	__cdecl	zCZoneZFogDefault	_CreateNewInstance
-0x0062CB30	static zCObject*	__cdecl	zCVobSound	_CreateNewInstance
-0x0062CDC0	static zCObject*	__cdecl	zCVobSoundDaytime	_CreateNewInstance
+0x0062C840	zCObject*	__cdecl	zCZoneZFogDefault	_CreateNewInstance
+0x0062CB30	zCObject*	__cdecl	zCVobSound	_CreateNewInstance
+0x0062CDC0	zCObject*	__cdecl	zCVobSoundDaytime	_CreateNewInstance
 0x0062CEB0	zCClassDef*	__thiscall	zCVobSoundDaytime	_GetClassDef
 0x0062CEC0	zCClassDef*	__thiscall	zCVobSoundDaytime	GetZoneMotherClass
 0x0062CF20		__thiscall	zCBBox3DSorterBase	zCBBox3DSorterBase
-0x0062D050	static int	__cdecl	zCBBox3DSorterBase	ArrayCompare	void const*	void const*
+0x0062D050	int	__cdecl	zCBBox3DSorterBase	ArrayCompare	void const*	void const*
 0x0062D140	void	__thiscall	zCBBox3DSorterBase	Clear
 0x0062D1C0	void	__thiscall	zCBBox3DSorterBase	AllocAbs	int
 0x0062D250	void	__thiscall	zCBBox3DSorterBase	Insert	void*
@@ -5056,8 +5056,8 @@
 0x00631650	void	__thiscall	zCZoneReverb	Unarchive	zCArchiver&
 0x00631700	void	__thiscall	zCZoneReverbDefault	ThisVobAddedToWorld	zCWorld*
 0x00631740	void	__thiscall	zCZoneReverbDefault	Unarchive	zCArchiver&
-0x00631800	static int	__cdecl	zCZoneMusic	SetAutochange	int
-0x00631820	static void	__cdecl	zCZoneMusic	GetAutochange	int*
+0x00631800	int	__cdecl	zCZoneMusic	SetAutochange	int
+0x00631820	void	__cdecl	zCZoneMusic	GetAutochange	int*
 0x00631DD0	int	__cdecl		CapsLock
 0x00631E00	void	__cdecl		SetCapsLock	int
 0x00631E60	void	__cdecl		ToggleCapsLock
@@ -5120,9 +5120,9 @@
 0x00639820		__thiscall	oCAIHuman_Stand	oCAIHuman_Stand	zCVob*
 0x00639950	zCClassDef*	__thiscall	oCAIHuman_Stand	_GetClassDef
 0x006399A0	void	__thiscall	oCAIHuman_Stand	DoAI	zCVob*	int&
-0x00639CC0	static zCObject*	__cdecl	oCAIHuman	_CreateNewInstance
-0x00639F50	static zCObject*	__cdecl	oCAICamera	_CreateNewInstance
-0x0063A2E0	static zCObject*	__cdecl	oCAIHuman_Stand	_CreateNewInstance
+0x00639CC0	zCObject*	__cdecl	oCAIHuman	_CreateNewInstance
+0x00639F50	zCObject*	__cdecl	oCAICamera	_CreateNewInstance
+0x0063A2E0	zCObject*	__cdecl	oCAIHuman_Stand	_CreateNewInstance
 0x0063A7C0	void	__thiscall	oCAISound	RemoveSlideSound
 0x0063A7E0	void	__thiscall	oCAISound	CheckSlideSound	zCVob*
 0x0063A870	int	__thiscall	oCAISound	GetSoundMaterial	zCVob*	zCSoundManager::zTSndManMedium&
@@ -5178,11 +5178,11 @@
 0x0063D710	void	__thiscall	oCAIDrop	SetStartPosition	zVEC3&
 0x0063D890	void	__thiscall	oCAIDrop	Archive	zCArchiver&
 0x0063D8A0	void	__thiscall	oCAIDrop	Unarchive	zCArchiver&
-0x0063DCB0	static zCObject*	__cdecl	oCAIArrowBase	_CreateNewInstance
-0x0063DFC0	static zCObject*	__cdecl	oCAIArrow	_CreateNewInstance
-0x0063E2E0	static zCObject*	__cdecl	oCAIDrop	_CreateNewInstance
-0x0063E5E0	static zCObject*	__cdecl	oCAIVobMove	_CreateNewInstance
-0x0063E8E0	static zCObject*	__cdecl	oCAIVobMoveTorch	_CreateNewInstance
+0x0063DCB0	zCObject*	__cdecl	oCAIArrowBase	_CreateNewInstance
+0x0063DFC0	zCObject*	__cdecl	oCAIArrow	_CreateNewInstance
+0x0063E2E0	zCObject*	__cdecl	oCAIDrop	_CreateNewInstance
+0x0063E5E0	zCObject*	__cdecl	oCAIVobMove	_CreateNewInstance
+0x0063E8E0	zCObject*	__cdecl	oCAIVobMoveTorch	_CreateNewInstance
 0x0063EE20		__thiscall	oTGilValues	oTGilValues
 0x0063EE90		__thiscall	oCAniCtrl_Human	oCAniCtrl_Human
 0x0063EFE0	zCClassDef*	__thiscall	oCAniCtrl_Human	_GetClassDef
@@ -5228,8 +5228,8 @@
 0x0064ACE0	void	__thiscall	oCAniCtrl_Human	DoAutoRoll
 0x0064ADC0	void	__thiscall	oCAniCtrl_Human	TurnDegrees	float	int
 0x0064AEA0	int	__thiscall	oCAniCtrl_Human	WallInFront	float
-0x0064AF70	static zSTRING	__cdecl	oCAniCtrl_Human	GetWeaponString	int
-0x0064B240	static zSTRING	__cdecl	oCAniCtrl_Human	GetWeaponHitString	int
+0x0064AF70	zSTRING	__cdecl	oCAniCtrl_Human	GetWeaponString	int
+0x0064B240	zSTRING	__cdecl	oCAniCtrl_Human	GetWeaponHitString	int
 0x0064B510	int	__thiscall	oCAniCtrl_Human	IsDefending
 0x0064B570	void	__thiscall	oCAniCtrl_Human	GetFightLimbs
 0x0064C120	void	__thiscall	oCAniCtrl_Human	DoSparks	zVEC3&	zSTRING const&
@@ -5303,7 +5303,7 @@
 0x00654A20	int	__thiscall	oCAniCtrl_Human	IsInWeaponChoose
 0x00654AC0	int	__thiscall	oCAniCtrl_Human	GetWaterLevel
 0x00654B30	int	__thiscall	oCAniCtrl_Human	IsInWater
-0x00654DC0	static zCObject*	__cdecl	oCAniCtrl_Human	_CreateNewInstance
+0x00654DC0	zCObject*	__cdecl	oCAniCtrl_Human	_CreateNewInstance
 0x006550D0		__thiscall	oCBarrier	oCBarrier
 0x00655D90	void	__thiscall	oCBarrier	Initialise	int
 0x00655E80		__thiscall	myThunder	myThunder
@@ -5354,10 +5354,10 @@
 0x0065A900	void	__thiscall	oCDoc	MapInitCoordinates	float	float	float	float	float	float	float	float
 0x0065A960	void	__thiscall	oCDoc	MapDrawCoordinates	float	float
 0x0065AC70	void	__thiscall	oCDoc	SetLevelName	zSTRING const&
-0x0065AE80	static void	__cdecl	oCNpcFocus	InitFocusModes
-0x0065AFB0	static void	__cdecl	oCNpcFocus	ExitFocusModes
-0x0065AFF0	static void	__cdecl	oCNpcFocus	SetFocusMode	int
-0x0065B0D0	static zSTRING	__cdecl	oCNpcFocus	GetFocusName
+0x0065AE80	void	__cdecl	oCNpcFocus	InitFocusModes
+0x0065AFB0	void	__cdecl	oCNpcFocus	ExitFocusModes
+0x0065AFF0	void	__cdecl	oCNpcFocus	SetFocusMode	int
+0x0065B0D0	zSTRING	__cdecl	oCNpcFocus	GetFocusName
 0x0065B1B0		__thiscall	oCNpcFocus	oCNpcFocus
 0x0065B1E0	void	__thiscall	oCNpcFocus	Init	zSTRING&
 0x0065B210	void	__thiscall	oCNpcFocus	Init	int
@@ -5467,7 +5467,7 @@
 0x00666790	void	__thiscall	oCGame	LoadWorldDyn	zSTRING const&
 0x00666D00	int	__thiscall	oCGame	IsInWorld	zSTRING const&
 0x00666EC0	void	__thiscall	oCGame	RenderBlit
-0x00666EE0	static int	__cdecl	oCGame	Sort_Routine	oCGame::TObjectRoutine*	oCGame::TObjectRoutine*
+0x00666EE0	int	__cdecl	oCGame	Sort_Routine	oCGame::TObjectRoutine*	oCGame::TObjectRoutine*
 0x00666F10	void	__thiscall	oCGame	InsertObjectRoutine	int	zSTRING const&	int	int	int
 0x006670F0	void	__thiscall	oCGame	ResetObjectRoutineList
 0x00667110	void	__thiscall	oCGame	ClearObjectRoutineList
@@ -5487,7 +5487,7 @@
 0x006684F0	void	__cdecl		Game_PlaySound	zSTRING&
 0x00668530	void	__cdecl		Game_ToggleScreenMode
 0x00668560	void	__cdecl		Edit_Changed	zSTRING const&
-0x006685C0	static int	__cdecl	oCGame	ConsoleEvalFunc	zSTRING const&	zSTRING&
+0x006685C0	int	__cdecl	oCGame	ConsoleEvalFunc	zSTRING const&	zSTRING&
 0x0066C900	void	__thiscall	zCVob	SetStaticVob	int
 0x0066C920	zTVobType	__thiscall	zCVob	GetVobType
 0x0066C930	void	__thiscall	zCVob	SetDrawBBox3D	int
@@ -5529,7 +5529,7 @@
 0x00691270	void	__thiscall	oCHelp	Update
 0x00691280	void	__thiscall	oCHelp	Redraw	zCVob*
 0x00691730		__thiscall	oCInfoManager	oCInfoManager	zCParser*
-0x00691A50	static int	__cdecl	oCInfoManager	CompareInfos	oCInfo*	oCInfo*
+0x00691A50	int	__cdecl	oCInfoManager	CompareInfos	oCInfo*	oCInfo*
 0x00691B10	oCInfo*	__thiscall	oCInfoManager	GetInformation	oCNpc*	oCNpc*	int
 0x00691C80	oCInfo*	__thiscall	oCInfoManager	GetInformation	int
 0x00691CB0	int	__thiscall	oCInfoManager	GetInfoCount	oCNpc*	oCNpc*
@@ -5562,8 +5562,8 @@
 0x006930A0	void	__thiscall	oCInfo	RemoveChoice	zSTRING
 0x00693220	void	__thiscall	oCInfo	RemoveAllChoices
 0x00693A00	short	__cdecl		TransferCountToAmount	short
-0x00693A40	static void	__cdecl	oCItemContainer	Container_PrepareDraw
-0x00693A50	static void	__cdecl	oCItemContainer	Container_Draw
+0x00693A40	void	__cdecl	oCItemContainer	Container_PrepareDraw
+0x00693A50	void	__cdecl	oCItemContainer	Container_Draw
 0x00693A70	oCItemContainer*	__thiscall	oCItemContainer	GetNextContainerLeft	oCItemContainer*
 0x00693B00	oCItemContainer*	__thiscall	oCItemContainer	GetNextContainerRight	oCItemContainer*
 0x00693B90		__thiscall	oCItemContainer	oCItemContainer
@@ -5668,8 +5668,8 @@
 0x0069DC00	void	__thiscall	oCNpcInventory	UnpackAllItems
 0x0069DC20	void	__thiscall	oCNpcInventory	PackItemsInCategory	int	int
 0x0069DF90	void	__thiscall	oCNpcInventory	UnpackItemsInCategory	int
-0x0069E690	static void	__cdecl	oCItem	SetLightingSwell	int
-0x0069E6A0	static int	__cdecl	oCItem	GetLightingSwell
+0x0069E690	void	__cdecl	oCItem	SetLightingSwell	int
+0x0069E6A0	int	__cdecl	oCItem	GetLightingSwell
 0x0069E6B0		__thiscall	oCItem	oCItem
 0x0069E7E0	int	__thiscall	oCVob	DoFocusCheckBBox
 0x0069E7F0	void	__thiscall	oCVob	SetSoundMaterial	oTSndMaterial
@@ -5735,7 +5735,7 @@
 0x006A0E30	void	__thiscall	oCItem	Unarchive	zCArchiver&
 0x006A0EC0	oCAIVobMove*	__thiscall	oCItem	GetAIVobMove
 0x006A0FC0	int	__fastcall	oCItem	Render	zTRenderContext&
-0x006A1200	static zCObject*	__cdecl	oCItem	_CreateNewInstance
+0x006A1200	zCObject*	__cdecl	oCItem	_CreateNewInstance
 0x006A1590		__thiscall	oCTradeManager	oCTradeManager	zCParser*
 0x006A1810	oCItemReactModule*	__thiscall	oCTradeManager	GetModule	oCNpc*	oCNpc*	oCItem*
 0x006A19F0		__thiscall	oCItemReactModule	oCItemReactModule	int
@@ -5747,7 +5747,7 @@
 0x006A1AD0	int	__thiscall	oCItemReactModule	GetNpcInstance
 0x006A1E40		__thiscall	oCMissionManager	oCMissionManager
 0x006A1F60	void	__thiscall	oCMissionManager	ClearMissions
-0x006A1FB0	static int	__cdecl	oCMissionManager	SortMissions	void const*	void const*
+0x006A1FB0	int	__cdecl	oCMissionManager	SortMissions	void const*	void const*
 0x006A1FD0	oCMission*	__thiscall	oCMissionManager	GetMission	int
 0x006A2030	void	__thiscall	oCMissionManager	CreateAllMissions
 0x006A2260	oCMission*	__thiscall	oCMissionManager	OfferThisMission	oCNpc*	oCNpc*	int
@@ -5781,9 +5781,9 @@
 0x006A4C10	int	__thiscall	oCMission	OnTime
 0x006A4C70	void	__thiscall	oCMission	Archive	zCArchiver&
 0x006A4D50	oCMission*	__thiscall	oCMission	Unarchive	zCArchiver&
-0x006A5900	static zCObject*	__cdecl	oCMOB	_CreateNewInstance
-0x006A5B70	static zCObject*	__cdecl	oCMobInter	_CreateNewInstance
-0x006A5E00	static zCObject*	__cdecl	oCMobBed	_CreateNewInstance
+0x006A5900	zCObject*	__cdecl	oCMOB	_CreateNewInstance
+0x006A5B70	zCObject*	__cdecl	oCMobInter	_CreateNewInstance
+0x006A5E00	zCObject*	__cdecl	oCMobBed	_CreateNewInstance
 0x006A5FF0	int	__thiscall	oCMobInter	GetState
 0x006A6000	int	__thiscall	oCMobInter	GetStateNum
 0x006A6020	void	__thiscall	oCMobInter	SetDirection	oCMobInter::TMobInterDirection
@@ -5791,31 +5791,31 @@
 0x006A6050	int	__thiscall	oCMobInter	IsIn	int
 0x006A6060	zSTRING const*	__thiscall	oCMobInter	GetTriggerTarget	int
 0x006A60A0	zCClassDef*	__thiscall	oCMobBed	_GetClassDef
-0x006A62B0	static zCObject*	__cdecl	oCMobSwitch	_CreateNewInstance
+0x006A62B0	zCObject*	__cdecl	oCMobSwitch	_CreateNewInstance
 0x006A6400	zCClassDef*	__thiscall	oCMobSwitch	_GetClassDef
-0x006A6810	static zCObject*	__cdecl	oCMobContainer	_CreateNewInstance
+0x006A6810	zCObject*	__cdecl	oCMobContainer	_CreateNewInstance
 0x006A6A00	zCClassDef*	__thiscall	oCMobLockable	_GetClassDef
 0x006A6A10	void	__thiscall	oCMobLockable	SetLocked	int
 0x006A6A30	void	__thiscall	oCMobLockable	SetKeyInstance	zSTRING const&
 0x006A6B70	void	__thiscall	oCMobLockable	SetPickLockStr	zSTRING const&
 0x006A6CB0	void	__thiscall	oCMobLockable	OnMessage	zCEventMessage*	zCVob*
 0x006A6D80	zCClassDef*	__thiscall	oCMobContainer	_GetClassDef
-0x006A6F90	static zCObject*	__cdecl	oCMobWheel	_CreateNewInstance
+0x006A6F90	zCObject*	__cdecl	oCMobWheel	_CreateNewInstance
 0x006A70F0	zCClassDef*	__thiscall	oCMobWheel	_GetClassDef
-0x006A7300	static zCObject*	__cdecl	oCMobLadder	_CreateNewInstance
+0x006A7300	zCObject*	__cdecl	oCMobLadder	_CreateNewInstance
 0x006A7470	zCClassDef*	__thiscall	oCMobLadder	_GetClassDef
 0x006A7480	int	__thiscall	oCMobLadder	DoFocusCheckBBox
-0x006A7690	static zCObject*	__cdecl	oCMobDoor	_CreateNewInstance
+0x006A7690	zCObject*	__cdecl	oCMobDoor	_CreateNewInstance
 0x006A7880	zCClassDef*	__thiscall	oCMobDoor	_GetClassDef
 0x006A7890	void	__thiscall	oCMobDoor	Open	oCNpc*
 0x006A78A0	void	__thiscall	oCMobDoor	Close	oCNpc*
-0x006A7AB0	static zCObject*	__cdecl	oCMobFire	_CreateNewInstance
+0x006A7AB0	zCObject*	__cdecl	oCMobFire	_CreateNewInstance
 0x006A7CD0	zCClassDef*	__thiscall	oCMobFire	_GetClassDef
-0x006A7EE0	static zCObject*	__cdecl	oCMobItemSlot	_CreateNewInstance
+0x006A7EE0	zCObject*	__cdecl	oCMobItemSlot	_CreateNewInstance
 0x006A7FA0	zCClassDef*	__thiscall	oCMobItemSlot	_GetClassDef
-0x006A81B0	static zCObject*	__cdecl	oCDummyVobGenerator	_CreateNewInstance
+0x006A81B0	zCObject*	__cdecl	oCDummyVobGenerator	_CreateNewInstance
 0x006A8290	zCClassDef*	__thiscall	oCDummyVobGenerator	_GetClassDef
-0x006A8520	static zCObject*	__cdecl	oCMobMsg	_CreateNewInstance
+0x006A8520	zCObject*	__cdecl	oCMobMsg	_CreateNewInstance
 0x006A8690	zCClassDef*	__thiscall	oCMobMsg	_GetClassDef
 0x006A86A0	int	__thiscall	oCMobMsg	IsNetRelevant
 0x006A86B0		__thiscall	oCMobMsg	oCMobMsg	oCMobMsg::TMobMsgSubType	oCNpc*
@@ -5852,10 +5852,10 @@
 0x006A9B00	void	__thiscall	oCMOB	Archive	zCArchiver&
 0x006A9C40	void	__thiscall	oCMOB	Unarchive	zCArchiver&
 0x006AA2D0	int	__thiscall	oCMOB	AllowDiscardingOfSubtree
-0x006AA2E0	static int	__cdecl	oCMobInter	SetAllMobsToState	oCWorld*	zSTRING const&	int
-0x006AA300	static int	__cdecl	oCMobInter	TraverseMobs	zCTree< zCVob>*	zSTRING const&	int	int
-0x006AA490	static void	__cdecl	oCMobInter	TriggerAllMobsToTmpState	zCWorld*
-0x006AA560	static void	__cdecl	oCMobInter	TraverseTriggerMobs	zCTree< zCVob>*
+0x006AA2E0	int	__cdecl	oCMobInter	SetAllMobsToState	oCWorld*	zSTRING const&	int
+0x006AA300	int	__cdecl	oCMobInter	TraverseMobs	zCTree< zCVob>*	zSTRING const&	int	int
+0x006AA490	void	__cdecl	oCMobInter	TriggerAllMobsToTmpState	zCWorld*
+0x006AA560	void	__cdecl	oCMobInter	TraverseTriggerMobs	zCTree< zCVob>*
 0x006AA630		__thiscall	oCMobInter	oCMobInter
 0x006AA7B0	zCClassDef*	__thiscall	oCMobInter	_GetClassDef
 0x006AAA10	void	__thiscall	oCMobInter	SetVisual	zCVisual*
@@ -5988,8 +5988,8 @@
 0x006B8070	int	__thiscall	oCNewsMemory	DeleteNewsByNumber	int
 0x006B8110	void	__thiscall	oCNewsMemory	Archive	zCArchiver&
 0x006B8190	void	__thiscall	oCNewsMemory	Unarchive	zCArchiver&
-0x006B8360	static int	__cdecl	oCNews	GetRemainingNews
-0x006B8370	static void	__cdecl	oCNews	CheckRemainingNews
+0x006B8360	int	__cdecl	oCNews	GetRemainingNews
+0x006B8370	void	__cdecl	oCNews	CheckRemainingNews
 0x006B8850		__thiscall	oCNews	oCNews
 0x006B8A10		__thiscall	oCNews	oCNews	int	int	oCNpc*	oCNpc*	oCNpc*	int
 0x006B8DE0	int	__thiscall	oCNews	GetID
@@ -6002,10 +6002,10 @@
 0x006B8EA0	void	__thiscall	oCNews	GetNewsData	int&	int&	oCNpc*&	oCNpc*&	oCNpc*&
 0x006B8FB0	void	__thiscall	oCNews	Archive	zCArchiver&
 0x006B9260	void	__thiscall	oCNews	Unarchive	zCArchiver&
-0x006BA4D0	static zCObject*	__cdecl	oCNpcTalent	_CreateNewInstance
+0x006BA4D0	zCObject*	__cdecl	oCNpcTalent	_CreateNewInstance
 0x006BA640	zCClassDef*	__thiscall	oCNpcTalent	_GetClassDef
 0x006BA650		__thiscall	oCNpcTalent	oCNpcTalent
-0x006BA800	static void	__cdecl	oCNpcTalent	CreateTalentList	zCArray< oCNpcTalent*>*
+0x006BA800	void	__cdecl	oCNpcTalent	CreateTalentList	zCArray< oCNpcTalent*>*
 0x006BA970	void	__thiscall	oCNpcTalent	Archive	zCArchiver&
 0x006BA9B0	void	__thiscall	oCNpcTalent	Unarchive	zCArchiver&
 0x006BAA00	int	__cdecl		BitToNumber	int
@@ -6293,8 +6293,8 @@
 0x006D4370	zSTRING	__thiscall	oCNpc	GetInstanceName
 0x006D43B0	int	__thiscall	oCNpc	GetScriptInstance	zSTRING*&	int&
 0x006D43E0	int	__thiscall	oCNpc	SetByScriptInstance	zSTRING const*	int
-0x006D4430	static zSTRING	__cdecl	oCNpc	GetInstanceByID	int
-0x006D4490	static int	__cdecl	oCNpc	GetIDByInstance	zSTRING const&
+0x006D4430	zSTRING	__cdecl	oCNpc	GetInstanceByID	int
+0x006D4490	int	__cdecl	oCNpc	GetIDByInstance	zSTRING const&
 0x006D4510	void	__thiscall	oCNpc	Disable
 0x006D4820	void	__thiscall	oCNpc	Enable	zVEC3&
 0x006D4E70	void	__thiscall	oCNpc	ClearEM
@@ -6428,7 +6428,7 @@
 0x006E9000	void	__thiscall	oCNpc	SetNpcsToState	int	int
 0x006E90D0	void	__thiscall	oCNpc	StopCutscenes
 0x006E9130	void	__thiscall	oCNpc	CreatePassivePerception	int	zCVob*	zCVob*
-0x006E9AF0	static void	__cdecl	oCNpc	CreateSoundPerception	int	zCVob*	zVEC3 const&	zCVob*	int
+0x006E9AF0	void	__cdecl	oCNpc	CreateSoundPerception	int	zCVob*	zVEC3 const&	zCVob*	int
 0x006E9FD0	int	__thiscall	oCNpc	AssessMurder_S	oCNpc*
 0x006E9FF0	int	__thiscall	oCNpc	AssessThreat_S	oCNpc*
 0x006EA1A0	int	__thiscall	oCNpc	AssessDefeat_S	oCNpc*
@@ -6436,8 +6436,8 @@
 0x006EA370	int	__thiscall	oCNpc	AssessOthersDamage_S	oCNpc*	oCNpc*	int
 0x006EA390	int	__thiscall	oCNpc	AssessRemoveWeapon_S	oCNpc*
 0x006EA3B0	int	__thiscall	oCNpc	ObserveIntruder_S
-0x006EA3F0	static int	__cdecl	oCNpc	AssessFightSound_S	zCVob*	zVEC3 const&	zCVob*
-0x006EA420	static int	__cdecl	oCNpc	AssessQuietSound_S	zCVob*	zVEC3 const&
+0x006EA3F0	int	__cdecl	oCNpc	AssessFightSound_S	zCVob*	zVEC3 const&	zCVob*
+0x006EA420	int	__cdecl	oCNpc	AssessQuietSound_S	zCVob*	zVEC3 const&
 0x006EA440	int	__thiscall	oCNpc	AssessWarn_S	oCNpc*
 0x006EA460	int	__thiscall	oCNpc	CatchThief_S	oCNpc*
 0x006EA610	int	__thiscall	oCNpc	AssessTheft_S	oCNpc*
@@ -6472,12 +6472,12 @@
 0x006EC4A0	void	__thiscall	oCNpc	DisablePerception	int
 0x006EC500	int	__thiscall	oCNpc	HasPerception	int
 0x006EC540	int	__thiscall	oCNpc	GetPerceptionFunc	int
-0x006EC580	static void	__cdecl	oCNpc	SetPerceptionRange	int	float
-0x006EC5A0	static int	__cdecl	oCNpc	IsInPerceptionRange	int	float
-0x006EC5D0	static int	__cdecl	oCNpc	IsInPerceptionRange	int	zCVob*	zCVob*
-0x006EC610	static void	__cdecl	oCNpc	InitStatics
-0x006ECA40	static void	__cdecl	oCNpc	ReleaseStatics
-0x006ECA50	static void	__cdecl	oCNpc	InitBodyStates
+0x006EC580	void	__cdecl	oCNpc	SetPerceptionRange	int	float
+0x006EC5A0	int	__cdecl	oCNpc	IsInPerceptionRange	int	float
+0x006EC5D0	int	__cdecl	oCNpc	IsInPerceptionRange	int	zCVob*	zCVob*
+0x006EC610	void	__cdecl	oCNpc	InitStatics
+0x006ECA40	void	__cdecl	oCNpc	ReleaseStatics
+0x006ECA50	void	__cdecl	oCNpc	InitBodyStates
 0x006ECAB0	void	__thiscall	oCNpc	SetBodyState	int
 0x006ECC00	int	__thiscall	oCNpc	GetBodyState
 0x006ECC10	int	__thiscall	oCNpc	GetFullBodyState
@@ -6495,13 +6495,13 @@
 0x006ED250	void	__thiscall	oCNpc	ShowDebugInfo	zCCamera*
 0x006ED460	float	__thiscall	oCNpc	GetDamageMultiplier
 0x006ED470	void	__thiscall	oCNpc	SetDamageMultiplier	float
-0x006ED480	static void	__cdecl	oCNpc	SetNpcAIDisabled	int
-0x006ED4D0	static void	__cdecl	oCNpc	ProcessAITimer
-0x006ED550	static int	__cdecl	oCNpc	IsScriptStateAIEnabled
-0x006ED5A0	static int	__cdecl	oCNpc	IsMessageAIEnabled
+0x006ED480	void	__cdecl	oCNpc	SetNpcAIDisabled	int
+0x006ED4D0	void	__cdecl	oCNpc	ProcessAITimer
+0x006ED550	int	__cdecl	oCNpc	IsScriptStateAIEnabled
+0x006ED5A0	int	__cdecl	oCNpc	IsMessageAIEnabled
 0x006ED5F0	void	__thiscall	oCNpc	SetShowNews	int
 0x006ED640	void	__thiscall	oCNpc	UseStandAI
-0x006ED8F0	static zCObject*	__cdecl	oCNpc	_CreateNewInstance
+0x006ED8F0	zCObject*	__cdecl	oCNpc	_CreateNewInstance
 0x006EF880	oCItem*	__cdecl		zDYNAMIC_CAST	zCObject const*
 0x006EF8B0	oCVob*	__cdecl		zDYNAMIC_CAST	zCObject const*
 0x006EF8E0	zCModel*	__cdecl		zDYNAMIC_CAST	zCObject const*
@@ -6514,7 +6514,7 @@
 0x006F0860	void	__thiscall	oCNpc	CloseSteal
 0x006F0880	void	__thiscall	oCNpc	OpenDeadNpc
 0x006F0A10	void	__thiscall	oCNpc	CloseDeadNpc
-0x006F0F80	static zCObject*	__cdecl	oCNpcMessage	_CreateNewInstance
+0x006F0F80	zCObject*	__cdecl	oCNpcMessage	_CreateNewInstance
 0x006F10A0	zCClassDef*	__thiscall	oCNpcMessage	_GetClassDef
 0x006F10B0	void	__thiscall	oCNpcMessage	Delete
 0x006F10C0	void	__thiscall	oCNpcMessage	SetInUse	int
@@ -6525,32 +6525,32 @@
 0x006F1110	int	__thiscall	oCNpcMessage	IsDeleted
 0x006F1120	int	__thiscall	oCNpcMessage	IsDeleteable
 0x006F1130	int	__thiscall	oCNpcMessage	IsHighPriority
-0x006F1340	static zCObject*	__cdecl	oCMsgDamage	_CreateNewInstance
+0x006F1340	zCObject*	__cdecl	oCMsgDamage	_CreateNewInstance
 0x006F1470	zCClassDef*	__thiscall	oCMsgDamage	_GetClassDef
 0x006F1480	int	__thiscall	oCMsgDamage	IsNetRelevant
 0x006F1490	int	__thiscall	oCMsgDamage	IsOverlay
 0x006F14A0	int	__thiscall	oCMsgDamage	IsDeleteable
 0x006F14B0	int	__thiscall	oCMsgDamage	IsHighPriority
-0x006F16C0	static zCObject*	__cdecl	oCMsgWeapon	_CreateNewInstance
+0x006F16C0	zCObject*	__cdecl	oCMsgWeapon	_CreateNewInstance
 0x006F17D0	zCClassDef*	__thiscall	oCMsgWeapon	_GetClassDef
-0x006F1A80	static zCObject*	__cdecl	oCMsgMovement	_CreateNewInstance
+0x006F1A80	zCObject*	__cdecl	oCMsgMovement	_CreateNewInstance
 0x006F1BA0	zCClassDef*	__thiscall	oCMsgMovement	_GetClassDef
-0x006F1DB0	static zCObject*	__cdecl	oCMsgAttack	_CreateNewInstance
+0x006F1DB0	zCObject*	__cdecl	oCMsgAttack	_CreateNewInstance
 0x006F1ED0	zCClassDef*	__thiscall	oCMsgAttack	_GetClassDef
 0x006F1EE0	int	__thiscall	oCMsgAttack	IsNetRelevant
 0x006F1EF0	int	__thiscall	oCMsgAttack	IsOverlay
-0x006F2110	static zCObject*	__cdecl	oCMsgUseItem	_CreateNewInstance
+0x006F2110	zCObject*	__cdecl	oCMsgUseItem	_CreateNewInstance
 0x006F2240	zCClassDef*	__thiscall	oCMsgUseItem	_GetClassDef
 0x006F2250	int	__thiscall	oCMsgUseItem	IsNetRelevant
-0x006F2460	static zCObject*	__cdecl	oCMsgState	_CreateNewInstance
+0x006F2460	zCObject*	__cdecl	oCMsgState	_CreateNewInstance
 0x006F2580	zCClassDef*	__thiscall	oCMsgState	_GetClassDef
 0x006F2590	int	__thiscall	oCMsgState	IsOverlay
-0x006F27A0	static zCObject*	__cdecl	oCMsgManipulate	_CreateNewInstance
+0x006F27A0	zCObject*	__cdecl	oCMsgManipulate	_CreateNewInstance
 0x006F28C0	zCClassDef*	__thiscall	oCMsgManipulate	_GetClassDef
 0x006F28D0	int	__thiscall	oCMsgManipulate	IsNetRelevant
-0x006F2AF0	static zCObject*	__cdecl	oCMsgConversation	_CreateNewInstance
+0x006F2AF0	zCObject*	__cdecl	oCMsgConversation	_CreateNewInstance
 0x006F2C20	zCClassDef*	__thiscall	oCMsgConversation	_GetClassDef
-0x006F2E30	static zCObject*	__cdecl	oCMsgMagic	_CreateNewInstance
+0x006F2E30	zCObject*	__cdecl	oCMsgMagic	_CreateNewInstance
 0x006F2F20	zCClassDef*	__thiscall	oCMsgMagic	_GetClassDef
 0x006F2F30	int	__thiscall	oCMsgMagic	IsJob
 0x006F2F40	int	__thiscall	oCMsgMagic	IsHighPriority
@@ -6703,7 +6703,7 @@
 0x006FD4C0	void	__thiscall	oCNpc_States	Unarchive	zCArchiver&
 0x006FDA70	void	__thiscall	oCNpc_States	PackState	zCBuffer&
 0x006FDAB0	void	__thiscall	oCNpc_States	UnpackState	zCBuffer&
-0x006FE020	static zCObject*	__cdecl	oCObjectFactory	_CreateNewInstance
+0x006FE020	zCObject*	__cdecl	oCObjectFactory	_CreateNewInstance
 0x006FE170	zCEventManager*	__thiscall	oCObjectFactory	CreateEventManager	zCVob*
 0x006FE1E0	zCCSManager*	__thiscall	oCObjectFactory	CreateCSManager
 0x006FE250	zCGameInfo*	__thiscall	oCObjectFactory	CreateGameInfo
@@ -6736,7 +6736,7 @@
 0x00700BF0	int	__thiscall	oCPortalRoom	IsPortalMyRoom	oCNpc*
 0x00700DC0	void	__thiscall	oCPortalRoom	SavePortalData	zCArchiver&
 0x00700E00	void	__thiscall	oCPortalRoom	LoadPortalData	zCArchiver&
-0x00700E40	static int	__cdecl	oCPortalRoomManager	SortPortals	void const*	void const*
+0x00700E40	int	__cdecl	oCPortalRoomManager	SortPortals	void const*	void const*
 0x00700EB0		__thiscall	oCPortalRoomManager	oCPortalRoomManager
 0x00700EE0	void	__thiscall	oCPortalRoomManager	CleanUp
 0x00700FF0	void	__thiscall	oCPortalRoomManager	AssignPortalToNpc	zSTRING const&	zSTRING const&
@@ -6763,11 +6763,11 @@
 0x00702E80	void	__thiscall	oCRtnEntry	SetTime	int	int	int	int
 0x00702EA0	int	__thiscall	oCRtnEntry	GetState
 0x00702EB0	zSTRING	__thiscall	oCRtnEntry	GetWaypoint
-0x00702F30	static int	__cdecl	oCRtnManager	Sort_Routine	oCRtnEntry*	oCRtnEntry*
-0x00702F80	static int	__cdecl	oCRtnManager	Sort_WayBoxLimit	oCRtnManager::TRtn_WayBoxLimit*	oCRtnManager::TRtn_WayBoxLimit*
-0x00702FA0	static int	__cdecl	oCRtnManager	Sort_WayBoxX	oCRtnManager::TRtn_WayBox*	oCRtnManager::TRtn_WayBox*
-0x00702FC0	static int	__cdecl	oCRtnManager	Sort_WayBoxY	oCRtnManager::TRtn_WayBox*	oCRtnManager::TRtn_WayBox*
-0x00702FE0	static int	__cdecl	oCRtnManager	Sort_WayBoxZ	oCRtnManager::TRtn_WayBox*	oCRtnManager::TRtn_WayBox*
+0x00702F30	int	__cdecl	oCRtnManager	Sort_Routine	oCRtnEntry*	oCRtnEntry*
+0x00702F80	int	__cdecl	oCRtnManager	Sort_WayBoxLimit	oCRtnManager::TRtn_WayBoxLimit*	oCRtnManager::TRtn_WayBoxLimit*
+0x00702FA0	int	__cdecl	oCRtnManager	Sort_WayBoxX	oCRtnManager::TRtn_WayBox*	oCRtnManager::TRtn_WayBox*
+0x00702FC0	int	__cdecl	oCRtnManager	Sort_WayBoxY	oCRtnManager::TRtn_WayBox*	oCRtnManager::TRtn_WayBox*
+0x00702FE0	int	__cdecl	oCRtnManager	Sort_WayBoxZ	oCRtnManager::TRtn_WayBox*	oCRtnManager::TRtn_WayBox*
 0x00703000		__thiscall	oCRtnManager	oCRtnManager
 0x00703230	void	__thiscall	oCRtnManager	SetWorld	zCWorld*
 0x00703240	void	__thiscall	oCRtnManager	ShowRoutine	int	int	oCNpc*
@@ -6794,12 +6794,12 @@
 0x007055D0	int	__thiscall	oCRtnManager	CollidesWithWayBox	zTBBox3D&	zCList< oCNpc>&
 0x007057F0	int	__thiscall	oCRtnManager	GetNumOfWayBoxes
 0x00705EE0		__thiscall	oCSpawnManager	oCSpawnManager
-0x00705FE0	static void	__cdecl	oCSpawnManager	SetInsertRange	float
-0x00705FF0	static float	__cdecl	oCSpawnManager	GetInsertRange
-0x00706000	static void	__cdecl	oCSpawnManager	SetRemoveRange	float
-0x00706010	static float	__cdecl	oCSpawnManager	GetRemoveRange
-0x00706020	static void	__cdecl	oCSpawnManager	SetSpawnTime	float
-0x00706030	static float	__cdecl	oCSpawnManager	GetSpawnTime
+0x00705FE0	void	__cdecl	oCSpawnManager	SetInsertRange	float
+0x00705FF0	float	__cdecl	oCSpawnManager	GetInsertRange
+0x00706000	void	__cdecl	oCSpawnManager	SetRemoveRange	float
+0x00706010	float	__cdecl	oCSpawnManager	GetRemoveRange
+0x00706020	void	__cdecl	oCSpawnManager	SetSpawnTime	float
+0x00706030	float	__cdecl	oCSpawnManager	GetSpawnTime
 0x00706040	void	__thiscall	oCSpawnManager	ClearList
 0x00706090	void	__thiscall	oCSpawnManager	InsertInList	oCSpawnManager::oSSpawnNode*
 0x00706190	void	__thiscall	oCSpawnManager	RemoveFromList	oCSpawnManager::oSSpawnNode*
@@ -6826,13 +6826,13 @@
 0x00708500		__thiscall	oCSVM	oCSVM
 0x00708530	void	__thiscall	oCSVM	InitByScript	int
 0x00708800	int	__thiscall	oCSVM	GetOU	zSTRING const&
-0x00708AC0	static void	__cdecl	oCText	InitText
+0x00708AC0	void	__cdecl	oCText	InitText
 0x00709BB0		__thiscall	oCVob	oCVob
 0x00709BD0	zCClassDef*	__thiscall	oCVob	_GetClassDef
 0x00709BE0	void	__thiscall	oCVob	GetSoundMaterial_AM	zCSoundManager::zTSndManMedium&	oTSndMaterial&	int
 0x00709C30	void	__thiscall	oCVob	Init
-0x00709C40	static void	__cdecl	oCVob	ClearDebugList
-0x00709C80	static void	__cdecl	oCVob	ShowVobDebugInfo	zCCamera*
+0x00709C40	void	__cdecl	oCVob	ClearDebugList
+0x00709C80	void	__cdecl	oCVob	ShowVobDebugInfo	zCCamera*
 0x00709CB0	int	__thiscall	oCVob	GetShowDebug
 0x00709CD0	void	__thiscall	oCVob	ToggleShowDebug
 0x00709D50	void	__thiscall	oCVob	SetShowDebug	int
@@ -6852,7 +6852,7 @@
 0x0070B960	int	__fastcall	oCVob	Render	zTRenderContext&
 0x0070BB30	oCAIVobMove*	__thiscall	oCVob	GetAIVobMove
 0x0070BC00	char const*	__thiscall	oCTouchDamage	GetDamageTypeArcEnum	unsigned long
-0x0070C080	static zCObject*	__cdecl	oCTouchDamage	_CreateNewInstance
+0x0070C080	zCObject*	__cdecl	oCTouchDamage	_CreateNewInstance
 0x0070C120	zCClassDef*	__thiscall	oCTouchDamage	_GetClassDef
 0x0070C570		__thiscall	oCWaypoint	oCWaypoint
 0x0070C590	zCClassDef*	__thiscall	zCWaypoint	_GetClassDef
@@ -6863,7 +6863,7 @@
 0x0070D050	int	__thiscall	oCWay	IsObjectOnWay	zCVob const*
 0x0070D070	oCMobLadder*	__thiscall	oCWay	GetLadder
 0x0070D080	oCMobDoor*	__thiscall	oCWay	GetDoor
-0x0070D5C0	static zCObject*	__cdecl	oCWorld	_CreateNewInstance
+0x0070D5C0	zCObject*	__cdecl	oCWorld	_CreateNewInstance
 0x0070D630		__thiscall	oCWorld	oCWorld
 0x0070D850	zCClassDef*	__thiscall	oCWorld	_GetClassDef
 0x0070DB60	oCVob*	__thiscall	oCWorld	CreateVob	zTVobType	zSTRING const&
@@ -6903,7 +6903,7 @@
 0x0070FB50	float	__thiscall	oCWorldTimer	GetSkyTime
 0x0070FB90	int	__thiscall	oCWorldTimer	IsDay
 0x0070FC10	int	__thiscall	oCWorldTimer	IsNight
-0x0070FCA0	static void	__cdecl	oCWorldTimer	AddTime	int&	int&	int	int
+0x0070FCA0	void	__cdecl	oCWorldTimer	AddTime	int&	int&	int	int
 0x0070FF50	void	__cdecl		TestFont
 0x00710200	int	__cdecl		MainProg
 0x00710350		__thiscall	zCConDat	zCConDat	zSTRING const&	zSTRING const&	int	void*	int
@@ -6942,20 +6942,20 @@
 0x00713D20	void	__thiscall	zCConsole	SetChangedFunc	void (__cdecl*)(zSTRING const&)
 0x00713D30	void	__thiscall	zCConsole	ShowHelp
 0x00713F90	void	__thiscall	zCConsole	SaveInfoFile	zSTRING const&
-0x00714250	static int	__cdecl	zCConsole	EditFunc	zSTRING const&	zSTRING&
+0x00714250	int	__cdecl	zCConsole	EditFunc	zSTRING const&	zSTRING&
 0x00714470	int	__thiscall	zCConsole	EditInstance	zSTRING const&	void*
 0x007144A0	int	__thiscall	zCConsole	EditInstance	int	void*
-0x00714C90	static zCObject*	__cdecl	zCEventManager	_CreateNewInstance
+0x00714C90	zCObject*	__cdecl	zCEventManager	_CreateNewInstance
 0x00714DC0	zCClassDef*	__thiscall	zCEventManager	_GetClassDef
 0x00714DD0	zCNetVobControl*	__thiscall	zCEventManager	GetNetVobControl	int
-0x00714E30	static void	__cdecl	zCEventManager	DoFrameActivity
+0x00714E30	void	__cdecl	zCEventManager	DoFrameActivity
 0x00714E70		__thiscall	zCEventManager	zCEventManager
 0x00714FC0		__thiscall	zCEventManager	zCEventManager	zCVob*
 0x007151F0	void	__thiscall	zCEventManager	KillMessages
 0x00715250	void	__thiscall	zCEventManager	OnMessage	zCEventMessage*	zCVob*
 0x00715C10	void	__thiscall	zCEventManager	SendMessageToHost	zCEventMessage*	zCVob*	zCVob*
-0x00715DE0	static void	__cdecl	zCEventManager	SetShowMessageCommunication	int
-0x00715DF0	static int	__cdecl	zCEventManager	GetShowMessageCommunication
+0x00715DE0	void	__cdecl	zCEventManager	SetShowMessageCommunication	int
+0x00715DF0	int	__cdecl	zCEventManager	GetShowMessageCommunication
 0x00715E00	void	__thiscall	zCEventManager	ShowMessageCommunication	zCVob*	zCVob*
 0x00716060	void	__thiscall	zCEventManager	ProcessMessageList
 0x00716170	void	__thiscall	zCEventManager	SetActive	int
@@ -7012,7 +7012,7 @@
 0x00719730	zCTexture*	__thiscall	zCFont	GetFontTexture
 0x00719800		__thiscall	zCGfx	zCGfx	zSTRING const&
 0x00719A20		__thiscall	zCGfx	zCGfx	int	int
-0x00719D30	static void	__cdecl	zCGfx	Reload
+0x00719D30	void	__cdecl	zCGfx	Reload
 0x0071A280		__thiscall	zCOLOR	zCOLOR	unsigned char	unsigned char	unsigned char	unsigned char
 0x0071A2A0	int	__cdecl		rnd	float
 0x0071A2D0	void	__cdecl		Gfx_ChangeBPP	TGfx_Gfx*
@@ -7031,8 +7031,8 @@
 0x0071C400	int	__thiscall	zCGfx	GetPixel	int	int
 0x0071C430	void	__cdecl		Gfx_Setpal	unsigned char*
 0x0071C4E0	void	__cdecl		Gfx_Loadpal	char const*
-0x0071C680	static void	__cdecl	zCParser	SetVersion	unsigned char
-0x0071C690	static unsigned char	__cdecl	zCParser	GetVersion
+0x0071C680	void	__cdecl	zCParser	SetVersion	unsigned char
+0x0071C690	unsigned char	__cdecl	zCParser	GetVersion
 0x0071C6A0		__thiscall	zCPar_File	zCPar_File
 0x0071C780	int	__thiscall	zCPar_File	IsNewerDate	zDATE&	zDATE&
 0x0071C820	int	__thiscall	zCPar_File	IsExactDate	zDATE&	zDATE&
@@ -7053,7 +7053,7 @@
 0x0071D080	zCPar_TreeNode*	__thiscall	zCPar_File	LoadTreeNode	zFILE*
 0x0071D1C0	int	__thiscall	zCPar_File	LoadTree	zFILE_STATS&	zCPar_SymbolTable&
 0x0071D630	void	__thiscall	zCPar_File	DeleteTree
-0x0071D660	static zCParser*	__cdecl	zCParser	GetParser
+0x0071D660	zCParser*	__cdecl	zCParser	GetParser
 0x0071D670		__thiscall	zCParser	zCParser	int
 0x0071DA00	void	__thiscall	zCParser	SetMessageFunc	void (__cdecl*)(zSTRING)
 0x0071DA10	void	__thiscall	zCParser	SetStopOnError	int
@@ -7142,9 +7142,9 @@
 0x00727770	void	__thiscall	zCPar_TreeNode	SetLeft	zCPar_TreeNode*
 0x00727780	void	__thiscall	zCPar_TreeNode	SetRight	zCPar_TreeNode*
 0x00727790	void	__thiscall	zCPar_TreeNode	SetNext	zCPar_TreeNode*
-0x007277A0	static zCPar_TreeNode*	__cdecl	zCPar_TreeNode	SeekEndTree	zCPar_TreeNode*
-0x007277C0	static zCPar_TreeNode*	__cdecl	zCPar_TreeNode	MakeDyadicNode	zCPar_TreeNode*	int	zCPar_TreeNode*
-0x00727840	static zCPar_TreeNode*	__cdecl	zCPar_TreeNode	MakeMonadicNode	int	zCPar_TreeNode*
+0x007277A0	zCPar_TreeNode*	__cdecl	zCPar_TreeNode	SeekEndTree	zCPar_TreeNode*
+0x007277C0	zCPar_TreeNode*	__cdecl	zCPar_TreeNode	MakeDyadicNode	zCPar_TreeNode*	int	zCPar_TreeNode*
+0x00727840	zCPar_TreeNode*	__cdecl	zCPar_TreeNode	MakeMonadicNode	int	zCPar_TreeNode*
 0x007278B0	void	__thiscall	zCParser	GetOperatorString	int	zSTRING&
 0x00727E60	void	__thiscall	zCParser	FindNext	char*
 0x00727FE0	void	__thiscall	zCParser	PrevWord
@@ -7201,9 +7201,9 @@
 0x00731AA0	void	__thiscall	zCPar_StringTable	Load	zSTRING&
 0x00731C70	void	__thiscall	zCPar_StringTable	ShrinkToFit
 0x00731D00	void	__thiscall	zCPar_StringTable	Show
-0x00731D40	static void	__cdecl	zCPar_Symbol	SetUseInstance	zCPar_Symbol*
-0x00731E60	static void	__cdecl	zCPar_Symbol	SetUseInstanceAdr	void*
-0x00731E70	static void*	__cdecl	zCPar_Symbol	GetUseInstance
+0x00731D40	void	__cdecl	zCPar_Symbol	SetUseInstance	zCPar_Symbol*
+0x00731E60	void	__cdecl	zCPar_Symbol	SetUseInstanceAdr	void*
+0x00731E70	void*	__cdecl	zCPar_Symbol	GetUseInstance
 0x00731E80		__thiscall	zCPar_Symbol	zCPar_Symbol
 0x00731FD0	void	__thiscall	zCPar_Symbol	AllocSpace
 0x007322E0	void*	__thiscall	zCPar_Symbol	GetDataAdr	int
@@ -7237,7 +7237,7 @@
 0x007337D0		__thiscall	zCPar_SymbolTable	zCPar_SymbolTable	int
 0x00733990	void	__thiscall	zCPar_SymbolTable	Clear
 0x00733A70	void	__thiscall	zCPar_SymbolTable	PreAlloc	int
-0x00733B00	static int	__cdecl	zCPar_SymbolTable	Compare	void const*	void const*
+0x00733B00	int	__cdecl	zCPar_SymbolTable	Compare	void const*	void const*
 0x00733B70	void	__thiscall	zCPar_SymbolTable	Save	zFILE*
 0x00733CF0	void	__thiscall	zCPar_SymbolTable	Load	zFILE*
 0x00734130	int	__thiscall	zCPar_SymbolTable	IsIn	zCPar_Symbol*
@@ -7285,8 +7285,8 @@
 0x00735CE0	void	__thiscall	zCInputCallback	SetHandleEventTop
 0x00735D60	void	__thiscall	zCInputCallback	SetEnableHandleEvent	int
 0x00735DF0	int	__thiscall	zCInputCallback	GetEnableHandleEvent
-0x00735E10	static int	__cdecl	zCInputCallback	DoEvents	int
-0x00735E40	static void	__cdecl	zCInputCallback	GetInput
+0x00735E10	int	__cdecl	zCInputCallback	DoEvents	int
+0x00735E40	void	__cdecl	zCInputCallback	GetInput
 0x00735EC0		__thiscall	zCView	zCView
 0x00735F80		__thiscall	zCView	zCView	int	int	int	int	zTviewID
 0x00736230	void	__thiscall	zCView	Init
@@ -7297,7 +7297,7 @@
 0x007366E0	int	__thiscall	zCView	nay	int
 0x00736720	int	__thiscall	zCView	anx	int
 0x00736760	int	__thiscall	zCView	any	int
-0x007367A0	static void	__cdecl	zCView	StdPrintwin	zSTRING const&
+0x007367A0	void	__cdecl	zCView	StdPrintwin	zSTRING const&
 0x007367C0	void	__thiscall	zCView	SetAutoScroll	float
 0x00736800	void	__thiscall	zCView	CheckAutoScroll
 0x00736910	void	__thiscall	zCView	SetTransparency	int
@@ -7376,14 +7376,14 @@
 0x0073B8C0	zSTRING	__thiscall	zCView	Input	int	zSTRING&
 0x0073BE90	zSTRING	__thiscall	zCView	Input	int	int	int	zSTRING&
 0x0073C190	int	__thiscall	zCView	InputNumber	int	int
-0x0073C620	static void	__cdecl	zCView	PrintDebug	zSTRING const&
-0x0073C640	static void	__cdecl	zCView	SetShowDebug	int
-0x0073C650	static int	__cdecl	zCView	GetShowDebug
+0x0073C620	void	__cdecl	zCView	PrintDebug	zSTRING const&
+0x0073C640	void	__cdecl	zCView	SetShowDebug	int
+0x0073C650	int	__cdecl	zCView	GetShowDebug
 0x0073C660	void	__thiscall	zCView	InsertItem	zCView*	int
 0x0073C8B0	void	__thiscall	zCView	RemoveItem	zCView*
-0x0073C930	static void	__cdecl	zCView	ChangeMode
-0x0073C940	static void	__cdecl	zCView	SetNextMode
-0x0073C950	static void	__cdecl	zCView	SetMode	int	int	int	HWND__**
+0x0073C930	void	__cdecl	zCView	ChangeMode
+0x0073C940	void	__cdecl	zCView	SetNextMode
+0x0073C950	void	__cdecl	zCView	SetMode	int	int	int	HWND__**
 0x0073CB20	void	__thiscall	zCView	Line	int	int	int	int	zCOLOR const&
 0x0073CBD0	int	__thiscall	zCView	GetCode	int	int
 0x0073CC10	int	__thiscall	zCView	ClipLine	int&	int&	int&	int&
@@ -7432,7 +7432,7 @@
 0x00740130	void	__thiscall	zCWay	CalcProperties	zCWorld*
 0x00740460	float	__thiscall	zCWay	GetChasm
 0x00740470	int	__thiscall	zCWay	CanJump
-0x00740480	static int	__cdecl	zCWayNet	SortWpList	zCWaypoint*	zCWaypoint*
+0x00740480	int	__cdecl	zCWayNet	SortWpList	zCWaypoint*	zCWaypoint*
 0x007405E0		__thiscall	zCWaypoint	zCWaypoint
 0x007406E0	int	__thiscall	zCWaypoint	CanBeUsed	zCVob const*
 0x00740720	void	__thiscall	zCWaypoint	Init	zVEC3&
@@ -7462,7 +7462,7 @@
 0x007414E0	zCRoute*	__thiscall	zCWayNet	FindRoute	zVEC3 const&	zSTRING const&	zCVob const*
 0x00741550	zCRoute*	__thiscall	zCWayNet	FindRoute	zCWaypoint*	zCWaypoint*	zCVob const*
 0x00741590	zCRoute*	__thiscall	zCWayNet	FindRoute	zSTRING const&	zSTRING const&	zCVob const*
-0x007415F0	static int	__cdecl	zCWayNet	SortOpenList	zCWaypoint*	zCWaypoint*
+0x007415F0	int	__cdecl	zCWayNet	SortOpenList	zCWaypoint*	zCWaypoint*
 0x00741610	void	__thiscall	zCWayNet	InsertInOpen	zCWaypoint*
 0x00741640	int	__thiscall	zCWayNet	IsInOpen	zCWaypoint*
 0x00741660	void	__thiscall	zCWayNet	InsertInClosed	zCWaypoint*
@@ -7495,17 +7495,17 @@
 0x007440C0	zCClassDef*	__thiscall	zCVobSpot	_GetClassDef
 0x00744120	int	__thiscall	zCVobSpot	IsAvailable	zCVob*
 0x007442B0	void	__thiscall	zCVobSpot	MarkAsUsed	float	zCVob*
-0x007444D0	static zCObject*	__cdecl	zCVobWaypoint	_CreateNewInstance
-0x00744760	static zCObject*	__cdecl	zCVobSpot	_CreateNewInstance
-0x00744A20	static zCObject*	__cdecl	zCVobStartpoint	_CreateNewInstance
+0x007444D0	zCObject*	__cdecl	zCVobWaypoint	_CreateNewInstance
+0x00744760	zCObject*	__cdecl	zCVobSpot	_CreateNewInstance
+0x00744A20	zCObject*	__cdecl	zCVobStartpoint	_CreateNewInstance
 0x00744AD0	zCClassDef*	__thiscall	zCVobStartpoint	_GetClassDef
-0x00744D20	static zCObject*	__cdecl	zCWaypoint	_CreateNewInstance
-0x00744F90	static zCObject*	__cdecl	zCWayNet	_CreateNewInstance
+0x00744D20	zCObject*	__cdecl	zCWaypoint	_CreateNewInstance
+0x00744F90	zCObject*	__cdecl	zCWayNet	_CreateNewInstance
 0x00745490	void	__cdecl		zUlfi_StartUp
 0x007455F0	void	__cdecl		zUlfi_ShutDown
-0x007458A0	static zCObject*	__cdecl	oCZoneMusic	_CreateNewInstance
+0x007458A0	zCObject*	__cdecl	oCZoneMusic	_CreateNewInstance
 0x00745990	zCClassDef*	__thiscall	oCZoneMusic	_GetClassDef
-0x00745BA0	static zCObject*	__cdecl	oCZoneMusicDefault	_CreateNewInstance
+0x00745BA0	zCObject*	__cdecl	oCZoneMusicDefault	_CreateNewInstance
 0x00745C90	zCClassDef*	__thiscall	oCZoneMusicDefault	_GetClassDef
 0x00745CA0		__thiscall	oCZoneMusic	oCZoneMusic
 0x00745D40	void	__thiscall	oCZoneMusic	ProcessZoneList	zCArraySort< zCZone*> const&	zCArraySort< zCZone*> const&	zCWorld*
@@ -7529,23 +7529,23 @@
 0x007468D0	int	__thiscall	oCZoneMusic	IsDayEntranceDone
 0x007468E0	void	__thiscall	oCZoneMusic	SetNightEntranceDone	int
 0x007468F0	int	__thiscall	oCZoneMusic	IsNightEntranceDone
-0x00746900	static void	__cdecl	oCZoneMusic	SetZonetime	int
-0x00746910	static void	__cdecl	oCZoneMusic	GetZonetime	int*
+0x00746900	void	__cdecl	oCZoneMusic	SetZonetime	int
+0x00746910	void	__cdecl	oCZoneMusic	GetZonetime	int*
 0x00746920	void	__thiscall	oCZoneMusic	Archive	zCArchiver&
 0x00746A10	void	__thiscall	oCZoneMusic	Unarchive	zCArchiver&
 0x00746B00	float	__thiscall	oCZoneMusic	GetCamPosWeightElps
-0x00746D30	static oCZoneMusicList*	__cdecl	oCZoneMusic	BuildTempZoneList	oCZoneMusicDefault*	zCArraySort< zCZone*> const&
-0x00746EA0	static void	__cdecl	oCZoneMusic	ReleaseTempZoneList	oCZoneMusicList*
-0x00746EC0	static void	__cdecl	oCZoneMusic	SwitchInAndOutZones	zCArraySort< zCZone*> const&	zCArraySort< zCZone*> const&
-0x00747380	static oCZoneMusic*	__cdecl	oCZoneMusic	GetMusicZoneByName	oCZoneMusic*	zSTRING
-0x00747410	static void	__cdecl	oCZoneMusic	GetNewTheme	zSTRING*
-0x00747850	static int	__cdecl	oCZoneMusic	PlayThemeVariation	zSTRING	int
-0x00747C80	static int	__cdecl	oCZoneMusic	IsDaytime
-0x00747CA0	static oHEROSTATUS	__cdecl	oCZoneMusic	GetHerostatus
+0x00746D30	oCZoneMusicList*	__cdecl	oCZoneMusic	BuildTempZoneList	oCZoneMusicDefault*	zCArraySort< zCZone*> const&
+0x00746EA0	void	__cdecl	oCZoneMusic	ReleaseTempZoneList	oCZoneMusicList*
+0x00746EC0	void	__cdecl	oCZoneMusic	SwitchInAndOutZones	zCArraySort< zCZone*> const&	zCArraySort< zCZone*> const&
+0x00747380	oCZoneMusic*	__cdecl	oCZoneMusic	GetMusicZoneByName	oCZoneMusic*	zSTRING
+0x00747410	void	__cdecl	oCZoneMusic	GetNewTheme	zSTRING*
+0x00747850	int	__cdecl	oCZoneMusic	PlayThemeVariation	zSTRING	int
+0x00747C80	int	__cdecl	oCZoneMusic	IsDaytime
+0x00747CA0	oHEROSTATUS	__cdecl	oCZoneMusic	GetHerostatus
 0x00747CB0		__thiscall	oCZoneMusicDefault	oCZoneMusicDefault
-0x00747F80	static zCObject*	__cdecl	zCMusicControler	_CreateNewInstance
+0x00747F80	zCObject*	__cdecl	zCMusicControler	_CreateNewInstance
 0x00748020	zCClassDef*	__thiscall	zCMusicControler	_GetClassDef
-0x00748230	static zCObject*	__cdecl	zCEventMusicControler	_CreateNewInstance
+0x00748230	zCObject*	__cdecl	zCEventMusicControler	_CreateNewInstance
 0x00748410	zCClassDef*	__thiscall	zCEventMusicControler	_GetClassDef
 0x00748420	int	__thiscall	zCEventMusicControler	MD_GetNumOfSubTypes
 0x007484C0	zSTRING	__thiscall	zCEventMusicControler	MD_GetSubTypeString	int
@@ -7784,7 +7784,7 @@
 0x0075F760	int	__thiscall	zCTexConGeneric	Unlock
 0x0075F920	void	__cdecl		tcConvertTexture	RGBPIXEL*	unsigned char*	unsigned char*	int
 0x0075FB90	void	__cdecl		tcCreatePalette	RGBPIXEL*	unsigned char*	int
-0x00761110	static oCDocumentManager&	__cdecl	oCDocumentManager	GetDocumentManager
+0x00761110	oCDocumentManager&	__cdecl	oCDocumentManager	GetDocumentManager
 0x00761170		__thiscall	oCDocumentManager	oCDocumentManager	oCDocumentManager const&
 0x00761190		__thiscall	oCDocumentManager	oCDocumentManager
 0x00761420	int	__fastcall	oCDocumentManager	CreateDocument
@@ -7825,7 +7825,7 @@
 0x00763270		__thiscall	oCViewDocumentMap	oCViewDocumentMap
 0x00763490	oCViewDocument*	__fastcall	oCViewDocumentMap	SetPage	int	zSTRING&	int
 0x00763590	void	__fastcall	oCViewDocumentMap	UpdatePosition
-0x00764150	static zCObject*	__cdecl	oCViewDialogInventory	_CreateNewInstance
+0x00764150	zCObject*	__cdecl	oCViewDialogInventory	_CreateNewInstance
 0x00764220	zCClassDef*	__thiscall	oCViewDialogInventory	_GetClassDef
 0x00764230		__thiscall	oCViewDialogInventory	oCViewDialogInventory
 0x007642C0	void	__fastcall	oCViewDialogInventory	Activate	int
@@ -7840,12 +7840,12 @@
 0x007644B0	int	__thiscall	oCViewDialogInventory	HandleEvent	int
 0x00764500	void	__fastcall	oCViewDialogInventory	StartSelection
 0x00764580	void	__fastcall	oCViewDialogInventory	StopSelection
-0x007647E0	static zCObject*	__cdecl	oCViewDialogItem	_CreateNewInstance
+0x007647E0	zCObject*	__cdecl	oCViewDialogItem	_CreateNewInstance
 0x007648A0	zCClassDef*	__thiscall	oCViewDialogItem	_GetClassDef
 0x007648B0		__thiscall	oCViewDialogItem	oCViewDialogItem
 0x007649B0	void	__fastcall	oCViewDialogItem	SetItem	oCItem*
 0x00764A00	void	__fastcall	oCViewDialogItem	Blit
-0x00764C40	static zCObject*	__cdecl	oCViewDialogItemContainer	_CreateNewInstance
+0x00764C40	zCObject*	__cdecl	oCViewDialogItemContainer	_CreateNewInstance
 0x00764D20	zCClassDef*	__thiscall	oCViewDialogItemContainer	_GetClassDef
 0x00764D30		__thiscall	oCViewDialogItemContainer	oCViewDialogItemContainer
 0x00764DD0	void	__fastcall	oCViewDialogItemContainer	Activate	int
@@ -7863,7 +7863,7 @@
 0x00765330	int	__thiscall	oCViewDialogItemContainer	HandleEvent	int
 0x00765380	void	__fastcall	oCViewDialogItemContainer	StartSelection
 0x00765410	void	__fastcall	oCViewDialogItemContainer	StopSelection
-0x00765910	static zCObject*	__cdecl	oCViewDialogStealContainer	_CreateNewInstance
+0x00765910	zCObject*	__cdecl	oCViewDialogStealContainer	_CreateNewInstance
 0x007659F0	zCClassDef*	__thiscall	oCViewDialogStealContainer	_GetClassDef
 0x00765A00		__thiscall	oCViewDialogStealContainer	oCViewDialogStealContainer
 0x00765AA0	void	__fastcall	oCViewDialogStealContainer	Activate	int
@@ -7881,7 +7881,7 @@
 0x007660F0	int	__thiscall	oCViewDialogStealContainer	HandleEvent	int
 0x00766140	void	__fastcall	oCViewDialogStealContainer	StartSelection
 0x007661C0	void	__fastcall	oCViewDialogStealContainer	StopSelection
-0x007666C0	static zCObject*	__cdecl	oCViewDialogTrade	_CreateNewInstance
+0x007666C0	zCObject*	__cdecl	oCViewDialogTrade	_CreateNewInstance
 0x00766750	void	__thiscall	oCViewDialogTrade	UpdateViewSettings
 0x00766910		__thiscall	oCViewDialogTrade	oCViewDialogTrade
 0x00766FF0	zCClassDef*	__thiscall	oCViewDialogTrade	_GetClassDef
@@ -7916,7 +7916,7 @@
 0x00768B40	void	__fastcall	oCViewDialogTrade	OnBack
 0x00768B50	void	__fastcall	oCViewDialogTrade	OnReset
 0x00768BB0	void	__fastcall	oCViewDialogTrade	OnExit
-0x00768F70	static oCInformationManager&	__cdecl	oCInformationManager	GetInformationManager
+0x00768F70	oCInformationManager&	__cdecl	oCInformationManager	GetInformationManager
 0x00768FC0	void	__thiscall	oCInformationManager	UpdateViewSettings
 0x00769110		__thiscall	oCInformationManager	oCInformationManager
 0x00769740	void	__fastcall	oCInformationManager	ToggleStatus
@@ -7948,7 +7948,7 @@
 0x0076C840	void	__fastcall	oCInformationManager	OnTradeEnd
 0x0076C990	void	__fastcall	oCInformationManager	OnExit
 0x0076CA60	void	__fastcall	oCInformationManager	OnTermination
-0x0076CB70	static oCLogManager&	__cdecl	oCLogManager	GetLogManager
+0x0076CB70	oCLogManager&	__cdecl	oCLogManager	GetLogManager
 0x0076CBD0		__thiscall	oCLogManager	oCLogManager	oCLogManager const&
 0x0076CBF0		__thiscall	oCLogManager	oCLogManager
 0x0076CCE0	void	__fastcall	oCLogManager	Clear
@@ -7959,8 +7959,8 @@
 0x0076D3C0	void	__fastcall	oCLogTopic	Unarchive	zCArchiver&
 0x0076D5D0	void	__thiscall	oCLogEntry	Archive	zCArchiver&
 0x0076D5F0	void	__thiscall	oCLogEntry	Unarchive	zCArchiver&
-0x0076DD40	static void	__cdecl	oCNpc	EnableDamageDebugOutput	int
-0x0076DD50	static void	__cdecl	oCNpc	NotifyDamageToSpy	zSTRING&
+0x0076DD40	void	__cdecl	oCNpc	EnableDamageDebugOutput	int
+0x0076DD50	void	__cdecl	oCNpc	NotifyDamageToSpy	zSTRING&
 0x0076DE20	void	__thiscall	oCNpc	InitDamage
 0x0076DFF0	int	__thiscall	oCNpc	EV_DamageOnce	oCMsgDamage*
 0x0076E380	int	__thiscall	oCNpc	EV_DamagePerFrame	oCMsgDamage*
@@ -7982,8 +7982,8 @@
 0x00788440	void	__thiscall	oCNpc	OnDamage_State	oCNpc::oSDamageDescriptor&
 0x007884B0	void	__thiscall	oCNpc	OnDamage	zCVob*	zCVob*	float	int	zVEC3 const&
 0x00788990	int	__thiscall	oCNpc	HasFlag	unsigned long	unsigned long
-0x00788E00	static void	__cdecl	oCNpc	InitFightAI
-0x007892A0	static void	__cdecl	oCNpc	ExitFightAI
+0x00788E00	void	__cdecl	oCNpc	InitFightAI
+0x007892A0	void	__cdecl	oCNpc	ExitFightAI
 0x007892F0	int	__thiscall	oCNpc	IsNpcBetweenMeAndTarget	zCVob*
 0x00789510	int	__thiscall	oCNpc	IsInDoubleFightRange	zCVob*	float&
 0x00789770	int	__thiscall	oCNpc	IsInFightRange	zCVob*	float&
@@ -8087,7 +8087,7 @@
 0x00795350	void	__thiscall	zCViewBase	Line	int	int	int	int	zCOLOR const&
 0x00795360	void	__fastcall	zCViewBase	GetViewport	int&	int&	int&	int&
 0x00795370	int	__thiscall	zCViewBase	GetCode	int	int
-0x007955C0	static zCObject*	__cdecl	zCViewDraw	_CreateNewInstance
+0x007955C0	zCObject*	__cdecl	zCViewDraw	_CreateNewInstance
 0x007956E0	zCClassDef*	__thiscall	zCViewDraw	_GetClassDef
 0x007956F0		__thiscall	zCViewDraw	zCViewDraw
 0x00795830	void	__fastcall	zCViewDraw	RemoveChild	zSTRING&
@@ -8102,9 +8102,9 @@
 0x00795DA0	void	__fastcall	zCViewDraw	Blit
 0x00795E00	void	__fastcall	zCViewDraw	BlitTexture
 0x00795E90	void	__fastcall	zCViewDraw	EvaluateTexturePosition
-0x00795F10	static zCViewDraw&	__cdecl	zCViewDraw	GetScreen
-0x00796050	static void	__cdecl	zCViewDraw	CleanupScreen
-0x007962B0	static zCObject*	__cdecl	zCViewFX	_CreateNewInstance
+0x00795F10	zCViewDraw&	__cdecl	zCViewDraw	GetScreen
+0x00796050	void	__cdecl	zCViewDraw	CleanupScreen
+0x007962B0	zCObject*	__cdecl	zCViewFX	_CreateNewInstance
 0x007963D0	zCClassDef*	__thiscall	zCViewFX	_GetClassDef
 0x007963E0		__thiscall	zCViewFX	zCViewFX
 0x007964E0	void	__fastcall	zCViewFX	Init	zCViewObject*	int	unsigned long	unsigned long	float	float	zSTRING&
@@ -8123,10 +8123,10 @@
 0x00796D20	void	__fastcall	zCViewFX	ApplyCloseZoom
 0x00796DB0	void	__fastcall	zCViewFX	Blit
 0x00796EE0	void	__fastcall	zCViewFX	EvaluateTexturePosition
-0x00797150	static zCObject*	__cdecl	zCViewObject	_CreateNewInstance
+0x00797150	zCObject*	__cdecl	zCViewObject	_CreateNewInstance
 0x007971E0		__thiscall	zCViewObject	zCViewObject
 0x007972C0	zCClassDef*	__thiscall	zCViewObject	_GetClassDef
-0x007972D0	static int	__cdecl	zCViewObject	Compare	zCViewObject*	zCViewObject*
+0x007972D0	int	__cdecl	zCViewObject	Compare	zCViewObject*	zCViewObject*
 0x00797440	void	__fastcall	zCViewObject	AddChild	zCViewObject*
 0x00797460	void	__fastcall	zCViewObject	AddChild	zCViewObject&
 0x00797480	void	__fastcall	zCViewObject	AddChildren	zCListSort< zCViewObject>&
@@ -8160,7 +8160,7 @@
 0x00798500	int	__thiscall	zCViewObject	ClipLine	int&	int&	int&	int&
 0x007986B0	void	__thiscall	zCViewObject	Line	int	int	int	int	zCOLOR const&
 0x00798760	int	__thiscall	zCViewObject	GetCode	int	int
-0x00798AC0	static zCObject*	__cdecl	zCViewPrint	_CreateNewInstance
+0x00798AC0	zCObject*	__cdecl	zCViewPrint	_CreateNewInstance
 0x00798B50		__thiscall	zCViewPrint	zCViewPrint
 0x00798C20	zCClassDef*	__thiscall	zCViewPrint	_GetClassDef
 0x00798D50	void	__fastcall	zCViewPrint	SizeHeightToContent	int
@@ -8190,9 +8190,9 @@
 0x0079A510		__thiscall	zCViewFont	zCViewFont	zCFont*
 0x0079A550		__thiscall	zCViewFont	zCViewFont
 0x0079A5A0	void	__fastcall	zCViewFont	SetFont	zSTRING&
-0x0079A7F0	static zCObject*	__cdecl	zCViewDialog	_CreateNewInstance
+0x0079A7F0	zCObject*	__cdecl	zCViewDialog	_CreateNewInstance
 0x0079A9A0		__thiscall	zCViewDialog	zCViewDialog
-0x0079AD80	static zCObject*	__cdecl	zCViewDialogChoice	_CreateNewInstance
+0x0079AD80	zCObject*	__cdecl	zCViewDialogChoice	_CreateNewInstance
 0x0079AE70	zCClassDef*	__thiscall	zCViewDialogChoice	_GetClassDef
 0x0079AE80		__thiscall	zCViewDialogChoice	zCViewDialogChoice
 0x0079AFC0	int	__thiscall	zCViewDialogChoice	HandleEvent	int
@@ -8216,16 +8216,16 @@
 0x0079BDC0	void	__fastcall	zCViewDialogChoice	RemoveAllChoices
 0x0079BE20	void	__cdecl		zAccountInit
 0x0079C000	int	__cdecl		Hash	zSTRING const&
-0x0079C080	static void	__cdecl	zCAccount	Add	void const*	char const*	int	int
+0x0079C080	void	__cdecl	zCAccount	Add	void const*	char const*	int	int
 0x0079C100	void	__thiscall	zCAccountInfo	Add	char const*	int	int
-0x0079C3F0	static void	__cdecl	zCAccount	Sum	void const*
+0x0079C3F0	void	__cdecl	zCAccount	Sum	void const*
 0x0079C420	void	__thiscall	zCAccountInfo	SumUp
-0x0079C830	static void	__cdecl	zCAccount	Clear	void const*
-0x0079C860	static void	__cdecl	zCAccount	Begin
-0x0079C870	static void	__cdecl	zCAccount	End
-0x0079C880	static int	__cdecl	zCAccount	IsActive
-0x0079C890	static void	__cdecl	zCClassDef	ObjectCreated	zCObject*	zCClassDef*	char const*	int
-0x0079D390	static zCCollisionObject*	__cdecl	oCCollObjectCharacter	_CreateNewInstance
+0x0079C830	void	__cdecl	zCAccount	Clear	void const*
+0x0079C860	void	__cdecl	zCAccount	Begin
+0x0079C870	void	__cdecl	zCAccount	End
+0x0079C880	int	__cdecl	zCAccount	IsActive
+0x0079C890	void	__cdecl	zCClassDef	ObjectCreated	zCObject*	zCClassDef*	char const*	int
+0x0079D390	zCCollisionObject*	__cdecl	oCCollObjectCharacter	_CreateNewInstance
 0x0079D420	zCCollisionObjectDef*	__thiscall	oCCollObjectCharacter	GetCollObjClass
 0x0079D430		__thiscall	oCCollObjectCharacter	oCCollObjectCharacter
 0x0079D490	float	__thiscall	oCCollObjectCharacter	TurnSpeed
@@ -8233,7 +8233,7 @@
 0x0079D500	void	__thiscall	oCCollObjectCharacter	PushAround	zVEC3 const&
 0x0079D530	int	__thiscall	oCCollObjectCharacter	DontLetHimComeNearer	zCVob const*
 0x0079D560	zCConvexPrimitive*	__thiscall	oCCollObjectCharacter	GetPrimitiveCC
-0x0079D590	static void	__cdecl	oCCollObjectCharacter	S_RegisterCollisionTestFuncs
+0x0079D590	void	__cdecl	oCCollObjectCharacter	S_RegisterCollisionTestFuncs
 0x0079D620	void	__cdecl		zLocal_Startup
 0x0079D630	void	__cdecl		zLocal_Shutdown
 0x0079D640	void	__cdecl		zLocal_PerFrame
@@ -8314,7 +8314,7 @@
 0x007A4D47	void	__thiscall	CD3duContext	_CreateFullscreenBuffers
 0x007A4EA3	void	__thiscall	CD3duContext	_CreateWindowedBuffers
 0x007A50DD	void	__thiscall	CD3duContext	_CreateOffScreenBuffers
-0x007A5234	static long	__stdcall	CD3duContext	_EnumSurfacesCallback2	IDirectDrawSurface7*	_DDSURFACEDESC2*	void*
+0x007A5234	long	__stdcall	CD3duContext	_EnumSurfacesCallback2	IDirectDrawSurface7*	_DDSURFACEDESC2*	void*
 0x007A524A	void	__thiscall	CD3duContext	_EnumBackBuffers	IDirectDrawSurface7*	unsigned long
 0x007A535F	long	__stdcall	CD3duContext	GetDeviceIndex	unsigned long*	unsigned long*
 0x007A5382	unsigned long	__stdcall	CD3duContext	GetNumBackBuffers
@@ -8325,7 +8325,7 @@
 0x007A542A		__thiscall	CHelInfo	CHelInfo
 0x007A5455	void	__thiscall	CHelInfo	Initialize
 0x007A595A	void	__thiscall	CHelInfo	GenerateSurfaceFormatList	unsigned long
-0x007A5BC3	static long	__stdcall	CHelInfo	_D3DEnumCBListSurfaceFormats	_DDPIXELFORMAT*	void*
+0x007A5BC3	long	__stdcall	CHelInfo	_D3DEnumCBListSurfaceFormats	_DDPIXELFORMAT*	void*
 0x007A5C05		__thiscall	CEnumSurfaceFormatContext	CEnumSurfaceFormatContext
 0x007A5C1B		__thiscall	CHelNode	CHelNode
 0x007A5C89		__thiscall	CD3dxFile	CD3dxFile
@@ -8349,8 +8349,8 @@
 0x007A61B8	unsigned long	__thiscall	CD3dxFile	FindChild	unsigned long	unsigned long	void const*	unsigned long
 0x007A6216	unsigned long	__thiscall	CD3dxFile	FindSibling	unsigned long	unsigned long
 0x007A6243	unsigned long	__thiscall	CD3dxFile	FindSibling	unsigned long	unsigned long	void const*	unsigned long
-0x007A629C	static long	__cdecl	CD3dxFile	Compress	void*	unsigned long	unsigned long*	void const*	unsigned long
-0x007A632C	static long	__cdecl	CD3dxFile	Decompress	void*	unsigned long	void const*	unsigned long	unsigned long*
+0x007A629C	long	__cdecl	CD3dxFile	Compress	void*	unsigned long	unsigned long*	void const*	unsigned long
+0x007A632C	long	__cdecl	CD3dxFile	Decompress	void*	unsigned long	void const*	unsigned long	unsigned long*
 0x007A63AB		__thiscall	CDDrawDeviceNode	CDDrawDeviceNode
 0x007A6483	void	__thiscall	CDDrawDeviceNode	SetDDCoopLevel	HWND__*	unsigned long	HWND__*	int
 0x007A6603	IDirectDrawSurface7*	__thiscall	CDDrawDeviceNode	GetPrimary
@@ -8358,13 +8358,13 @@
 0x007A66DC	void	__thiscall	CDDrawDeviceNode	ReleasePrimary
 0x007A66FE	void	__thiscall	CDDrawDeviceNode	CreatePrimary	int	unsigned long
 0x007A68A9	void	__thiscall	CDDrawDeviceNode	GetCurrentVideoMode	_D3DX_VIDMODEDESC*
-0x007A6943	static long	__stdcall	CDDrawDeviceNode	WndProc	HWND__*	unsigned int	unsigned int	long
+0x007A6943	long	__stdcall	CDDrawDeviceNode	WndProc	HWND__*	unsigned int	unsigned int	long
 0x007A695C	void	__thiscall	CDDrawDeviceNode	ObtainCapsAtDisplayMode	_D3DX_VIDMODEDESC*
-0x007A6F78	static long	__stdcall	CDDrawDeviceNode	_D3DEnumCBListSurfaceFormats	_DDPIXELFORMAT*	void*
+0x007A6F78	long	__stdcall	CDDrawDeviceNode	_D3DEnumCBListSurfaceFormats	_DDPIXELFORMAT*	void*
 0x007A6FBA		__thiscall	CDDrawDeviceList	CDDrawDeviceList
-0x007A706C	static int	__stdcall	CDDrawDeviceList	_DDEnumCBListDDrawDevices	_GUID*	char*	char*	void*	HMONITOR__*
-0x007A729F	static long	__stdcall	CDDrawDeviceList	_D3DEnumCBFindHWDevices	char*	char*	_D3DDeviceDesc7*	void*
-0x007A738E	static long	__stdcall	CDDrawDeviceList	_DDEnumCBListAllVideoModes	_DDSURFACEDESC2*	void*
+0x007A706C	int	__stdcall	CDDrawDeviceList	_DDEnumCBListDDrawDevices	_GUID*	char*	char*	void*	HMONITOR__*
+0x007A729F	long	__stdcall	CDDrawDeviceList	_D3DEnumCBFindHWDevices	char*	char*	_D3DDeviceDesc7*	void*
+0x007A738E	long	__stdcall	CDDrawDeviceList	_DDEnumCBListAllVideoModes	_DDSURFACEDESC2*	void*
 0x007A7568	long	__cdecl		RegisterBlts
 0x007A756B	long	__cdecl		RegisterLines
 0x007A99AD	void	__cdecl		EncodeBlockRGB	S3TC_COLOR* const	S3TCBlockRGB*
@@ -8460,8 +8460,8 @@
 0x007B8C7F		__thiscall	ios	ios	streambuf*
 0x007B8CE8		__thiscall	ios	ios	ios const&
 0x007B8D7A	void	__thiscall	ios	init	streambuf*
-0x007B8DE4	static int	__cdecl	ios	xalloc
-0x007B8E15	static long	__cdecl	ios	bitalloc
+0x007B8DE4	int	__cdecl	ios	xalloc
+0x007B8E15	long	__cdecl	ios	bitalloc
 0x007B8E3B		__thiscall	ofstream	ofstream
 0x007B8EEC		__thiscall	ofstream	ofstream	char const*	int	int
 0x007B8FA3		__thiscall	ofstream	ofstream	int
