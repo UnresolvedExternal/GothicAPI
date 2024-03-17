@@ -120,11 +120,6 @@ namespace Gothic_I_Classic {
     return s1.operator !=( s2 );
   }
 
-  // case Insensitive
-  inline int operator != ( const zSTRING& s1, const char* s2 ) {
-    return s1.operator !=( s2 );
-  }
-
 } // namespace Gothic_I_Classic
 
 #endif // __ZSTRING_H__VER0__
