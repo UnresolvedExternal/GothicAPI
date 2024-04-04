@@ -484,7 +484,7 @@ namespace Gothic_II_Addon {
       zCParticleFX* pParticleFX;                           // sizeof 04h    offset CCh
       oCVisualFX* pVisualFX;                               // sizeof 04h    offset D0h
 
-      oSDamageDescriptor() {}
+      oSDamageDescriptor() { ZeroMemory(this, sizeof(*this)); fDamageMultiplier = 1.0f; }
       void oSDamageDescriptor_OnInit( oSDamageDescriptor const& ) zCall( 0x00664250 );
       ~oSDamageDescriptor()                                       zCall( 0x004962F0 );
       void Release()                                              zCall( 0x00664170 );

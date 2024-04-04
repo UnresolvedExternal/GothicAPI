@@ -473,7 +473,7 @@ namespace Gothic_II_Classic {
       zCParticleFX* pParticleFX;                           // sizeof 04h    offset C8h
       oCVisualFX* pVisualFX;                               // sizeof 04h    offset CCh
 
-      oSDamageDescriptor() {}
+      oSDamageDescriptor() { ZeroMemory(this, sizeof(*this)); fDamageMultiplier = 1.0f; }
       void oSDamageDescriptor_OnInit( oSDamageDescriptor const& ) zCall( 0x0077AFE0 );
       ~oSDamageDescriptor()                                       zCall( 0x00494730 );
       void Release()                                              zCall( 0x0077AF00 );
