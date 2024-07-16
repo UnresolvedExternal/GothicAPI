@@ -1,4 +1,6 @@
 #include <Windows.h>
+#include <stdio.h>
+#include <type_traits>
 
 #include "zGothicAPI.h"
 
@@ -55,7 +57,7 @@ int GetGameVersion() {
 
 
 static const char* GothicNamespace = nullptr;
-static int GothicNamespaceLength = 0;
+static uint32_t GothicNamespaceLength = 0;
 
 
 inline void DisableNamespace( char* where ) {
@@ -69,7 +71,7 @@ inline void DisableNamespace( char* where ) {
 
 inline const char* FindGothicNamespace( const char* str ) {
   size_t length = strlen( str );
-  if( static_cast<int>(length) > GothicNamespaceLength ) {
+  if( length > GothicNamespaceLength ) {
     const char* part = str + length - GothicNamespaceLength;
     if( strcmp( part, GothicNamespace ) == 0 )
       return part;

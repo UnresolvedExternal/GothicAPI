@@ -48,8 +48,8 @@ namespace Gothic_I_Addon {
     zCCollisionObject*  collObject1,
     zCCollisionReport** ppoCollReport);
 
-#ifndef _FILE_DEFINED
-  struct _iobuf {
+  // old FILE (aka _iobuf) implementation
+  struct zGOTHIC_FILE {
     zOPERATORS_DECLARATION()
 
     char* _ptr;
@@ -61,12 +61,9 @@ namespace Gothic_I_Addon {
     int   _bufsiz;
     char* _tmpfname;
   };
-  typedef struct _iobuf FILE;
-#define _FILE_DEFINED
-#endif
 
-#ifndef _finddata_t
-  struct _finddata_t {
+  // old _finddata_t implementation
+  struct zFINDDATA {
     zOPERATORS_DECLARATION()
 
     unsigned int  attrib;
@@ -76,8 +73,6 @@ namespace Gothic_I_Addon {
     unsigned long size;
     char          name[260];
   };
-#endif
-
 } // namespace Gothic_II_Addon
 
 #endif // __ZTYPES_H__VER1__

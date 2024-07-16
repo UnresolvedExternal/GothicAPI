@@ -3,6 +3,7 @@
 
 #ifndef __ZMACRO_H__VER3__
 #define __ZMACRO_H__VER3__
+#include <cassert>
 #include <crtversion.h>
 
 namespace Gothic_II_Addon {
@@ -22,13 +23,39 @@ namespace Gothic_II_Addon {
 #define zPureCall ;
 #define virtual
 #endif
-#define group struct
 #define RGBA(r,g,b,a)   ((zUINT32)(zUINT8)(a)|(zUINT32)(zUINT8)(b)<<8|(zUINT32)(zUINT8)(g)<<16|(zUINT32)(zUINT8)(r)<<24)
 #define EXTRACT_R(rgba) (rgba		& 0xff)
 #define EXTRACT_G(rgba) (rgba >> 8	& 0xff)
 #define EXTRACT_B(rgba) (rgba >> 16 & 0xff)
 #define EXTRACT_A(rgba) (rgba >> 24 & 0xff)
-#define zMEMPOOL_VOLATILE_DECLARATION( className )
+
+#define zMEMPOOL_VOLATILE_DECLARATION(classname)                                                    \
+private:                                                                                            \
+    static zCVolatileMemory<classname>& s_MemMan;                                                   \
+public:                                                                                             \
+    void *operator new(size_t s) {                                                                  \
+        return s_MemMan.Alloc();                                                                    \
+    }                                                                                               \
+                                                                                                    \
+    void operator delete(void *p) {                                                                 \
+        zSTRING msg = zSTRING("Can't delete an object of class ") + #classname + zSTRING(".");      \
+        assert(msg.ToChar());                                                                       \
+    }                                                                                               \
+                                                                                                    \
+    void* operator new(unsigned int size,const char *classn,const char *file,int l) {               \
+        return shi_malloc(size);                                                                    \
+    }                                                                                               \
+                                                                                                    \
+    void operator delete(void *ptr,const char *classn,const char *file,int line) {                  \
+        shi_free(ptr);                                                                              \
+    }                                                                                               \
+                                                                                                    \
+    static size_t PoolMark() { return s_MemMan.Mark(); }                                            \
+    static void PoolRestore(size_t m=0) { s_MemMan.Restore(m); }                                    \
+    static classname &PoolElement(int i) { return s_MemMan.Element(i); }                            \
+    static int PoolIndex(classname *o) { return s_MemMan.Index(o); }                                \
+    static int PoolLastAllocatedIndex() { return s_MemMan.LastAllocatedIndex(); }
+
 #define XCALL(uAddr)			  \
 	__asm { mov esp, ebp	 } 	\
 	__asm { pop ebp	       }  \

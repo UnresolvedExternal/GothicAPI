@@ -262,10 +262,11 @@ namespace Gothic_I_Addon {
 #endif // __ZMATH_TOOLS_H__VER1__
 
 #ifdef __ZMEM_POOL_H__VER1__
-  const char*& zCMemPoolBase::s_className = *(const char**)0x008B9680;
-  const char*& zCMemPoolBase::s_fileName  = *(const char**)0x008B9684;
-  int& zCMemPoolBase::s_line              = *(int*)0x008B9688;
-  int& zCMemPoolBase::s_disablePools      = *(int*)0x00884588;
+  const char*& zCMemPoolBase::s_className       = *(const char**)0x008B9680;
+  const char*& zCMemPoolBase::s_fileName        = *(const char**)0x008B9684;
+  int& zCMemPoolBase::s_line                    = *(int*)0x008B9688;
+  int& zCMemPoolBase::s_disablePools            = *(int*)0x00884588;
+  zCVolatileMemory<zCVertexTransform>& s_MemMan = *(zCVolatileMemory<zCVertexTransform>*)0x008B51F0;
 #endif // __ZMEM_POOL_H__VER1__
 
 #ifdef __ZMENU_H__VER1__
